@@ -19,6 +19,8 @@ from __future__ import print_function
 import os
 import sys
 
+from tensorboard_visualizer import TensorBoardVisualizer
+
 __dir__ = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(__dir__)
 sys.path.insert(0, os.path.abspath(os.path.join(__dir__, '..')))
@@ -177,10 +179,25 @@ def main(config, device, logger, vdl_writer):
     if config['Global']['distributed']:
         model = paddle.DataParallel(model)
     # start train
-    program.train(config, train_dataloader, valid_dataloader, device, model,
-                  loss_class, optimizer, lr_scheduler, post_process_class,
-                  eval_class, pre_best_model_dict, logger, vdl_writer, scaler,
-                  amp_level, amp_custom_black_list)
+    program.train(
+        config=config,
+        train_dataloader=train_dataloader,
+        valid_dataloader=valid_dataloader,
+        device=device,
+        model=model,
+        loss_class=loss_class,
+        optimizer=optimizer,
+        lr_scheduler=lr_scheduler,
+        post_process_class=post_process_class,
+        eval_class=eval_class,
+        pre_best_model_dict=pre_best_model_dict,
+        logger=logger,
+        log_writer=vdl_writer,
+        scaler=scaler,
+        amp_level=amp_level,
+        amp_custom_black_list=amp_custom_black_list,
+        visualizer=TensorBoardVisualizer()
+    )
 
 
 def test_reader(config, device, logger):

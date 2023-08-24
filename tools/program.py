@@ -36,6 +36,7 @@ from ppocr.utils.logging import get_logger
 from ppocr.utils.loggers import VDLLogger, WandbLogger, Loggers
 from ppocr.utils import profiler
 from ppocr.data import build_dataloader
+from ppocr.losses import build_loss
 
 
 class ArgsParser(ArgumentParser):
@@ -188,10 +189,9 @@ def train(config,
           log_writer=None,
           scaler=None,
           amp_level='O2',
-          amp_custom_black_list=[]):
-    cal_metric_during_train = config['Global'].get('cal_metric_during_train',
-                                                   False)
-    calc_epoch_interval = config['Global'].get('calc_epoch_interval', 1)
+          amp_custom_black_list=[],
+          visualizer=None):
+
     log_smooth_window = config['Global']['log_smooth_window']
     epoch_num = config['Global']['epoch_num']
     print_batch_step = config['Global']['print_batch_step']
@@ -211,10 +211,7 @@ def train(config,
                 'will be disabled'
             )
             start_eval_step = 1e111
-        logger.info(
-            "During the training process, after the {}th iteration, " \
-            "an evaluation is run every {} iterations".
-            format(start_eval_step, eval_batch_step))
+
     save_epoch_step = config['Global']['save_epoch_step']
     save_model_dir = config['Global']['save_model_dir']
     if not os.path.exists(save_model_dir):
@@ -248,16 +245,14 @@ def train(config,
     start_epoch = best_model_dict[
         'start_epoch'] if 'start_epoch' in best_model_dict else 1
 
-    total_samples = 0
-    train_reader_cost = 0.0
-    train_batch_cost = 0.0
-    reader_start = time.time()
-    eta_meter = AverageMeter()
 
     max_iter = len(train_dataloader) - 1 if platform.system(
     ) == "Windows" else len(train_dataloader)
 
     for epoch in range(start_epoch, epoch_num + 1):
+        print(f"starting epoch {epoch}")
+        reader_start = time.time()
+        eta_meter = AverageMeter()
         if train_dataloader.dataset.need_reset:
             train_dataloader = build_dataloader(
                 config, 'Train', device, logger, seed=epoch)
@@ -266,7 +261,6 @@ def train(config,
 
         for idx, batch in enumerate(train_dataloader):
             profiler.add_profiler_step(profiler_options)
-            train_reader_cost += time.time() - reader_start
             if idx >= max_iter:
                 break
             lr = optimizer.get_lr()
@@ -274,6 +268,7 @@ def train(config,
             if use_srn:
                 model_average = True
             # use amp
+            avg_loss = 0
             if scaler:
                 with paddle.amp.auto_cast(
                         level=amp_level,
@@ -301,141 +296,122 @@ def train(config,
                     preds = model(batch[:3])
                 else:
                     preds = model(images)
+
                 loss = loss_class(preds, batch)
                 avg_loss = loss['loss']
                 avg_loss.backward()
                 optimizer.step()
 
+
             optimizer.clear_grad()
 
-            if cal_metric_during_train and epoch % calc_epoch_interval == 0:  # only rec and cls need
-                batch = [item.numpy() for item in batch]
-                if model_type in ['kie', 'sr']:
-                    eval_class(preds, batch)
-                elif model_type in ['table']:
-                    post_result = post_process_class(preds, batch)
-                    eval_class(post_result, batch)
-                elif algorithm in ['CAN']:
-                    model_type = 'can'
-                    eval_class(preds[0], batch[2:], epoch_reset=(idx == 0))
-                else:
-                    if config['Loss']['name'] in ['MultiLoss', 'MultiLoss_v2'
-                                                  ]:  # for multi head loss
-                        post_result = post_process_class(
-                            preds['ctc'], batch[1])  # for CTC head out
-                    elif config['Loss']['name'] in ['VLLoss']:
-                        post_result = post_process_class(preds, batch[1],
-                                                         batch[-1])
-                    else:
-                        post_result = post_process_class(preds, batch[1])
-                    eval_class(post_result, batch)
-                metric = eval_class.get_metric()
-                train_stats.update(metric)
-
-            train_batch_time = time.time() - reader_start
-            train_batch_cost += train_batch_time
-            eta_meter.update(train_batch_time)
             global_step += 1
-            total_samples += len(images)
 
             if not isinstance(lr_scheduler, float):
                 lr_scheduler.step()
 
-            # logger and visualdl
-            stats = {k: v.numpy().mean() for k, v in loss.items()}
-            stats['lr'] = lr
-            train_stats.update(stats)
+        # eval
+        if global_step > start_eval_step and dist.get_rank() == 0:
+            if model_average:
+                Model_Average = paddle.incubate.optimizer.ModelAverage(
+                    0.15,
+                    parameters=model.parameters(),
+                    min_average_window=10000,
+                    max_average_window=15625)
+                Model_Average.apply()
+            valid_metrics = eval(
+                model,
+                valid_dataloader,
+                post_process_class,
+                eval_class,
+                build_loss(config['CTCLoss']),
+                model_type,
+                extra_input=extra_input,
+                scaler=scaler,
+                amp_level=amp_level,
+                amp_custom_black_list=amp_custom_black_list)
 
-            if log_writer is not None and dist.get_rank() == 0:
-                log_writer.log_metrics(
-                    metrics=train_stats.get(), prefix="TRAIN", step=global_step)
+            train_metrics = eval(
+                model,
+                train_dataloader,
+                post_process_class,
+                eval_class,
+                build_loss(config['CTCLoss']),
+                model_type,
+                extra_input=extra_input,
+                scaler=scaler,
+                amp_level=amp_level,
+                amp_custom_black_list=amp_custom_black_list)
 
-            if dist.get_rank() == 0 and (
-                (global_step > 0 and global_step % print_batch_step == 0) or
-                (idx >= len(train_dataloader) - 1)):
-                logs = train_stats.log()
+            # if valid_metrics[main_indicator] >= best_model_dict[
+            #         main_indicator]:
+            #     best_model_dict.update(valid_metrics)
+            #     best_model_dict['best_epoch'] = epoch
+            #     save_model(
+            #         model,
+            #         optimizer,
+            #         save_model_dir,
+            #         logger,
+            #         config,
+            #         is_best=True,
+            #         prefix='best_accuracy',
+            #         best_model_dict=best_model_dict,
+            #         epoch=epoch,
+            #         global_step=global_step)
+            # best_str = 'best metric, {}'.format(', '.join([
+            #     '{}: {}'.format(k, v) for k, v in best_model_dict.items()
+            # ]))
+            # logger.info(best_str)
+            # # logger best metric
+            # if log_writer is not None:
+            #     log_writer.log_metrics(
+            #         metrics={
+            #             "best_{}".format(main_indicator):
+            #             best_model_dict[main_indicator]
+            #         },
+            #         prefix="EVAL",
+            #         step=global_step)
 
-                eta_sec = ((epoch_num + 1 - epoch) * \
-                    len(train_dataloader) - idx - 1) * eta_meter.avg
-                eta_sec_format = str(datetime.timedelta(seconds=int(eta_sec)))
-                strs = 'epoch: [{}/{}], global_step: {}, {}, avg_reader_cost: ' \
-                    '{:.5f} s, avg_batch_cost: {:.5f} s, avg_samples: {}, ' \
-                    'ips: {:.5f} samples/s, eta: {}'.format(
-                    epoch, epoch_num, global_step, logs,
-                    train_reader_cost / print_batch_step,
-                    train_batch_cost / print_batch_step,
-                    total_samples / print_batch_step,
-                    total_samples / train_batch_cost, eta_sec_format)
-                logger.info(strs)
+            #     log_writer.log_model(
+            #         is_best=True,
+            #         prefix="best_accuracy",
+            #         metadata=best_model_dict
+            #     )
 
-                total_samples = 0
-                train_reader_cost = 0.0
-                train_batch_cost = 0.0
-            # eval
-            if global_step > start_eval_step and \
-                    (global_step - start_eval_step) % eval_batch_step == 0 \
-                    and dist.get_rank() == 0:
-                if model_average:
-                    Model_Average = paddle.incubate.optimizer.ModelAverage(
-                        0.15,
-                        parameters=model.parameters(),
-                        min_average_window=10000,
-                        max_average_window=15625)
-                    Model_Average.apply()
-                cur_metric = eval(
-                    model,
-                    valid_dataloader,
-                    post_process_class,
-                    eval_class,
-                    model_type,
-                    extra_input=extra_input,
-                    scaler=scaler,
-                    amp_level=amp_level,
-                    amp_custom_black_list=amp_custom_black_list)
-                cur_metric_str = 'cur metric, {}'.format(', '.join(
-                    ['{}: {}'.format(k, v) for k, v in cur_metric.items()]))
-                logger.info(cur_metric_str)
-
-                # logger metric
-                if log_writer is not None:
-                    log_writer.log_metrics(
-                        metrics=cur_metric, prefix="EVAL", step=global_step)
-
-                if cur_metric[main_indicator] >= best_model_dict[
-                        main_indicator]:
-                    best_model_dict.update(cur_metric)
-                    best_model_dict['best_epoch'] = epoch
-                    save_model(
-                        model,
-                        optimizer,
-                        save_model_dir,
-                        logger,
-                        config,
-                        is_best=True,
-                        prefix='best_accuracy',
-                        best_model_dict=best_model_dict,
-                        epoch=epoch,
-                        global_step=global_step)
-                best_str = 'best metric, {}'.format(', '.join([
-                    '{}: {}'.format(k, v) for k, v in best_model_dict.items()
-                ]))
-                logger.info(best_str)
-                # logger best metric
-                if log_writer is not None:
-                    log_writer.log_metrics(
-                        metrics={
-                            "best_{}".format(main_indicator):
-                            best_model_dict[main_indicator]
-                        },
-                        prefix="EVAL",
-                        step=global_step)
-
-                    log_writer.log_model(
-                        is_best=True,
-                        prefix="best_accuracy",
-                        metadata=best_model_dict)
-
+        
+            train_epoch_time = time.time() - reader_start
+            eta_meter.update(train_epoch_time)
             reader_start = time.time()
+            print(f"previous epoch took {train_epoch_time} seconds to train")
+            eta_seconds = eta_meter.avg * (epoch_num - epoch)
+
+            # convert the seconds to hours, minutes, and seconds
+            hours, remainder = divmod(eta_seconds, 3600)
+            minutes, seconds = divmod(remainder, 60)
+
+            # format the time remaining as "_h _m _s remaining"
+            time_remaining = f"{int(hours)}h {int(minutes)}m {int(seconds)}s remaining"
+            print(f"estimated time remaining: {time_remaining}")
+            # overall_avg_loss = overall_avg_loss / len(train_dataloader)
+            # overall_avg_loss = overall_avg_loss.numpy()[0]
+            if type(train_metrics['loss']) == int:
+                t_loss = train_metrics['loss']
+            else:
+                t_loss = train_metrics['loss'].numpy()[0]
+            if type(valid_metrics['loss']) == int:
+                v_loss = valid_metrics['loss']
+            else:
+                v_loss = valid_metrics['loss'].numpy()[0]
+            visualizer.update_charts(
+                lr=optimizer.get_lr(),
+                train_acc=train_metrics['acc'],
+                train_loss=t_loss,
+                valid_acc=valid_metrics['acc'],
+                valid_loss=v_loss,
+                inf_loss=valid_metrics['inf-loss'],
+                epoch=epoch
+            )
+
         if dist.get_rank() == 0:
             save_model(
                 model,
@@ -480,6 +456,7 @@ def eval(model,
          valid_dataloader,
          post_process_class,
          eval_class,
+         loss_class,
          model_type=None,
          extra_input=False,
          scaler=None,
@@ -497,8 +474,10 @@ def eval(model,
         max_iter = len(valid_dataloader) - 1 if platform.system(
         ) == "Windows" else len(valid_dataloader)
         sum_images = 0
+        min_loss = 100000
+        count_inf = 0
         for idx, batch in enumerate(valid_dataloader):
-            if idx >= max_iter:
+            if idx >= 5:
                 break
             images = batch[0]
             start = time.time()
@@ -521,10 +500,13 @@ def eval(model,
                     else:
                         preds = model(images)
                 preds = to_float32(preds)
+
             else:
-                if model_type == 'table' or extra_input:
-                    preds = model(images, data=batch[1:])
-                elif model_type in ["kie"]:
+                # if model_type == 'table' or extra_input:
+                #     print(model_type)
+                #     print(extra_input)
+                    # preds = model(images, data=batch[1:])
+                if model_type in ["kie"]:
                     preds = model(batch)
                 elif model_type in ['can']:
                     preds = model(batch[:3])
@@ -534,7 +516,14 @@ def eval(model,
                     lr_img = preds["lr_img"]
                 else:
                     preds = model(images)
-
+                loss = loss_class(preds, batch)
+                avg_loss = loss['loss']
+                if avg_loss < min_loss:
+                    min_loss = avg_loss
+                if avg_loss.numpy()[0] > 100000:
+                    count_inf += 1
+                
+                
             batch_numpy = []
             for item in batch:
                 if isinstance(item, paddle.Tensor):
@@ -544,6 +533,7 @@ def eval(model,
             # Obtain usable results from post-processing methods
             total_time += time.time() - start
             # Evaluate the results of the current batch
+
             if model_type in ['table', 'kie']:
                 if post_process_class is None:
                     eval_class(preds, batch_numpy)
@@ -557,16 +547,22 @@ def eval(model,
             else:
                 post_result = post_process_class(preds, batch_numpy[1])
                 eval_class(post_result, batch_numpy)
-
             pbar.update(1)
             total_frame += len(images)
             sum_images += 1
         # Get final metric，eg. acc or hmean
         metric = eval_class.get_metric()
+        # stats = {
+        #     k: float(v) if v.shape == [] else v.numpy().mean()
+        #     for k, v in loss.items()
+        # }
+        # print(stats)
 
     pbar.close()
     model.train()
+    metric['loss'] = min_loss
     metric['fps'] = total_frame / total_time
+    metric['inf-loss'] = count_inf
     return metric
 
 

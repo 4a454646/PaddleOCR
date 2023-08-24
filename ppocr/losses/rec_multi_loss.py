@@ -44,10 +44,20 @@ class MultiLoss(nn.Layer):
         # batch [image, label_ctc, label_sar, length, valid_ratio]
         for name, loss_func in self.loss_funcs.items():
             if name == 'CTCLoss':
-                loss = loss_func(predicts['ctc'],
+                # check if predicts is a dictionary
+                if type(predicts) == dict:
+                    preds = predicts['ctc']
+                else:
+                    preds = predicts
+                loss = loss_func(preds,
                                  batch[:2] + batch[3:])['loss'] * self.weight_1
+
             elif name == 'SARLoss':
-                loss = loss_func(predicts['sar'],
+                if type(predicts) == dict:
+                    preds = predicts['sar']
+                else:
+                    preds = predicts
+                loss = loss_func(preds,
                                  batch[:1] + batch[2:])['loss'] * self.weight_2
             else:
                 raise NotImplementedError(
