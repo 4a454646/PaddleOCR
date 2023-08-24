@@ -37,6 +37,7 @@ from ppocr.utils.loggers import VDLLogger, WandbLogger, Loggers
 from ppocr.utils import profiler
 from ppocr.data import build_dataloader
 from ppocr.losses import build_loss
+import torch
 
 
 class ArgsParser(ArgumentParser):
@@ -241,6 +242,7 @@ def train(config,
         model_type = None
 
     algorithm = config['Architecture']['algorithm']
+    ctc_loss = build_loss(config['CTCLoss'])
 
     start_epoch = best_model_dict[
         'start_epoch'] if 'start_epoch' in best_model_dict else 1
@@ -259,7 +261,12 @@ def train(config,
             max_iter = len(train_dataloader) - 1 if platform.system(
             ) == "Windows" else len(train_dataloader)
 
-        for idx, batch in enumerate(train_dataloader):
+        pbar = tqdm(
+            total=len(train_dataloader),
+            desc='training',
+            position=0,
+            leave=True)
+        for idx, batch in enumerate(valid_dataloader):
             profiler.add_profiler_step(profiler_options)
             if idx >= max_iter:
                 break
@@ -268,11 +275,12 @@ def train(config,
             if use_srn:
                 model_average = True
             # use amp
-            avg_loss = 0
             if scaler:
                 with paddle.amp.auto_cast(
                         level=amp_level,
-                        custom_black_list=amp_custom_black_list):
+                        custom_black_list=amp_custom_black_list,
+                        custom_white_list=amp_custom_white_list,
+                        dtype=amp_dtype):
                     if model_type == 'table' or extra_input:
                         preds = model(images, data=batch[1:])
                     elif model_type in ["kie"]:
@@ -296,7 +304,6 @@ def train(config,
                     preds = model(batch[:3])
                 else:
                     preds = model(images)
-
                 loss = loss_class(preds, batch)
                 avg_loss = loss['loss']
                 avg_loss.backward()
@@ -309,6 +316,7 @@ def train(config,
 
             if not isinstance(lr_scheduler, float):
                 lr_scheduler.step()
+            pbar.update(1)
 
         # eval
         if global_step > start_eval_step and dist.get_rank() == 0:
@@ -324,24 +332,34 @@ def train(config,
                 valid_dataloader,
                 post_process_class,
                 eval_class,
-                build_loss(config['CTCLoss']),
+                ctc_loss,
                 model_type,
                 extra_input=extra_input,
                 scaler=scaler,
                 amp_level=amp_level,
                 amp_custom_black_list=amp_custom_black_list)
 
-            train_metrics = eval(
-                model,
-                train_dataloader,
-                post_process_class,
-                eval_class,
-                build_loss(config['CTCLoss']),
-                model_type,
-                extra_input=extra_input,
-                scaler=scaler,
-                amp_level=amp_level,
-                amp_custom_black_list=amp_custom_black_list)
+            # train_metrics = eval(
+            #     model,
+            #     train_dataloader,
+            #     post_process_class,
+            #     eval_class,
+            #     ctc_loss,
+            #     model_type,
+            #     extra_input=extra_input,
+            #     scaler=scaler,
+            #     amp_level=amp_level,
+            #     amp_custom_black_list=amp_custom_black_list)
+
+            # visualizer.update_charts(
+            #     lr=optimizer.get_lr(),
+            #     train_acc=train_metrics['acc'],
+            #     train_loss=train_metrics['loss'],
+            #     valid_acc=valid_metrics['acc'],
+            #     valid_loss=valid_metrics['loss'],
+            #     inf_loss=valid_metrics['inf-loss'],
+            #     epoch=epoch
+            # )
 
             # if valid_metrics[main_indicator] >= best_model_dict[
             #         main_indicator]:
@@ -378,39 +396,24 @@ def train(config,
             #         metadata=best_model_dict
             #     )
 
-        
+
             train_epoch_time = time.time() - reader_start
             eta_meter.update(train_epoch_time)
             reader_start = time.time()
-            print(f"previous epoch took {train_epoch_time} seconds to train")
+            print(f"previous epoch took {int(train_epoch_time)} seconds to train")
             eta_seconds = eta_meter.avg * (epoch_num - epoch)
-
-            # convert the seconds to hours, minutes, and seconds
             hours, remainder = divmod(eta_seconds, 3600)
             minutes, seconds = divmod(remainder, 60)
-
-            # format the time remaining as "_h _m _s remaining"
             time_remaining = f"{int(hours)}h {int(minutes)}m {int(seconds)}s remaining"
             print(f"estimated time remaining: {time_remaining}")
-            # overall_avg_loss = overall_avg_loss / len(train_dataloader)
-            # overall_avg_loss = overall_avg_loss.numpy()[0]
-            if type(train_metrics['loss']) == int:
-                t_loss = train_metrics['loss']
-            else:
-                t_loss = train_metrics['loss'].numpy()[0]
-            if type(valid_metrics['loss']) == int:
-                v_loss = valid_metrics['loss']
-            else:
-                v_loss = valid_metrics['loss'].numpy()[0]
-            visualizer.update_charts(
-                lr=optimizer.get_lr(),
-                train_acc=train_metrics['acc'],
-                train_loss=t_loss,
-                valid_acc=valid_metrics['acc'],
-                valid_loss=v_loss,
-                inf_loss=valid_metrics['inf-loss'],
-                epoch=epoch
-            )
+
+            # del valid_metrics
+            # del train_metrics
+            del preds
+            del loss
+            optimizer.clear_grad()
+
+
 
         if dist.get_rank() == 0:
             save_model(
@@ -429,6 +432,7 @@ def train(config,
                 log_writer.log_model(is_best=False, prefix="latest")
 
         if dist.get_rank() == 0 and epoch > 0 and epoch % save_epoch_step == 0:
+            print("saving!")
             save_model(
                 model,
                 optimizer,
@@ -461,21 +465,17 @@ def eval(model,
          extra_input=False,
          scaler=None,
          amp_level='O2',
-         amp_custom_black_list=[]):
+         amp_custom_black_list=[],
+         amp_custom_white_list=[],
+         amp_dtype='float16'):
     model.eval()
     with paddle.no_grad():
-        total_frame = 0.0
-        total_time = 0.0
         pbar = tqdm(
-            total=len(valid_dataloader),
-            desc='eval model:',
+            total=5,
+            desc='eval',
             position=0,
             leave=True)
-        max_iter = len(valid_dataloader) - 1 if platform.system(
-        ) == "Windows" else len(valid_dataloader)
-        sum_images = 0
-        min_loss = 100000
-        count_inf = 0
+        inf_count = 0
         for idx, batch in enumerate(valid_dataloader):
             if idx >= 5:
                 break
@@ -486,7 +486,8 @@ def eval(model,
             if scaler:
                 with paddle.amp.auto_cast(
                         level=amp_level,
-                        custom_black_list=amp_custom_black_list):
+                        custom_black_list=amp_custom_black_list,
+                        dtype=amp_dtype):
                     if model_type == 'table' or extra_input:
                         preds = model(images, data=batch[1:])
                     elif model_type in ["kie"]:
@@ -500,13 +501,12 @@ def eval(model,
                     else:
                         preds = model(images)
                 preds = to_float32(preds)
-
+                # loss = loss_class(preds, batch)
+                # avg_loss = loss['loss']
             else:
-                # if model_type == 'table' or extra_input:
-                #     print(model_type)
-                #     print(extra_input)
-                    # preds = model(images, data=batch[1:])
-                if model_type in ["kie"]:
+                if model_type == 'table' or extra_input:
+                    preds = model(images, data=batch[1:])
+                elif model_type in ["kie"]:
                     preds = model(batch)
                 elif model_type in ['can']:
                     preds = model(batch[:3])
@@ -516,14 +516,11 @@ def eval(model,
                     lr_img = preds["lr_img"]
                 else:
                     preds = model(images)
-                loss = loss_class(preds, batch)
-                avg_loss = loss['loss']
-                if avg_loss < min_loss:
-                    min_loss = avg_loss
-                if avg_loss.numpy()[0] > 100000:
-                    count_inf += 1
-                
-                
+
+                # loss = loss_class(preds, batch)
+                # avg_loss = loss['loss']
+            # if avg_loss > 99999:
+                # inf_count += 1
             batch_numpy = []
             for item in batch:
                 if isinstance(item, paddle.Tensor):
@@ -531,9 +528,7 @@ def eval(model,
                 else:
                     batch_numpy.append(item)
             # Obtain usable results from post-processing methods
-            total_time += time.time() - start
             # Evaluate the results of the current batch
-
             if model_type in ['table', 'kie']:
                 if post_process_class is None:
                     eval_class(preds, batch_numpy)
@@ -547,22 +542,19 @@ def eval(model,
             else:
                 post_result = post_process_class(preds, batch_numpy[1])
                 eval_class(post_result, batch_numpy)
+
             pbar.update(1)
-            total_frame += len(images)
-            sum_images += 1
         # Get final metric，eg. acc or hmean
         metric = eval_class.get_metric()
-        # stats = {
-        #     k: float(v) if v.shape == [] else v.numpy().mean()
-        #     for k, v in loss.items()
-        # }
-        # print(stats)
-
     pbar.close()
     model.train()
-    metric['loss'] = min_loss
-    metric['fps'] = total_frame / total_time
-    metric['inf-loss'] = count_inf
+    avg_loss = 0
+    if type(avg_loss) == int:
+        metric['loss'] = avg_loss
+    else:
+        metric['loss'] = avg_loss.numpy()[0]
+    metric['inf-loss'] = inf_count
+
     return metric
 
 
@@ -684,6 +676,7 @@ def preprocess(is_train=False):
         wandb_params.update({'save_dir': save_dir})
         log_writer = WandbLogger(**wandb_params, config=config)
         loggers.append(log_writer)
+
     else:
         log_writer = None
     print_dict(config, logger)
