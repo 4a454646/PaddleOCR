@@ -266,7 +266,7 @@ def train(config,
             desc='training',
             position=0,
             leave=True)
-        for idx, batch in enumerate(valid_dataloader):
+        for idx, batch in enumerate(train_dataloader):
             profiler.add_profiler_step(profiler_options)
             if idx >= max_iter:
                 break
@@ -339,62 +339,62 @@ def train(config,
                 amp_level=amp_level,
                 amp_custom_black_list=amp_custom_black_list)
 
-            # train_metrics = eval(
-            #     model,
-            #     train_dataloader,
-            #     post_process_class,
-            #     eval_class,
-            #     ctc_loss,
-            #     model_type,
-            #     extra_input=extra_input,
-            #     scaler=scaler,
-            #     amp_level=amp_level,
-            #     amp_custom_black_list=amp_custom_black_list)
+            train_metrics = eval(
+                model,
+                train_dataloader,
+                post_process_class,
+                eval_class,
+                ctc_loss,
+                model_type,
+                extra_input=extra_input,
+                scaler=scaler,
+                amp_level=amp_level,
+                amp_custom_black_list=amp_custom_black_list)
 
-            # visualizer.update_charts(
-            #     lr=optimizer.get_lr(),
-            #     train_acc=train_metrics['acc'],
-            #     train_loss=train_metrics['loss'],
-            #     valid_acc=valid_metrics['acc'],
-            #     valid_loss=valid_metrics['loss'],
-            #     inf_loss=valid_metrics['inf-loss'],
-            #     epoch=epoch
-            # )
+            visualizer.update_charts(
+                lr=optimizer.get_lr(),
+                train_acc=train_metrics['acc'],
+                train_loss=train_metrics['loss'],
+                valid_acc=valid_metrics['acc'],
+                valid_loss=valid_metrics['loss'],
+                inf_loss=valid_metrics['inf-loss'],
+                epoch=epoch
+            )
 
-            # if valid_metrics[main_indicator] >= best_model_dict[
-            #         main_indicator]:
-            #     best_model_dict.update(valid_metrics)
-            #     best_model_dict['best_epoch'] = epoch
-            #     save_model(
-            #         model,
-            #         optimizer,
-            #         save_model_dir,
-            #         logger,
-            #         config,
-            #         is_best=True,
-            #         prefix='best_accuracy',
-            #         best_model_dict=best_model_dict,
-            #         epoch=epoch,
-            #         global_step=global_step)
-            # best_str = 'best metric, {}'.format(', '.join([
-            #     '{}: {}'.format(k, v) for k, v in best_model_dict.items()
-            # ]))
-            # logger.info(best_str)
-            # # logger best metric
-            # if log_writer is not None:
-            #     log_writer.log_metrics(
-            #         metrics={
-            #             "best_{}".format(main_indicator):
-            #             best_model_dict[main_indicator]
-            #         },
-            #         prefix="EVAL",
-            #         step=global_step)
+            if valid_metrics[main_indicator] >= best_model_dict[
+                    main_indicator]:
+                best_model_dict.update(valid_metrics)
+                best_model_dict['best_epoch'] = epoch
+                save_model(
+                    model,
+                    optimizer,
+                    save_model_dir,
+                    logger,
+                    config,
+                    is_best=True,
+                    prefix='best_accuracy',
+                    best_model_dict=best_model_dict,
+                    epoch=epoch,
+                    global_step=global_step)
+            best_str = 'best metric, {}'.format(', '.join([
+                '{}: {}'.format(k, v) for k, v in best_model_dict.items()
+            ]))
+            logger.info(best_str)
+            # logger best metric
+            if log_writer is not None:
+                log_writer.log_metrics(
+                    metrics={
+                        "best_{}".format(main_indicator):
+                        best_model_dict[main_indicator]
+                    },
+                    prefix="EVAL",
+                    step=global_step)
 
-            #     log_writer.log_model(
-            #         is_best=True,
-            #         prefix="best_accuracy",
-            #         metadata=best_model_dict
-            #     )
+                log_writer.log_model(
+                    is_best=True,
+                    prefix="best_accuracy",
+                    metadata=best_model_dict
+                )
 
 
             train_epoch_time = time.time() - reader_start
@@ -407,10 +407,6 @@ def train(config,
             time_remaining = f"{int(hours)}h {int(minutes)}m {int(seconds)}s remaining"
             print(f"estimated time remaining: {time_remaining}")
 
-            # del valid_metrics
-            # del train_metrics
-            del preds
-            del loss
             optimizer.clear_grad()
 
 
@@ -456,8 +452,9 @@ def train(config,
     return
 
 
+
 def eval(model,
-         valid_dataloader,
+         dataloader,
          post_process_class,
          eval_class,
          loss_class,
@@ -470,15 +467,18 @@ def eval(model,
          amp_dtype='float16'):
     model.eval()
     with paddle.no_grad():
+        total_frame = 0.0
+        total_time = 0.0
         pbar = tqdm(
             total=5,
-            desc='eval',
+            desc='eval model',
             position=0,
             leave=True)
+        sum_images = 0
         inf_count = 0
-        for idx, batch in enumerate(valid_dataloader):
-            if idx >= 5:
-                break
+        for idx, batch in enumerate(dataloader):
+            if idx > 5:
+                continue
             images = batch[0]
             start = time.time()
 
@@ -501,8 +501,10 @@ def eval(model,
                     else:
                         preds = model(images)
                 preds = to_float32(preds)
-                # loss = loss_class(preds, batch)
-                # avg_loss = loss['loss']
+                loss = loss_class(preds, batch)
+                avg_loss = loss['loss']
+                scaled_avg_loss = scaler.scale(avg_loss)
+                scaled_avg_loss.backward()
             else:
                 if model_type == 'table' or extra_input:
                     preds = model(images, data=batch[1:])
@@ -516,11 +518,12 @@ def eval(model,
                     lr_img = preds["lr_img"]
                 else:
                     preds = model(images)
+                loss = loss_class(preds, batch)
+                avg_loss = loss['loss']
+                avg_loss.backward()
+            if avg_loss > 99999:
+                inf_count += 1
 
-                # loss = loss_class(preds, batch)
-                # avg_loss = loss['loss']
-            # if avg_loss > 99999:
-                # inf_count += 1
             batch_numpy = []
             for item in batch:
                 if isinstance(item, paddle.Tensor):
@@ -528,6 +531,7 @@ def eval(model,
                 else:
                     batch_numpy.append(item)
             # Obtain usable results from post-processing methods
+            total_time += time.time() - start
             # Evaluate the results of the current batch
             if model_type in ['table', 'kie']:
                 if post_process_class is None:
@@ -544,11 +548,13 @@ def eval(model,
                 eval_class(post_result, batch_numpy)
 
             pbar.update(1)
+            total_frame += len(images)
+            sum_images += 1
         # Get final metric，eg. acc or hmean
         metric = eval_class.get_metric()
+
     pbar.close()
     model.train()
-    avg_loss = 0
     if type(avg_loss) == int:
         metric['loss'] = avg_loss
     else:
