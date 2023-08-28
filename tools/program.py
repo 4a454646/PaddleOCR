@@ -251,205 +251,92 @@ def train(config,
     max_iter = len(train_dataloader) - 1 if platform.system(
     ) == "Windows" else len(train_dataloader)
 
+
     for epoch in range(start_epoch, epoch_num + 1):
         print(f"starting epoch {epoch}")
         reader_start = time.time()
         eta_meter = AverageMeter()
-        if train_dataloader.dataset.need_reset:
-            train_dataloader = build_dataloader(
-                config, 'Train', device, logger, seed=epoch)
-            max_iter = len(train_dataloader) - 1 if platform.system(
-            ) == "Windows" else len(train_dataloader)
 
-        pbar = tqdm(
-            total=len(train_dataloader),
-            desc='training',
-            position=0,
-            leave=True)
+        if train_dataloader.dataset.need_reset:
+            train_dataloader = build_dataloader(config, 'Train', device, logger, seed=epoch)
+            max_iter = len(train_dataloader)
+
+        pbar = tqdm(total=len(train_dataloader), desc='training', position=0, leave=True)
         for idx, batch in enumerate(train_dataloader):
             profiler.add_profiler_step(profiler_options)
             if idx >= max_iter:
                 break
             lr = optimizer.get_lr()
             images = batch[0]
-            if use_srn:
-                model_average = True
-            # use amp
-            if scaler:
-                with paddle.amp.auto_cast(
-                        level=amp_level,
-                        custom_black_list=amp_custom_black_list,
-                        custom_white_list=amp_custom_white_list,
-                        dtype=amp_dtype):
-                    if model_type == 'table' or extra_input:
-                        preds = model(images, data=batch[1:])
-                    elif model_type in ["kie"]:
-                        preds = model(batch)
-                    elif algorithm in ['CAN']:
-                        preds = model(batch[:3])
-                    else:
-                        preds = model(images)
-                preds = to_float32(preds)
-                loss = loss_class(preds, batch)
-                avg_loss = loss['loss']
-                scaled_avg_loss = scaler.scale(avg_loss)
-                scaled_avg_loss.backward()
-                scaler.minimize(optimizer, scaled_avg_loss)
-            else:
-                if model_type == 'table' or extra_input:
-                    preds = model(images, data=batch[1:])
-                elif model_type in ["kie", 'sr']:
-                    preds = model(batch)
-                elif algorithm in ['CAN']:
-                    preds = model(batch[:3])
-                else:
-                    preds = model(images)
-                loss = loss_class(preds, batch)
-                avg_loss = loss['loss']
-                avg_loss.backward()
-                optimizer.step()
 
-
+            preds = model(images, data=batch[1:])
+            loss = loss_class(preds, batch)['loss']
+            loss.backward()
+            optimizer.step()
             optimizer.clear_grad()
-
-            global_step += 1
 
             if not isinstance(lr_scheduler, float):
                 lr_scheduler.step()
+
             pbar.update(1)
 
         # eval
-        if global_step > start_eval_step and dist.get_rank() == 0:
-            if model_average:
-                Model_Average = paddle.incubate.optimizer.ModelAverage(
-                    0.15,
-                    parameters=model.parameters(),
-                    min_average_window=10000,
-                    max_average_window=15625)
-                Model_Average.apply()
-            valid_metrics = eval(
-                model,
-                valid_dataloader,
-                post_process_class,
-                eval_class,
-                ctc_loss,
-                model_type,
-                extra_input=extra_input,
-                scaler=scaler,
-                amp_level=amp_level,
-                amp_custom_black_list=amp_custom_black_list)
+        if dist.get_rank() == 0:
+            calc_loss = epoch % 10 == 0
+            valid_metrics = eval(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
 
-            train_metrics = eval(
-                model,
-                train_dataloader,
-                post_process_class,
-                eval_class,
-                ctc_loss,
-                model_type,
-                extra_input=extra_input,
-                scaler=scaler,
-                amp_level=amp_level,
-                amp_custom_black_list=amp_custom_black_list)
+            train_metrics = eval(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
 
-            visualizer.update_charts(
-                lr=optimizer.get_lr(),
-                train_acc=train_metrics['acc'],
-                train_loss=train_metrics['loss'],
-                valid_acc=valid_metrics['acc'],
-                valid_loss=valid_metrics['loss'],
-                inf_loss=valid_metrics['inf-loss'],
-                epoch=epoch
-            )
-
-            if valid_metrics[main_indicator] >= best_model_dict[
-                    main_indicator]:
-                best_model_dict.update(valid_metrics)
-                best_model_dict['best_epoch'] = epoch
-                save_model(
-                    model,
-                    optimizer,
-                    save_model_dir,
-                    logger,
-                    config,
-                    is_best=True,
-                    prefix='best_accuracy',
-                    best_model_dict=best_model_dict,
-                    epoch=epoch,
-                    global_step=global_step)
-            best_str = 'best metric, {}'.format(', '.join([
-                '{}: {}'.format(k, v) for k, v in best_model_dict.items()
-            ]))
-            logger.info(best_str)
-            # logger best metric
-            if log_writer is not None:
-                log_writer.log_metrics(
-                    metrics={
-                        "best_{}".format(main_indicator):
-                        best_model_dict[main_indicator]
-                    },
-                    prefix="EVAL",
-                    step=global_step)
-
-                log_writer.log_model(
-                    is_best=True,
-                    prefix="best_accuracy",
-                    metadata=best_model_dict
+            if calc_loss:
+                visualizer.update_charts(
+                    lr=optimizer.get_lr(),
+                    train_acc=train_metrics['acc'],
+                    train_loss=train_metrics['loss'],
+                    valid_acc=valid_metrics['acc'],
+                    valid_loss=valid_metrics['loss'],
+                    epoch=epoch
+                )
+            else:
+                visualizer.update_charts(
+                    lr=optimizer.get_lr(),
+                    train_acc=train_metrics['acc'],
+                    train_loss=0,
+                    valid_acc=valid_metrics['acc'],
+                    valid_loss=0,
+                    epoch=epoch
                 )
 
+            print(f"lr: {optimizer.get_lr()}, train_acc: {train_metrics['acc']}, train_loss: {train_metrics['loss']}, valid_acc: {valid_metrics['acc']}, valid_loss: {valid_metrics['loss']}")
 
-            train_epoch_time = time.time() - reader_start
-            eta_meter.update(train_epoch_time)
-            reader_start = time.time()
-            print(f"previous epoch took {int(train_epoch_time)} seconds to train")
-            eta_seconds = eta_meter.avg * (epoch_num - epoch)
-            hours, remainder = divmod(eta_seconds, 3600)
-            minutes, seconds = divmod(remainder, 60)
-            time_remaining = f"{int(hours)}h {int(minutes)}m {int(seconds)}s remaining"
-            print(f"estimated time remaining: {time_remaining}")
+            if valid_metrics[main_indicator] >= best_model_dict[main_indicator]:
+                print("saving new best model!")
+                best_model_dict.update(valid_metrics)
+                best_model_dict['best_epoch'] = epoch
+                save_model(model, optimizer, save_model_dir, logger, config, is_best=True, prefix='best_accuracy', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+
+            calc_time_remaining(epoch_num, epoch, reader_start, eta_meter)
 
             optimizer.clear_grad()
 
 
 
         if dist.get_rank() == 0:
-            save_model(
-                model,
-                optimizer,
-                save_model_dir,
-                logger,
-                config,
-                is_best=False,
-                prefix='latest',
-                best_model_dict=best_model_dict,
-                epoch=epoch,
-                global_step=global_step)
+            save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='latest', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+            if epoch > 0 and epoch % save_epoch_step == 0:
+                save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='iter_epoch_{}'.format(epoch), best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
 
-            if log_writer is not None:
-                log_writer.log_model(is_best=False, prefix="latest")
-
-        if dist.get_rank() == 0 and epoch > 0 and epoch % save_epoch_step == 0:
-            print("saving!")
-            save_model(
-                model,
-                optimizer,
-                save_model_dir,
-                logger,
-                config,
-                is_best=False,
-                prefix='iter_epoch_{}'.format(epoch),
-                best_model_dict=best_model_dict,
-                epoch=epoch,
-                global_step=global_step)
-            if log_writer is not None:
-                log_writer.log_model(
-                    is_best=False, prefix='iter_epoch_{}'.format(epoch))
-
-    best_str = 'best metric, {}'.format(', '.join(
-        ['{}: {}'.format(k, v) for k, v in best_model_dict.items()]))
-    logger.info(best_str)
-    if dist.get_rank() == 0 and log_writer is not None:
-        log_writer.close()
     return
+
+def calc_time_remaining(epoch_num, epoch, reader_start, eta_meter):
+    train_epoch_time = time.time() - reader_start
+    eta_meter.update(train_epoch_time)
+    reader_start = time.time()
+    print(f"previous epoch took {int(train_epoch_time)} seconds to train")
+    eta_seconds = eta_meter.avg * (epoch_num - epoch)
+    hours, remainder = divmod(eta_seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    time_remaining = f"{int(hours)}h {int(minutes)}m {int(seconds)}s remaining"
+    print(f"estimated time remaining: {time_remaining}")
 
 
 
@@ -457,7 +344,9 @@ def eval(model,
          dataloader,
          post_process_class,
          eval_class,
+         calc_loss,
          loss_class,
+         epoch,
          model_type=None,
          extra_input=False,
          scaler=None,
@@ -465,64 +354,19 @@ def eval(model,
          amp_custom_black_list=[],
          amp_custom_white_list=[],
          amp_dtype='float16'):
-    model.eval()
-    with paddle.no_grad():
-        total_frame = 0.0
-        total_time = 0.0
-        pbar = tqdm(
-            total=5,
-            desc='eval model',
-            position=0,
-            leave=True)
-        sum_images = 0
-        inf_count = 0
+    if not calc_loss:
+        model.eval()
+    with torch.no_grad():
+        if calc_loss: 
+            total = len(dataloader)
+        else: total = 5
+        pbar = tqdm(total=total, desc=f"evaluating with{'' if calc_loss else 'out'} loss", position=0, leave=True)
         for idx, batch in enumerate(dataloader):
             if idx > 5:
-                continue
+                if calc_loss: pass
+                else: continue
             images = batch[0]
-            start = time.time()
-
-            # use amp
-            if scaler:
-                with paddle.amp.auto_cast(
-                        level=amp_level,
-                        custom_black_list=amp_custom_black_list,
-                        dtype=amp_dtype):
-                    if model_type == 'table' or extra_input:
-                        preds = model(images, data=batch[1:])
-                    elif model_type in ["kie"]:
-                        preds = model(batch)
-                    elif model_type in ['can']:
-                        preds = model(batch[:3])
-                    elif model_type in ['sr']:
-                        preds = model(batch)
-                        sr_img = preds["sr_img"]
-                        lr_img = preds["lr_img"]
-                    else:
-                        preds = model(images)
-                preds = to_float32(preds)
-                loss = loss_class(preds, batch)
-                avg_loss = loss['loss']
-                scaled_avg_loss = scaler.scale(avg_loss)
-                scaled_avg_loss.backward()
-            else:
-                if model_type == 'table' or extra_input:
-                    preds = model(images, data=batch[1:])
-                elif model_type in ["kie"]:
-                    preds = model(batch)
-                elif model_type in ['can']:
-                    preds = model(batch[:3])
-                elif model_type in ['sr']:
-                    preds = model(batch)
-                    sr_img = preds["sr_img"]
-                    lr_img = preds["lr_img"]
-                else:
-                    preds = model(images)
-                loss = loss_class(preds, batch)
-                avg_loss = loss['loss']
-                avg_loss.backward()
-            if avg_loss > 99999:
-                inf_count += 1
+            preds = model(images, data=batch[1:])
 
             batch_numpy = []
             for item in batch:
@@ -530,37 +374,27 @@ def eval(model,
                     batch_numpy.append(item.numpy())
                 else:
                     batch_numpy.append(item)
-            # Obtain usable results from post-processing methods
-            total_time += time.time() - start
-            # Evaluate the results of the current batch
-            if model_type in ['table', 'kie']:
-                if post_process_class is None:
-                    eval_class(preds, batch_numpy)
-                else:
-                    post_result = post_process_class(preds, batch_numpy)
-                    eval_class(post_result, batch_numpy)
-            elif model_type in ['sr']:
-                eval_class(preds, batch_numpy)
-            elif model_type in ['can']:
-                eval_class(preds[0], batch_numpy[2:], epoch_reset=(idx == 0))
-            else:
+
+            if calc_loss:
+                loss = loss_class(preds, batch)['loss']
+                loss.backward()
+                post_result = post_process_class(preds['ctc'], batch_numpy[1])
+            else: 
                 post_result = post_process_class(preds, batch_numpy[1])
-                eval_class(post_result, batch_numpy)
+                loss = 0
+            
+            eval_class(post_result, batch_numpy)
 
             pbar.update(1)
-            total_frame += len(images)
-            sum_images += 1
-        # Get final metric，eg. acc or hmean
         metric = eval_class.get_metric()
 
     pbar.close()
     model.train()
-    if type(avg_loss) == int:
-        metric['loss'] = avg_loss
+    
+    if type(loss) == int:
+        metric['loss'] = loss
     else:
-        metric['loss'] = avg_loss.numpy()[0]
-    metric['inf-loss'] = inf_count
-
+        metric['loss'] = loss.numpy()[0]
     return metric
 
 

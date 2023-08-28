@@ -21,17 +21,32 @@ Global:
   save_res_path: ./output/rec/predicts_ppocrv3_en.txt
 
 
+# Optimizer:
+#   name: Adam
+#   beta1: 0.9
+#   beta2: 0.999
+#   lr:
+#     name: Step
+#     step_each_epoch: 37
+#     step_size: 20
+#     learning_rate: 0.01
+#     gamma: 0.92
+#   regularizer:
+#     name: L2
+#     factor: 0
+
 Optimizer:
   name: Adam
   beta1: 0.9
   beta2: 0.999
   lr:
     name: Cosine
-    learning_rate: 1.0e-4
-    warmup_epoch: 0
+    learning_rate: 1.0e-3
+    warmup_epoch: 5
   regularizer:
     name: L2
     factor: 2.0e-5
+    # factor: 0
 
 
 Architecture:
@@ -105,7 +120,7 @@ Train:
         - valid_ratio
   loader:
     shuffle: true
-    batch_size_per_card: 512
+    batch_size_per_card: 576
     drop_last: true
     num_workers: 8
 Eval:
@@ -131,7 +146,7 @@ Eval:
   loader:
     shuffle: true
     drop_last: false
-    batch_size_per_card: 512
+    batch_size_per_card: 576
     num_workers: 8
 Test:
   dataset:
