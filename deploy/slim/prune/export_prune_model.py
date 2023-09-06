@@ -68,7 +68,7 @@ def main(config, device, logger, vdl_writer):
     eval_class = build_metric(config['Metric'])
 
     def eval_fn():
-        metric = program.eval(model, valid_dataloader, post_process_class,
+        metric = program.eval_with(model, valid_dataloader, post_process_class,
                               eval_class)
         if config['Architecture']['model_type'] == 'det':
             main_indicator = 'hmean'
@@ -100,7 +100,7 @@ def main(config, device, logger, vdl_writer):
 
     # load pretrain model
     load_model(config, model)
-    metric = program.eval(model, valid_dataloader, post_process_class,
+    metric = program.eval_with(model, valid_dataloader, post_process_class,
                           eval_class)
     if config['Architecture']['model_type'] == 'det':
         main_indicator = 'hmean'

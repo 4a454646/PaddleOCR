@@ -110,7 +110,7 @@ def main(config, device, logger, vdl_writer):
                 format(len(train_dataloader), len(valid_dataloader)))
 
     def eval_fn():
-        metric = program.eval(model, valid_dataloader, post_process_class,
+        metric = program.eval_with(model, valid_dataloader, post_process_class,
                               eval_class, False)
         if config['Architecture']['model_type'] == 'det':
             main_indicator = 'hmean'

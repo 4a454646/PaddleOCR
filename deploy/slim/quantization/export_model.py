@@ -139,7 +139,7 @@ def main():
     use_srn = config['Architecture']['algorithm'] == "SRN"
     model_type = config['Architecture'].get('model_type', None)
     # start eval
-    metric = program.eval(model, valid_dataloader, post_process_class,
+    metric = program.eval_with(model, valid_dataloader, post_process_class,
                           eval_class, model_type, use_srn)
     model.eval()
 

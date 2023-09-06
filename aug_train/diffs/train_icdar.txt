@@ -1,0 +1,25 @@
+test/word_1016.png	NETSr
+test/word_1431.png	AdvertisemetSpace
+test/word_1434.png	Robertt
+test/word_1495.png	FOEER
+test/word_1500.png	OEVEE2
+test/word_1580.png	LELE
+test/word_1631.png	COEMURGN
+test/word_1754.png	LEVEL2
+test/word_1759.png	CHOCACE
+test/word_1762.png	LAELE
+test/word_177.png	CAF
+test/word_1836.png	TAENN
+test/word_1894.png	CONEMURGE
+test/word_2026.png	nniru
+test/word_2033.png	CONEMURGE
+test/word_400.png	CRE
+test/word_668.png	WOKKK
+test/word_700.png	NOURIH
+test/word_727.png	GEOXX
+test/word_745.png	50%OFFF
+test/word_77.png	BEYND
+test/word_81.png	mLntCTs
+test/word_818.png	Crahtre
+test/word_864.png	SPnCACE
+test/word_921.png	gua an

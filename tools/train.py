@@ -196,7 +196,7 @@ def main(config, device, logger, vdl_writer):
         scaler=scaler,
         amp_level=amp_level,
         amp_custom_black_list=amp_custom_black_list,
-        visualizer=TensorBoardVisualizer()
+        visualizer=TensorBoardVisualizer(config["Global"]["save_model_dir"])
     )
 
 

@@ -124,7 +124,7 @@ def main():
             logger.info('{}:{}'.format(k, v))
 
     # start eval
-    metric = program.eval(model, valid_dataloader, post_process_class,
+    metric = program.eval_with(model, valid_dataloader, post_process_class,
                           eval_class, model_type, extra_input, scaler,
                           amp_level, amp_custom_black_list)
     logger.info('metric eval ***************')

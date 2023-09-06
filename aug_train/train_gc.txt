@@ -2043,7 +2043,8 @@ gc_ori/242_34.jpg	978
 gc_ori/242_36.jpg	978
 gc_ori/242_39.jpg	134
 gc_ori/242_4.jpg	WWW.
-gc_ori/242_9.jpg	WWWgc_ori/243_19.jpg	34
+gc_ori/242_9.jpg	WWW
+gc_ori/243_19.jpg	34
 gc_ori/243_28.jpg	Visit
 gc_ori/243_32.jpg	202
 gc_ori/243_34.jpg	75

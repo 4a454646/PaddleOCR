@@ -6,11 +6,7 @@ from pytz import timezone
 import pytz
 
 class TensorBoardVisualizer():
-    def __init__(self):
-        date = datetime.now(tz=pytz.utc)
-        date = date.astimezone(timezone('US/Pacific'))
-        pst_time = date.strftime("%B_%d_%Y_%I:%M%p")
-        log_dir = f"/workspace/PaddleOCR/runs/{pst_time}"
+    def __init__(self, log_dir):
         self._writer = SummaryWriter(log_dir=log_dir)
 
 

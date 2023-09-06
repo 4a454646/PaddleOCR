@@ -280,12 +280,13 @@ def train(config,
 
             pbar.update(1)
 
+
         # eval
         if dist.get_rank() == 0:
             calc_loss = epoch % 10 == 0
-            valid_metrics = eval(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
+            valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
 
-            train_metrics = eval(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
+            train_metrics = eval_with(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
 
             if calc_loss:
                 visualizer.update_charts(
@@ -340,7 +341,7 @@ def calc_time_remaining(epoch_num, epoch, reader_start, eta_meter):
 
 
 
-def eval(model,
+def eval_with(model,
          dataloader,
          post_process_class,
          eval_class,

@@ -1,14 +1,14 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 1000
+  epoch_num: 800
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/aug_train8
-  save_epoch_step: 25
+  save_model_dir: ./trials/cosine_no_aug_higher_lr
+  save_epoch_step: 50
   eval_batch_step: [0, 1000]
   cal_metric_during_train: true
-  pretrained_model: pretrain_modesls/en_PP-OCRv3_rec_train/best_accuracy
+  pretrained_model: ./pretrain_models/en_PP-OCRv3_rec_train/best_accuracy
   checkpoints:
   save_inference_dir:
   use_visualdl: false
@@ -35,18 +35,44 @@ Global:
 #     name: L2
 #     factor: 0
 
+# Optimizer:
+#   name: Adam
+#   beta1: 0.9
+#   beta2: 0.999
+#   lr:
+#     name: Piecewise
+#     step_each_epoch: 37
+#     decay_epochs: [75, 175, 300, 500]
+#     values: [1.0e-3, 5.0e-4, 1.0e-4, 1.0e-5, 1.0e-6]
+#     warmup_epoch: 5
+#   regularizer:
+#     name: L2
+#     # factor: 2.0e-5
+#     factor: 0
+
+# Optimizer:
+#   name: Adam
+#   beta1: 0.9
+#   beta2: 0.999
+#   lr:
+#     name: Const
+#     learning_rate: 5.0e-04
+#     warmup_epoch: 5
+#   regularizer:
+#     name: L2
+#     factor: 0
+
 Optimizer:
   name: Adam
   beta1: 0.9
   beta2: 0.999
   lr:
     name: Cosine
-    learning_rate: 1.0e-3
+    learning_rate: 5.0e-3
     warmup_epoch: 5
   regularizer:
     name: L2
-    factor: 2.0e-5
-    # factor: 0
+    factor: 0
 
 
 Architecture:
@@ -119,8 +145,8 @@ Train:
         - length
         - valid_ratio
   loader:
-    shuffle: true
-    batch_size_per_card: 576
+    shuffle: false
+    batch_size_per_card: 256
     drop_last: true
     num_workers: 8
 Eval:
@@ -144,9 +170,9 @@ Eval:
         - length
         - valid_ratio
   loader:
-    shuffle: true
+    shuffle: false
     drop_last: false
-    batch_size_per_card: 576
+    batch_size_per_card: 256
     num_workers: 8
 Test:
   dataset:
@@ -171,5 +197,5 @@ Test:
   loader:
     shuffle: false
     drop_last: false
-    batch_size_per_card: 512
+    batch_size_per_card: 256
     num_workers: 8

@@ -41,7 +41,9 @@ class RecMetric(object):
         correct_num = 0
         all_num = 0
         norm_edit_dis = 0.0
+        i = 0
         for (pred, pred_conf), (target, _) in zip(preds, labels):
+            i += 1
             if self.ignore_space:
                 pred = pred.replace(" ", "")
                 target = target.replace(" ", "")
