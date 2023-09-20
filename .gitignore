@@ -40,5 +40,5 @@ test_tipc/web/node_modules/
 *.log
 *.jpg
 *.png
-*.tar.gz
+*.tar*
 runs/*
