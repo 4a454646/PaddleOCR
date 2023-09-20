@@ -1,2 +1,0 @@
-python quicktools/resulter.py
-

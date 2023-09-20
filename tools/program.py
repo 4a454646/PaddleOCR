@@ -269,6 +269,20 @@ def train(config,
             lr = optimizer.get_lr()
             images = batch[0]
 
+            # # save each image to disk in a folder called "visualize", then immediately stop the program
+            # for idx, image in enumerate(images):
+            #     # image_min, image_max = image.min(), image.max()
+            #     # image = (image - image_min) / (image_max - image_min + 1e-6)
+            #     undo = image.numpy().copy()
+            #     undo *= 0.5
+            #     undo += 0.5
+            #     undo *= 255
+            #     undo = np.transpose(undo, (1, 2, 0)).astype('uint8')
+            #     cv2.imwrite(f"visualize/{idx}.jpg", undo)
+            #     if idx > 10: 
+            #         break
+            # exit()
+
             preds = model(images, data=batch[1:])
             loss = loss_class(preds, batch)['loss']
             loss.backward()

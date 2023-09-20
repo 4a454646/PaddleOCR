@@ -1,10 +1,10 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 800
+  epoch_num: 500
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/cosine_no_aug_higher_lr
+  save_model_dir: ./trials/cosine_ia_0.1prob_1rot
   save_epoch_step: 50
   eval_batch_step: [0, 1000]
   cal_metric_during_train: true
@@ -68,7 +68,7 @@ Optimizer:
   beta2: 0.999
   lr:
     name: Cosine
-    learning_rate: 5.0e-3
+    learning_rate: 1.0e-3
     warmup_epoch: 5
   regularizer:
     name: L2
@@ -129,11 +129,18 @@ Train:
         img_mode: BGR
         channel_first: false
     - RecConAug:
-        prob: 0.5
+        prob: 0
         ext_data_num: 2
         image_shape: [48, 320, 3]
         max_text_length: 25
     - RecAug:
+        tia_prob: 0
+        crop_prob: 0
+        reverse_prob: 0
+        noise_prob: 0
+        jitter_prob: 0
+        blur_prob: 0
+        hsv_aug_prob: 0
     - MultiLabelEncode:
     - RecResizeImg:
         image_shape: [3, 48, 320]

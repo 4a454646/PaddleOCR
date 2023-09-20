@@ -20,7 +20,10 @@ import copy
 from PIL import Image
 from .text_image_aug import tia_perspective, tia_stretch, tia_distort
 from .abinet_aug import CVGeometry, CVDeterioration, CVColorJitter, SVTRGeometry, SVTRDeterioration
-from paddle.vision.transforms import Compose
+
+
+import imgaug as ia
+import imgaug.augmenters as iaa
 
 
 class RecAug(object):
@@ -92,7 +95,21 @@ class BaseDataAugmentation(object):
         if random.random() <= self.reverse_prob:
             img = 255 - img
 
+        if random.random() <= 0.1:
+            seq = iaa.Sequential([
+                iaa.Affine(
+                    # scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
+                    # translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)},
+                    rotate=(-1, 1),
+                    # shear=(-8, 8),
+                    fit_output=True,
+                    cval=128
+                )
+            ], random_order=True)
+            img = seq.augment_image(img)
+        
         data['image'] = img
+        # cv2.imwrite('/workspace/PaddleOCR/visualize/test.jpg', img)
         return data
 
 
@@ -234,6 +251,12 @@ class RecResizeImg(object):
                                                     self.padding)
         data['image'] = norm_img
         data['valid_ratio'] = valid_ratio
+        # undo = norm_img.copy()
+        # undo *= 0.5
+        # undo += 0.5
+        # undo *= 255
+        # undo = np.transpose(undo, (1, 2, 0))
+        # cv2.imwrite('/workspace/PaddleOCR/visualize/test.jpg', undo)
         return data
 
 

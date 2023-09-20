@@ -13,3 +13,4 @@ c
 /workspace/PaddleOCR/preds/best_no_ai/train_imgs-train-export.txt
 /workspace/PaddleOCR/aug_train/train_word_list.txt
 /workspace/PaddleOCR/aug_train/diffs/train_word_list.txt
+

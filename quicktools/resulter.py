@@ -1,4 +1,6 @@
 import re
+import os
+import argparse
 
 def extract_predictions(lines):
     pattern = r"Predicts of .*?/([^/]+/[^/]+\.(?:jpg|png)):\(['\"](.+?)['\"]\s*,"
@@ -13,10 +15,7 @@ def extract_predictions(lines):
 
     return extracted_predictions
 
-def main():
-    # Prompt for input file path
-    input_file_path = input("Enter the path of the input text file: ")
-    
+def process_file(input_file_path, output_file_path):
     # Read input lines from the text file
     with open(input_file_path, 'r') as input_file:
         lines = input_file.readlines()
@@ -24,15 +23,19 @@ def main():
     # Extract predictions
     predictions = extract_predictions(lines)
 
-    # Prompt for output file path
-    output_file_path = input("Enter the path of the output text file: ")
-
     # Write the output to the text file
     with open(output_file_path, 'w') as output_file:
         for image_filename, prediction in predictions.items():
             output_file.write(f"{image_filename}\t{prediction}\n")
 
-    print("Extraction completed. Predictions saved to the output text file.")
-
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', '--folder_path', help='Path to the folder containing input text files')
+    args = parser.parse_args()
+    full_path = f"preds/{args.folder_path}"
+
+    for filename in os.listdir(full_path):
+        if filename.endswith('.txt') and not filename.endswith('-export.txt'):
+            input_file_path = os.path.join(full_path, filename)
+            output_file_path = os.path.join(full_path, f"{os.path.splitext(filename)[0]}-export.txt")
+            process_file(input_file_path, output_file_path)
