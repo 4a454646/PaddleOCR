@@ -185,7 +185,7 @@ def export_single_model(model,
         paddle.jit.save(model, save_path)
     else:
         quanter.save_quantized_model(model, save_path)
-    logger.info("inference model is saved to {}".format(save_path))
+    # logger.info("inference model is saved to {}".format(save_path))
     return
 
 

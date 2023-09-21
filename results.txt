@@ -1,0 +1,30 @@
+Results for 0.4bda:
+train: 21077/21848 (96.47%)
+validation: 4360/4840 (90.08%)
+test: 3087/3387 (91.14%)
+
+Results for 0.4bda_0.5reccon:
+train: 21065/21848 (96.42%)
+validation: 4367/4840 (90.23%)
+test: 3089/3387 (91.2%)
+
+Results for 0.4bda_0.5reccon_0.4-2rot:
+train: 20952/21848 (95.9%)
+validation: 4365/4840 (90.19%)
+test: 3098/3387 (91.47%)
+
+Results for 0.4bda_0.5reccon_0.4-4rot:
+train: 20911/21848 (95.71%)
+validation: 4370/4840 (90.29%)
+test: 3087/3387 (91.14%)
+
+Results for 0.4bda_0.5reccon_0.4-6rot:
+train: 20846/21848 (95.41%)
+validation: 4363/4840 (90.14%)
+test: 3099/3387 (91.5%)
+
+Results for 0.4bda_0.5reccon_0.4-8rot:
+train: 20770/21848 (95.07%)
+validation: 4350/4840 (89.88%)
+test: 3092/3387 (91.29%)
+

@@ -683,7 +683,7 @@ def main(args):
                 # calculate the necessary number of tabs to equal the spacing created by path_list[ino]
                 num_tabs = 1 + (len(path_list[ino]) // 4)
                 output_file.write("\t" * (num_tabs - 4) + "GROUND TRUTH:\t" + ground_truths[ino] + "\n")
-    print(f"{len(img_list) - count_wrong}/{len(img_list)} ({round((1 - count_wrong / len(img_list)) * 100, 2)}%)")
+    print(f"{args.label}: {len(img_list) - count_wrong}/{len(img_list)} ({round((1 - count_wrong / len(img_list)) * 100, 2)}%)")
     if args.benchmark:
         text_recognizer.autolog.report()
 

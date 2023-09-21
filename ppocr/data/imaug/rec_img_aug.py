@@ -100,7 +100,7 @@ class BaseDataAugmentation(object):
                 iaa.Affine(
                     # scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
                     # translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)},
-                    rotate=(-6, 6),
+                    rotate=(-8, 8),
                     # shear=(-8, 8),
                     fit_output=True,
                     cval=128

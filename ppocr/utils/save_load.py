@@ -178,7 +178,7 @@ def load_pretrained_params(model, path):
         logger.info(
             "The parameter type is float16, which is converted to float32 when loading"
         )
-    logger.info("load pretrain successful from {}".format(path))
+    # logger.info("load pretrain successful from {}".format(path))
     return is_float16
 
 
