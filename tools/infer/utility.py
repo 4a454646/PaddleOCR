@@ -48,6 +48,7 @@ def init_args():
     parser.add_argument("--train_list", type=str)
     parser.add_argument("--full_paths", type=str)
     parser.add_argument("--out_path", type=str)
+    parser.add_argument("--label", type=str)
     parser.add_argument("--page_num", type=int, default=0)
     parser.add_argument("--det_algorithm", type=str, default='DB')
     parser.add_argument("--det_model_dir", type=str)

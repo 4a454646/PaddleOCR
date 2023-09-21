@@ -1,0 +1,1874 @@
+cards_crops/front_cards/0_15cf5a84-0a56-4024-8318-5f35121279ed_cropped.png	RAE
+															GROUND TRUTH:	RAYS
+cards_crops/front_cards/0_162d9c1b-0fe8-493b-b498-1dc4245d8136_cropped.png	Bowmon
+															GROUND TRUTH:	Bowman
+cards_crops/front_cards/0_22656163-3fff-484c-bdeb-f7fb85589a36_cropped.png	DiaMOMD
+															GROUND TRUTH:	DIAMOND
+cards_crops/front_cards/0_3612d640-60ba-45e5-8271-ef3eb4439d81_cropped.png	DOnU
+															GROUND TRUTH:	DEBUTS
+cards_crops/front_cards/0_36d36bb6-5701-42c9-97df-dd0201df9d76_cropped.png	top
+															GROUND TRUTH:	topps
+cards_crops/front_cards/0_36da6392-d944-4d8f-8c03-ee51185c3661_cropped.png	STRrmE
+															GROUND TRUTH:	STROUTE
+cards_crops/front_cards/0_88ac3e95-2583-4f7e-a48f-38c3366ff203_cropped.png	Lo
+															GROUND TRUTH:	A's
+cards_crops/front_cards/0_90a2db78-631e-4d41-afa4-cd485e32d3a7_cropped.png	T0
+															GROUND TRUTH:	70
+cards_crops/front_cards/0_922d2552-d2c7-4487-ad84-075fa94c4c4d_cropped.png	L OHTANI|P|OH
+															GROUND TRUTH:	I OHTANI|P|OH
+cards_crops/front_cards/10_7339d84e-c711-408a-b95d-5960f90af14b_cropped.png	MCCUTCHEN
+															GROUND TRUTH:	McCUTCHEN
+cards_crops/front_cards/11_17a9dec8-d01c-4fb8-9bcd-894d2c3670e7_cropped.png	REVORSTORY
+															GROUND TRUTH:	TREVOR STORY
+cards_crops/front_cards/12_386a9439-a32b-482f-bba3-ff71b6d00e7e_cropped.png	SIXTY-EOUR
+															GROUND TRUTH:	SIXTY-FOUR
+cards_crops/front_cards/16_183d6d17-412c-4603-8e9d-42f11a16dba9_cropped.png	SIXTY-OME
+															GROUND TRUTH:	SIXTY.ONE
+cards_crops/front_cards/16_865aa2ff-98f4-4a84-b785-49cbb1b03ed8_cropped.png	SEVENTYNINE
+															GROUND TRUTH:	SEVENTY-NINE
+cards_crops/front_cards/19_250de7d7-5670-4f98-8e0e-4dad8d7ad763_cropped.png	BLUEJAYS
+															GROUND TRUTH:	BLUE JAYS
+cards_crops/front_cards/1_13287636-5dfb-44de-a920-2f4be47b1786_cropped.png	DITROIT
+															GROUND TRUTH:	DETROIT
+cards_crops/front_cards/1_1458fa63-c30e-4244-9ac6-a25ceaa257e3_cropped.png	C
+															GROUND TRUTH:	MC
+cards_crops/front_cards/1_2616549f-054c-4e19-88a5-1ce425c0d578_cropped.png	KINGS
+															GROUND TRUTH:	HinGs
+cards_crops/front_cards/1_38b538da-8b7c-405f-949b-3e5bbd939514_cropped.png	Dodga
+															GROUND TRUTH:	Dodgers
+cards_crops/front_cards/1_6504ac8c-e126-4110-96ce-79b8d0cfaf50_cropped.png	OSPECT
+															GROUND TRUTH:	OSPECT.
+cards_crops/front_cards/1_67ba80e1-0b9c-4740-861e-c2dbda488ea4_cropped.png	BIEBER|P
+															GROUND TRUTH:	BEIBER|P
+cards_crops/front_cards/1_759b90de-1456-43a6-ae9c-cfc571a8c2a4_cropped.png	THMELINE
+															GROUND TRUTH:	TIMELINE
+cards_crops/front_cards/1_75da4717-d4af-419d-b348-c9497d5ff4a6_cropped.png	Masterpleces
+															GROUND TRUTH:	Masterpieces
+cards_crops/front_cards/2_0582fefa-4c50-42b3-8382-d1707462161c_cropped.png	AEX
+															GROUND TRUTH:	ALEX
+cards_crops/front_cards/2_099f76ac-9b99-457c-9474-6c28e266eca4_cropped.png	COREY-SLAR
+															GROUND TRUTH:	COREY STAR
+cards_crops/front_cards/2_162d9c1b-0fe8-493b-b498-1dc4245d8136_cropped.png	chrome
+															GROUND TRUTH:	Chrome
+cards_crops/front_cards/2_197ffe25-6f34-475a-bde8-ca7fd49700d3_cropped.png	K-C
+															GROUND TRUTH:	KC
+cards_crops/front_cards/2_78ad2cf4-20e2-407f-9cb5-7f8b3d2c6e77_cropped.png	OF|SANDIEGOPADRES
+															GROUND TRUTH:	OF|SAN DIEGO PADRES
+cards_crops/front_cards/2_86f7a939-67c5-4ead-888f-9f4d1a2495f0_cropped.png	adinale
+															GROUND TRUTH:	adinals
+cards_crops/front_cards/2_99fc5b56-a32f-4c66-82ea-185c687da047_cropped.png	Cc
+															GROUND TRUTH:	CC
+cards_crops/front_cards/30_479f3aff-5d74-4493-8844-7a0ed44e1653_cropped.png	DAVIDORTIZ
+															GROUND TRUTH:	DAVID ORTIZ
+cards_crops/front_cards/3_101b2ccd-cec5-46e3-a28b-f20c3b3bda96_cropped.png	iVERLANDER:
+															GROUND TRUTH:	VERLANDER::
+cards_crops/front_cards/3_29000e04-9570-4310-8d94-e84ad6b108eb_cropped.png	DH|BOSTONRED SOX
+															GROUND TRUTH:	DH|BOSTON RED SOX
+cards_crops/front_cards/3_45ace598-539d-45e0-88b5-e481f7de143a_cropped.png	BLUEVIATS
+															GROUND TRUTH:	BLUEIAYS
+cards_crops/front_cards/3_8cfc05d8-a489-45f4-993f-4228fa3a8631_cropped.png	PRIZZM
+															GROUND TRUTH:	PRIZM
+cards_crops/front_cards/3_9d794f0b-e785-4e11-96ad-23635960ed02_cropped.png	PIRATES
+															GROUND TRUTH:	PIR ATES
+cards_crops/front_cards/4_0582fefa-4c50-42b3-8382-d1707462161c_cropped.png	M|NNESOTA
+															GROUND TRUTH:	MINNESOTA
+cards_crops/front_cards/4_22a04c65-08ac-4fa9-80c6-90a8f73f68aa_cropped.png	TRADDD
+															GROUND TRUTH:	TRADED
+cards_crops/front_cards/4_34a4a4d7-f4f0-43e1-94ec-944eecc1e85d_cropped.png	FRANCISCO
+															GROUND TRUTH:	FRAINCISCO
+cards_crops/front_cards/4_36d36bb6-5701-42c9-97df-dd0201df9d76_cropped.png	Dodes
+															GROUND TRUTH:	Dodgers
+cards_crops/front_cards/4_3831a386-97f0-4b25-9197-a22b2a70ee8b_cropped.png	PIPELINETALENT
+															GROUND TRUTH:	PIPELINE TALENT
+cards_crops/front_cards/4_4302d1d5-deab-4ab6-b3a8-356f7678be1e_cropped.png	PROSPECT.
+															GROUND TRUTH:	PROSPECT
+cards_crops/front_cards/4_7fc36f67-8d86-4e5a-ba50-ab3082169f65_cropped.png	BIEBER/P
+															GROUND TRUTH:	BIEBER|P
+cards_crops/front_cards/4_963002d2-de25-473d-8087-e70adc17a3d4_cropped.png	tops
+															GROUND TRUTH:	topps
+cards_crops/front_cards/4_9a1b1ed0-4b50-4ded-9f1f-ed6190ea18de_cropped.png	148/295
+															GROUND TRUTH:	149/295
+cards_crops/front_cards/5_0864c499-f975-45c9-a1c5-d0628a82e088_cropped.png	BAY RAYS
+															GROUND TRUTH:	RAY BATS
+cards_crops/front_cards/5_182d84bc-8269-4652-8710-6dde839ba8f9_cropped.png	ARISIDES
+															GROUND TRUTH:	ARISTIDES
+cards_crops/front_cards/5_439437ae-80aa-41ae-b608-9af31d434a53_cropped.png	MARINEP
+															GROUND TRUTH:	MARINER
+cards_crops/front_cards/5_68242912-4422-4ad6-9022-cb405a485796_cropped.png	AUTDGRAPH
+															GROUND TRUTH:	AUTOGRAPH
+cards_crops/front_cards/5_917c53a9-d062-435f-9643-85dad7de85d5_cropped.png	NASHINGTO
+															GROUND TRUTH:	WASHINGTO
+cards_crops/front_cards/7_30dab04b-2e7a-4f4a-a5c6-e416efb7e0dd_cropped.png	RAMRSZ
+															GROUND TRUTH:	RAMIREZ
+cards_crops/front_cards/7_36016ebe-2b1f-44e7-93fb-128cd7efa98a_cropped.png	TO
+															GROUND TRUTH:	T O
+cards_crops/front_cards/8_1306d649-c769-4958-b448-24a3a1da3c27_cropped.png	DRIZ
+															GROUND TRUTH:	PRIZ
+cards_crops/front_cards/8_79afcde3-3716-412a-9876-2fe18041506d_cropped.png	DONRUSS
+															GROUND TRUTH:	f
+cards_crops/front_cards/8_86f7a939-67c5-4ead-888f-9f4d1a2495f0_cropped.png	SL
+															GROUND TRUTH:	SLT
+cards_crops/front_cards/8_94f433be-ceb8-4b5d-80e5-44af2442ab33_cropped.png	GORPDN
+															GROUND TRUTH:	GORDON
+cards_crops/front_cards/9_066bebb2-e21b-4dc9-bfe7-97ca1b83c2a8_cropped.png	ERANCISCO
+															GROUND TRUTH:	FRANCISCO
+cards_crops/front_cards/9_133b8438-cb1d-4fd6-a0ea-240b1395a8d1_cropped.png	PROSPECT
+															GROUND TRUTH:	PROSRECT
+cards_crops/front_cards/9_30dab04b-2e7a-4f4a-a5c6-e416efb7e0dd_cropped.png	YOURIcS
+															GROUND TRUTH:	YOUKILIS
+cards_crops/front_cards/9_6552163d-87db-4475-aa01-460dc2c14dcc_cropped.png	cukee
+															GROUND TRUTH:	dukee
+gc_ori/123_43.jpg	.COM.
+	GROUND TRUTH:	COM.
+gc_ori/129_26.jpg	.276
+	GROUND TRUTH:	276
+gc_ori/129_30.jpg	MLBPLAYERS.COM.
+	GROUND TRUTH:	MLBPLAYERS.COM
+gc_ori/130_43.jpg	BPL
+	GROUND TRUTH:	BPI
+gc_ori/137_43.jpg	TOPPS.COM
+	GROUND TRUTH:	TOPPS.COM.
+gc_ori/139_43.jpg	WWW
+	GROUND TRUTH:	WWW.
+gc_ori/148_26.jpg	8=14-20
+	GROUND TRUTH:	8-14-20.
+gc_ori/14_32.jpg	DRAETED
+	GROUND TRUTH:	DRAFTED
+gc_ori/155_26.jpg	MONTREALWASH,
+	GROUND TRUTH:	MONTREAL/WASH.
+gc_ori/16_39.jpg	DRAETED
+	GROUND TRUTH:	DRAFTED
+gc_ori/171_16.jpg	copyrightes
+	GROUND TRUTH:	copyrights
+gc_ori/17_41.jpg	CARDINALS
+	GROUND TRUTH:	CARDINAL
+gc_ori/181_11.jpg	.com.
+	GROUND TRUTH:	.com
+gc_ori/190_37.jpg	Liceosed
+	GROUND TRUTH:	Licensed
+gc_ori/196_4.jpg	Walk-ofif
+	GROUND TRUTH:	walk-off
+gc_ori/199_3.jpg	CODE#CMP046310
+	GROUND TRUTH:	CODE#CAMP046310
+gc_ori/201_3.jpg	WW.TOPPS.COM.
+	GROUND TRUTH:	WW.TOPPS.COM
+gc_ori/21_19.jpg	DRAFTFD
+	GROUND TRUTH:	DRAFTED
+gc_ori/223_4.jpg	MLB.com
+	GROUND TRUTH:	MLB.com.
+gc_ori/22_36.jpg	NASHVILLE,
+	GROUND TRUTH:	NASHVILLE.
+gc_ori/240_28.jpg	Basebal
+	GROUND TRUTH:	Baseball
+gc_ori/242_9.jpg	WWW
+	GROUND TRUTH:	WWWgc_ori/243_19.jpg
+gc_ori/289_8.jpg	Inc
+	GROUND TRUTH:	Inc.
+gc_ori/2_17.jpg	SAkland
+GROUND TRUTH:	Oakland
+gc_ori/302_18.jpg	C0DE#CMPO46310
+	GROUND TRUTH:	CODE#CMP046310
+gc_ori/32_4.jpg	CARDINAISS
+GROUND TRUTH:	CARDINALS
+gc_ori/33_19.jpg	3-30-89
+	GROUND TRUTH:	3-30-89.
+gc_ori/38_11.jpg	elite,
+	GROUND TRUTH:	elite.
+gc_ori/3_25.jpg	986
+GROUND TRUTH:	1986
+gc_ori/46_6.jpg	blockbuste
+GROUND TRUTH:	blockbuster
+gc_ori/4_10.jpg	Dogers
+GROUND TRUTH:	Dodgers
+gc_ori/70_28.jpg	season.
+	GROUND TRUTH:	season
+gc_ori/76_23.jpg	Washingtor
+	GROUND TRUTH:	Washington
+gc_ori/85_21.jpg	COMPANY.
+	GROUND TRUTH:	COMPANY
+gc_ori/99_30.jpg	Baseball
+	GROUND TRUTH:	BAseball
+output/color_image/images/000000072.jpg	SUPERCOMPUTER,
+						GROUND TRUTH:	SUPERCOMPUTER.
+output/color_image/images/000000204.jpg	SUPERCOMPUTER,
+						GROUND TRUTH:	SUPERCOMPUTER.
+output/color_image/images/000000556.jpg	Ai
+						GROUND TRUTH:	Ali
+output/compact_char_spacing/images/000000001.jpg	2,54
+									GROUND TRUTH:	2,354
+output/compact_char_spacing/images/000000047.jpg	guariel
+									GROUND TRUTH:	guarded
+output/compact_char_spacing/images/000000051.jpg	cacators
+									GROUND TRUTH:	capacitors,
+output/compact_char_spacing/images/000000058.jpg	contrain
+									GROUND TRUTH:	contraption
+output/compact_char_spacing/images/000000060.jpg	legndary
+									GROUND TRUTH:	legendary
+output/compact_char_spacing/images/000000067.jpg	I
+									GROUND TRUTH:	III
+output/compact_char_spacing/images/000000083.jpg	fime-traveling
+									GROUND TRUTH:	time-traveling
+output/compact_char_spacing/images/000000132.jpg	Quibbardash,
+									GROUND TRUTH:	Quibberdash,
+output/compact_char_spacing/images/000000134.jpg	HILARICUS
+									GROUND TRUTH:	HILARIOUS
+output/compact_char_spacing/images/000000140.jpg	ZORKALAK,
+									GROUND TRUTH:	ZORKALAX,
+output/compact_char_spacing/images/000000151.jpg	SHIMMERINIG
+									GROUND TRUTH:	SHIMMERING
+output/compact_char_spacing/images/000000163.jpg	CREATION-A,
+									GROUND TRUTH:	CREATION-A
+output/compact_char_spacing/images/000000180.jpg	is_Ill
+									GROUND TRUTH:	is_Ill.
+output/compact_char_spacing/images/000000214.jpg	AAVORITE
+									GROUND TRUTH:	FAVORITE
+output/compact_char_spacing/images/000000222.jpg	is_Il
+									GROUND TRUTH:	is_Ill.
+output/compact_char_spacing/images/000000231.jpg	PRAIRES,
+									GROUND TRUTH:	PRAIRIES,
+output/compact_char_spacing/images/000000240.jpg	Froodledinks
+									GROUND TRUTH:	Froobledinks
+output/compact_char_spacing/images/000000243.jpg	Meanwhle
+									GROUND TRUTH:	Meanwhile,
+output/compact_char_spacing/images/000000255.jpg	sail
+									GROUND TRUTH:	sail.
+output/compact_char_spacing/images/000000257.jpg	.,
+									GROUND TRUTH:	.,,
+output/compact_char_spacing/images/000000267.jpg	arest
+									GROUND TRUTH:	arrest
+output/compact_char_spacing/images/000000284.jpg	.,
+									GROUND TRUTH:	..,
+output/compact_char_spacing/images/000000309.jpg	.,
+									GROUND TRUTH:	..,
+output/compact_char_spacing/images/000000347.jpg	googolpleian
+									GROUND TRUTH:	googolplexian
+output/compact_char_spacing/images/000000350.jpg	praies,
+									GROUND TRUTH:	prairies,
+output/compact_char_spacing/images/000000361.jpg	Nelbulbtron-42
+									GROUND TRUTH:	Nebulotron-42
+output/compact_char_spacing/images/000000380.jpg	spaceshipg
+									GROUND TRUTH:	spaceship
+output/compact_char_spacing/images/000000396.jpg	SPPING
+									GROUND TRUTH:	SIPPING
+output/compact_char_spacing/images/000000422.jpg	is_l
+									GROUND TRUTH:	is_Ill.
+output/compact_char_spacing/images/000000423.jpg	capcitors,
+									GROUND TRUTH:	capacitors,
+output/compact_char_spacing/images/000000476.jpg	Giggleblastr-9000.
+									GROUND TRUTH:	Giggleblaster-9000.
+output/compact_char_spacing/images/000000491.jpg	unveled
+									GROUND TRUTH:	unveiled
+output/compact_char_spacing/images/000000495.jpg	Giggleblastr-000.
+									GROUND TRUTH:	Giggleblaster-9000.
+output/compact_char_spacing/images/000000505.jpg	.,,
+									GROUND TRUTH:	.,-,.
+output/compact_char_spacing/images/000000535.jpg	alliens
+									GROUND TRUTH:	aliens
+output/compact_char_spacing/images/000000589.jpg	QURRKS
+									GROUND TRUTH:	QUARKS
+output/compact_char_spacing/images/000000593.jpg	Infiny
+									GROUND TRUTH:	Infinity
+output/compact_char_spacing/images/000000604.jpg	HLARIOUS
+									GROUND TRUTH:	HILARIOUS
+output/compact_char_spacing/images/000000616.jpg	inavigating
+									GROUND TRUTH:	navigating
+output/compact_char_spacing/images/000000637.jpg	siping
+									GROUND TRUTH:	sipping
+output/compact_char_spacing/images/000000660.jpg	10,01
+									GROUND TRUTH:	10,001
+output/curve/images/000000401.jpg	Protessor
+					GROUND TRUTH:	Professor
+output/curve/images/000000580.jpg	MEANWHILE
+					GROUND TRUTH:	MEANWHILE,
+output/dropout_horizontal/images/000000050.jpg	trasdimeasional
+								GROUND TRUTH:	transdimensional
+output/dropout_horizontal/images/000000079.jpg	WHMSICAL
+								GROUND TRUTH:	WHIMSICAL
+output/dropout_horizontal/images/000000091.jpg	Chrono-Glzmo.
+								GROUND TRUTH:	Chrono-Gizmo.
+output/dropout_horizontal/images/000000111.jpg	COMCALLY
+								GROUND TRUTH:	COMICALLY
+output/dropout_horizontal/images/000000118.jpg	UNVELED
+								GROUND TRUTH:	UNVEILED
+output/dropout_horizontal/images/000000120.jpg	transdimensionodl
+								GROUND TRUTH:	transdimensional
+output/dropout_horizontal/images/000000122.jpg	INTERGACACTIC
+								GROUND TRUTH:	INTERGALACTIC
+output/dropout_horizontal/images/000000125.jpg	QUUIRKELBURP
+								GROUND TRUTH:	QUIRKELBURP,
+output/dropout_horizontal/images/000000130.jpg	...
+								GROUND TRUTH:	..,
+output/dropout_horizontal/images/000000161.jpg	concoctod
+								GROUND TRUTH:	concocted
+output/dropout_horizontal/images/000000163.jpg	MUMBCJUMBO
+								GROUND TRUTH:	MUMBOJUMBO
+output/dropout_horizontal/images/000000188.jpg	NERULA,
+								GROUND TRUTH:	NEBULA,
+output/dropout_horizontal/images/000000210.jpg	CHRONO-OIZMO.
+								GROUND TRUTH:	CHRONO-GIZMO.
+output/dropout_horizontal/images/000000253.jpg	dinosaur-rtddon
+								GROUND TRUTH:	dinosaur-ridden
+output/dropout_horizontal/images/000000368.jpg	PROEESSOR
+								GROUND TRUTH:	PROFESSOR
+output/dropout_horizontal/images/000000390.jpg	DINOSAURRIDDEN
+								GROUND TRUTH:	DINOSAUR-RIDDEN
+output/dropout_horizontal/images/000000405.jpg	embarned
+								GROUND TRUTH:	embarked
+output/dropout_horizontal/images/000000406.jpg	JELLYEISH
+								GROUND TRUTH:	JELLYFISH
+output/dropout_horizontal/images/000000458.jpg	DINOSAURRIDDEN
+								GROUND TRUTH:	DINOSAUR-RIDDEN
+output/dropout_horizontal/images/000000500.jpg	MUMBOUMBO
+								GROUND TRUTH:	MUMBOJUMBO
+output/dropout_horizontal/images/000000501.jpg	FOC.
+								GROUND TRUTH:	FOG.
+output/dropout_horizontal/images/000000522.jpg	exampies
+								GROUND TRUTH:	examples
+output/dropout_horizontal/images/000000559.jpg	TIMETRAVELING
+								GROUND TRUTH:	TIME-TRAVELING
+output/dropout_horizontal/images/000000609.jpg	vez
+								GROUND TRUTH:	vex
+output/dropout_horizontal/images/000000649.jpg	SUPERCOMPUTER,
+								GROUND TRUTH:	SUPERCOMPUTER.
+output/dropout_horizontal/images/000000663.jpg	IYDRA.
+								GROUND TRUTH:	HYDRA.
+output/dropout_horizontal/images/000000668.jpg	capacilors,
+								GROUND TRUTH:	capacitors,
+output/dropout_horizontal/images/000000669.jpg	capaciiors,
+								GROUND TRUTH:	capacitors,
+output/dropout_horizontal/images/000000698.jpg	DOODADIFIFR,
+								GROUND TRUTH:	DOODADIFIER,
+output/dropout_rand/images/000000119.jpg	SUPERCOMPUTER,
+							GROUND TRUTH:	SUPERCOMPUTER.
+output/dropout_rand/images/000000263.jpg	SUPERCOMPUTER,
+							GROUND TRUTH:	SUPERCOMPUTER.
+output/dropout_rand/images/000000687.jpg	CREATIONTA
+							GROUND TRUTH:	CREATION-A
+output/dropout_vertical/images/000000024.jpg	CREATIONLA
+								GROUND TRUTH:	CREATION-A
+output/dropout_vertical/images/000000045.jpg	TRANSDIMENSIONAD
+								GROUND TRUTH:	TRANSDIMENSIONAL
+output/dropout_vertical/images/000000049.jpg	devce
+								GROUND TRUTH:	device
+output/dropout_vertical/images/000000050.jpg	ae
+								GROUND TRUTH:	as
+output/dropout_vertical/images/000000052.jpg	off
+								GROUND TRUTH:	of
+output/dropout_vertical/images/000000055.jpg	FUTURISHC
+								GROUND TRUTH:	FUTURISTIC
+output/dropout_vertical/images/000000064.jpg	adverturers
+								GROUND TRUTH:	adventurers
+output/dropout_vertical/images/000000067.jpg	I
+								GROUND TRUTH:	IS
+output/dropout_vertical/images/000000075.jpg	ZUGGLONIA,
+								GROUND TRUTH:	ZOGGLONIA,
+output/dropout_vertical/images/000000078.jpg	10,0001
+								GROUND TRUTH:	10,001
+output/dropout_vertical/images/000000087.jpg	i
+								GROUND TRUTH:	in
+output/dropout_vertical/images/000000088.jpg	WORMHOUES
+								GROUND TRUTH:	WORMHOLES
+output/dropout_vertical/images/000000092.jpg	..-,.,
+								GROUND TRUTH:	.,.-,.,
+output/dropout_vertical/images/000000094.jpg	ic
+								GROUND TRUTH:	in
+output/dropout_vertical/images/000000100.jpg	,..
+								GROUND TRUTH:	,,.
+output/dropout_vertical/images/000000109.jpg	ito
+								GROUND TRUTH:	to
+output/dropout_vertical/images/000000110.jpg	ANND
+								GROUND TRUTH:	AND
+output/dropout_vertical/images/000000122.jpg	,,
+								GROUND TRUTH:	,,.
+output/dropout_vertical/images/000000127.jpg	jourrey
+								GROUND TRUTH:	journey
+output/dropout_vertical/images/000000134.jpg	N
+								GROUND TRUTH:	IN
+output/dropout_vertical/images/000000146.jpg	ad
+								GROUND TRUTH:	led
+output/dropout_vertical/images/000000176.jpg	o
+								GROUND TRUTH:	a
+output/dropout_vertical/images/000000188.jpg	G
+								GROUND TRUTH:	TO
+output/dropout_vertical/images/000000196.jpg	TIME-IRAVELING
+								GROUND TRUTH:	TIME-TRAVELING
+output/dropout_vertical/images/000000216.jpg	FIZA,
+								GROUND TRUTH:	FIZZ,
+output/dropout_vertical/images/000000225.jpg	A
+								GROUND TRUTH:	&
+output/dropout_vertical/images/000000227.jpg	o
+								GROUND TRUTH:	of
+output/dropout_vertical/images/000000237.jpg	Zolkalax,
+								GROUND TRUTH:	Zorkalax,
+output/dropout_vertical/images/000000245.jpg	.,.-,,
+								GROUND TRUTH:	.,.-,.,
+output/dropout_vertical/images/000000260.jpg	ZORKOLAX,
+								GROUND TRUTH:	ZORKALAX,
+output/dropout_vertical/images/000000268.jpg	aiens
+								GROUND TRUTH:	aliens
+output/dropout_vertical/images/000000277.jpg	f
+								GROUND TRUTH:	of
+output/dropout_vertical/images/000000279.jpg	shiminering
+								GROUND TRUTH:	shimmering
+output/dropout_vertical/images/000000281.jpg	,,
+								GROUND TRUTH:	,,.
+output/dropout_vertical/images/000000283.jpg	oWF
+								GROUND TRUTH:	owz
+output/dropout_vertical/images/000000289.jpg	a
+								GROUND TRUTH:	.1
+output/dropout_vertical/images/000000295.jpg	is
+								GROUND TRUTH:	as
+output/dropout_vertical/images/000000296.jpg	A
+								GROUND TRUTH:	in
+output/dropout_vertical/images/000000297.jpg	transdimensiona
+								GROUND TRUTH:	transdimensional
+output/dropout_vertical/images/000000304.jpg	fromm
+								GROUND TRUTH:	from
+output/dropout_vertical/images/000000310.jpg	6,246
+								GROUND TRUTH:	3,246
+output/dropout_vertical/images/000000315.jpg	Wibble-Mobble
+								GROUND TRUTH:	Wibble-Wobble
+output/dropout_vertical/images/000000341.jpg	FROOBLEDTIKS
+								GROUND TRUTH:	FROOBLEDINKS
+output/dropout_vertical/images/000000342.jpg	Illuson
+								GROUND TRUTH:	Illusion
+output/dropout_vertical/images/000000347.jpg	is_ll.
+								GROUND TRUTH:	is_Ill.
+output/dropout_vertical/images/000000353.jpg	Wioble-obble
+								GROUND TRUTH:	Wibble-Wobble
+output/dropout_vertical/images/000000356.jpg	TIIMIE-TRAWELING
+								GROUND TRUTH:	TIME-TRAVELING
+output/dropout_vertical/images/000000369.jpg	Ollve
+								GROUND TRUTH:	Olive
+output/dropout_vertical/images/000000387.jpg	o
+								GROUND TRUTH:	of
+output/dropout_vertical/images/000000400.jpg	QUIBBEROASH,
+								GROUND TRUTH:	QUIBBERDASH,
+output/dropout_vertical/images/000000405.jpg	ith
+								GROUND TRUTH:	with
+output/dropout_vertical/images/000000417.jpg	lebra
+								GROUND TRUTH:	zebra
+output/dropout_vertical/images/000000421.jpg	NLBULOTRON-42
+								GROUND TRUTH:	NEBULOTRON-42
+output/dropout_vertical/images/000000432.jpg	17,892,
+								GROUND TRUTH:	17,892
+output/dropout_vertical/images/000000439.jpg	AO.
+								GROUND TRUTH:	AD.
+output/dropout_vertical/images/000000448.jpg	CUPTAIN
+								GROUND TRUTH:	CAPTAIN
+output/dropout_vertical/images/000000450.jpg	Is
+								GROUND TRUTH:	IS
+output/dropout_vertical/images/000000454.jpg	Meanwhtle,
+								GROUND TRUTH:	Meanwhile,
+output/dropout_vertical/images/000000487.jpg	Thhe
+								GROUND TRUTH:	The
+output/dropout_vertical/images/000000491.jpg	,,
+								GROUND TRUTH:	,,.
+output/dropout_vertical/images/000000505.jpg	D.
+								GROUND TRUTH:	AD.
+output/dropout_vertical/images/000000509.jpg	Nebulaw,
+								GROUND TRUTH:	Nebula,
+output/dropout_vertical/images/000000510.jpg	0b
+								GROUND TRUTH:	023
+output/dropout_vertical/images/000000518.jpg	WIMSICAL
+								GROUND TRUTH:	WHIMSICAL
+output/dropout_vertical/images/000000527.jpg	56
+								GROUND TRUTH:	56,
+output/dropout_vertical/images/000000541.jpg	o&
+								GROUND TRUTH:	A
+output/dropout_vertical/images/000000545.jpg	colka-dot
+								GROUND TRUTH:	polka-dot
+output/dropout_vertical/images/000000556.jpg	ANd
+								GROUND TRUTH:	AD.
+output/dropout_vertical/images/000000566.jpg	TE
+								GROUND TRUTH:	THE
+output/dropout_vertical/images/000000584.jpg	secare
+								GROUND TRUTH:	secure
+output/dropout_vertical/images/000000590.jpg	zuro
+								GROUND TRUTH:	zero
+output/dropout_vertical/images/000000602.jpg	BNY
+								GROUND TRUTH:	ANY
+output/dropout_vertical/images/000000609.jpg	quanlum
+								GROUND TRUTH:	quantum
+output/dropout_vertical/images/000000614.jpg	INTERSIELLAR:
+								GROUND TRUTH:	INTERSTELLAR
+output/dropout_vertical/images/000000624.jpg	FUTURISSTIC
+								GROUND TRUTH:	FUTURISTIC
+output/dropout_vertical/images/000000640.jpg	10,404
+								GROUND TRUTH:	10,001
+output/dropout_vertical/images/000000647.jpg	rjob,
+								GROUND TRUTH:	job,
+output/dropout_vertical/images/000000651.jpg	bead
+								GROUND TRUTH:	bean
+output/dropout_vertical/images/000000653.jpg	Os
+								GROUND TRUTH:	os
+output/dropout_vertical/images/000000658.jpg	SUPERCOMPUTER,
+								GROUND TRUTH:	SUPERCOMPUTER.
+output/dropout_vertical/images/000000671.jpg	fng.
+								GROUND TRUTH:	fog.
+output/dropout_vertical/images/000000676.jpg	fo
+								GROUND TRUTH:	fog.
+output/dropout_vertical/images/000000683.jpg	naviganing
+								GROUND TRUTH:	navigating
+output/dropout_vertical/images/000000686.jpg	FROOBLEDINK'S
+								GROUND TRUTH:	FROOBLEDINKS
+output/dropout_vertical/images/000000693.jpg	GIGGLEELASTER-900C.
+								GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/dropout_vertical/images/000000696.jpg	48,
+								GROUND TRUTH:	78,
+output/extra_text_line_layout/images/000000278.jpg	up.
+									GROUND TRUTH:	up
+output/extra_text_line_layout/images/000000622.jpg	QUANIUM
+									GROUND TRUTH:	QUANTUM
+output/extra_text_line_layout/images/000000687.jpg	.,--,.
+									GROUND TRUTH:	.,-,.
+output/large_char_spacing/images/000000015.jpg	SUPERCOMPUTER!
+								GROUND TRUTH:	SUPERCOMPUTER.
+output/large_char_spacing/images/000000184.jpg	timeztraveling
+								GROUND TRUTH:	time-traveling
+output/large_char_spacing/images/000000192.jpg	GIGGLEBLASTER-9OOO.
+								GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/large_char_spacing/images/000000199.jpg	Quirkelberp,
+								GROUND TRUTH:	Quirkelburp,
+output/large_char_spacing/images/000000230.jpg	,.
+								GROUND TRUTH:	,..
+output/large_char_spacing/images/000000294.jpg	GIGGLEBLASTER-9OOO.
+								GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/large_char_spacing/images/000000318.jpg	Owz-Woz.zwo,
+								GROUND TRUTH:	Owz-Woz.Zwo,
+output/large_char_spacing/images/000000326.jpg	is_lll.
+								GROUND TRUTH:	is_Ill.
+output/large_char_spacing/images/000000353.jpg	Iin
+								GROUND TRUTH:	In
+output/large_char_spacing/images/000000413.jpg	GIGGLEBLASTER-9OOO.
+								GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/large_char_spacing/images/000000457.jpg	timectraveling
+								GROUND TRUTH:	time-traveling
+output/large_char_spacing/images/000000460.jpg	MOONBEAMS
+								GROUND TRUTH:	MOONBEAMS.
+output/large_char_spacing/images/000000584.jpg	GIGGLEBLASTER-9OOO.
+								GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/large_char_spacing/images/000000629.jpg	Snickieshnort,
+								GROUND TRUTH:	Snickleshnort,
+output/line_bottom/images/000000168.jpg	GIGGLEBLASTER-9O00.
+						GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/line_bottom_left/images/000000200.jpg	HTLARIOUS
+								GROUND TRUTH:	HILARIOUS
+output/line_bottom_left/images/000000249.jpg	GIGGLEBLASTER-9000,
+								GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/line_bottom_right/images/000000059.jpg	SUPERCOMPUTER,
+								GROUND TRUTH:	SUPERCOMPUTER.
+output/line_bottom_right/images/000000565.jpg	Oo.OO,
+								GROUND TRUTH:	Oo.0O,
+output/line_bottom_right/images/000000619.jpg	SUPERCOMPUTER,
+								GROUND TRUTH:	SUPERCOMPUTER.
+output/line_bottom_right/images/000000640.jpg	SUPERCOMPUTER,
+								GROUND TRUTH:	SUPERCOMPUTER.
+output/line_horizontal_middle/images/000000005.jpg	Mumbojumbe
+									GROUND TRUTH:	Mumbojumbo
+output/line_horizontal_middle/images/000000087.jpg	Crono-Gizmo.
+									GROUND TRUTH:	Chrono-Gizmo.
+output/line_horizontal_middle/images/000000158.jpg	WIBBLEWOBBLE
+									GROUND TRUTH:	WIBBLE-WOBBLE
+output/line_horizontal_middle/images/000000167.jpg	493-HE,ADED
+									GROUND TRUTH:	493-HEADED
+output/line_horizontal_middle/images/000000193.jpg	NEBULOTRON42
+									GROUND TRUTH:	NEBULOTRON-42
+output/line_horizontal_middle/images/000000227.jpg	,,
+									GROUND TRUTH:	,,.
+output/line_horizontal_middle/images/000000287.jpg	jourhey
+									GROUND TRUTH:	journey
+output/line_horizontal_middle/images/000000362.jpg	SUPERCOMPUTER,
+									GROUND TRUTH:	SUPERCOMPUTER.
+output/line_horizontal_middle/images/000000388.jpg	dinosaurridden
+									GROUND TRUTH:	dinosaur-ridden
+output/line_horizontal_middle/images/000000457.jpg	SHMMERING
+									GROUND TRUTH:	SHIMMERING
+output/line_horizontal_middle/images/000000526.jpg	SUPERCOMPUTER,
+									GROUND TRUTH:	SUPERCOMPUTER.
+output/line_horizontal_middle/images/000000539.jpg	WHIMSLCAL
+									GROUND TRUTH:	WHIMSICAL
+output/line_horizontal_middle/images/000000546.jpg	,,,
+									GROUND TRUTH:	.,,
+output/line_horizontal_middle/images/000000653.jpg	Giggleblaster9000.
+									GROUND TRUTH:	Giggleblaster-9000.
+output/line_left/images/000000044.jpg	SUPERCOMPUTER,
+						GROUND TRUTH:	SUPERCOMPUTER.
+output/line_left/images/000000250.jpg	Owz-Woz.Zwo
+						GROUND TRUTH:	Owz-Woz.Zwo,
+output/line_left/images/000000257.jpg	NTERGALACTIC
+						GROUND TRUTH:	INTERGALACTIC
+output/line_left/images/000000353.jpg	SUPERCOMPUTER,
+						GROUND TRUTH:	SUPERCOMPUTER.
+output/line_right/images/000000198.jpg	BC.
+						GROUND TRUTH:	BC
+output/line_right/images/000000443.jpg	SUPERCOMPUTER,
+						GROUND TRUTH:	SUPERCOMPUTER.
+output/line_right/images/000000488.jpg	GIGGLEBLASTER-9OO0.
+						GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/line_top_left/images/000000345.jpg	CHRONO-GIZMO
+							GROUND TRUTH:	CHRONO-GIZMO.
+output/line_vertical_middle/images/000000099.jpg	GIGGLEBLASTER-9O0O.
+									GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/line_vertical_middle/images/000000152.jpg	3,014,557
+									GROUND TRUTH:	3,014,567
+output/line_vertical_middle/images/000000246.jpg	EMIBARKED
+									GROUND TRUTH:	EMBARKED
+output/line_vertical_middle/images/000000274.jpg	GGGLEBLASTER-9000.
+									GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/line_vertical_middle/images/000000306.jpg	job.
+									GROUND TRUTH:	job,
+output/line_vertical_middle/images/000000417.jpg	CaII
+									GROUND TRUTH:	Call
+output/line_vertical_middle/images/000000421.jpg	JELLYEISH
+									GROUND TRUTH:	JELLYFISH
+output/line_vertical_middle/images/000000571.jpg	INTERGALACTIO
+									GROUND TRUTH:	INTERGALACTIC
+output/line_vertical_middle/images/000000601.jpg	GIITTERPOP
+									GROUND TRUTH:	GLITTERPOP
+output/line_vertical_middle/images/000000610.jpg	SUPERCOMPUTER,
+									GROUND TRUTH:	SUPERCOMPUTER.
+output/line_vertical_middle/images/000000619.jpg	TRAINSPORT
+									GROUND TRUTH:	TRANSPORT
+output/line_vertical_middle/images/000000667.jpg	UNVEIVED
+									GROUND TRUTH:	UNVEILED
+output/padding/images/000000699.jpg	A
+					GROUND TRUTH:	Aoutput/perspective_transform/images/000000000.jpg
+output/perspective_transform/images/000000357.jpg	creation-
+									GROUND TRUTH:	creation-a
+output/same_line_layout_different_font_size/images/000000228.jpg	Helllo  World!
+													GROUND TRUTH:	Hello  World!
+output/same_line_layout_different_font_size/images/000000304.jpg	Hello - World!
+													GROUND TRUTH:	Hello  World!
+test/word_1019.png	esplaa
+	GROUND TRUTH:	esplanade
+test/word_1067.png	repp
+	GROUND TRUTH:	repu
+test/word_1070.png	alik
+	GROUND TRUTH:	alk'
+test/word_1071.png	CRTSIL
+	GROUND TRUTH:	CRYSTAL
+test/word_1074.png	jowE
+	GROUND TRUTH:	Towe
+test/word_1101.png	Sif
+	GROUND TRUTH:	STRO
+test/word_1102.png	TreaD
+	GROUND TRUTH:	Leaf
+test/word_1107.png	Peror
+	GROUND TRUTH:	Peperor
+test/word_1113.png	GRBIN
+	GROUND TRUTH:	GIORDANO
+test/word_1115.png	SWAROVSI
+	GROUND TRUTH:	SWAROVSKI
+test/word_1120.png	SEPROA
+	GROUND TRUTH:	SEPHORA
+test/word_1121.png	A
+	GROUND TRUTH:	Tvo
+test/word_1162.png	bN
+	GROUND TRUTH:	bYST
+test/word_1171.png	shuATELER
+	GROUND TRUTH:	shuaTELER
+test/word_1173.png	IoN
+	GROUND TRUTH:	Ion
+test/word_1180.png	The
+	GROUND TRUTH:	THe
+test/word_1189.png	Coffe
+	GROUND TRUTH:	Coffes
+test/word_1191.png	SWAROVSKHI
+	GROUND TRUTH:	SWAROVSKI
+test/word_1212.png	colepoi
+	GROUND TRUTH:	collectpoint
+test/word_1223.png	SAE
+	GROUND TRUTH:	SAL
+test/word_1235.png	JEWELERN
+	GROUND TRUTH:	JEWELLERY
+test/word_1244.png	Glailo
+	GROUND TRUTH:	Glaillo
+test/word_125.png	comin
+	GROUND TRUTH:	comi
+test/word_1261.png	wWW.dintaifung.com.sg
+	GROUND TRUTH:	www.dintaifung.com.sg
+test/word_1270.png	REREr
+	GROUND TRUTH:	Anniversary
+test/word_1276.png	GNG
+	GROUND TRUTH:	GNC
+test/word_1293.png	SPECLAL
+	GROUND TRUTH:	SPECIAL
+test/word_1309.png	BOL
+	GROUND TRUTH:	AVEDA
+test/word_1317.png	MOARteN
+	GROUND TRUTH:	MAARteN
+test/word_1325.png	Kinkunia
+	GROUND TRUTH:	Kinokuniya
+test/word_1365.png	BreadTalli
+	GROUND TRUTH:	BreadTalk
+test/word_1383.png	Deuro
+	GROUND TRUTH:	eauty
+test/word_1431.png	Advertisement
+	GROUND TRUTH:	AdvertisementSpace
+test/word_1434.png	Riet
+	GROUND TRUTH:	Robert
+test/word_1445.png	outRAcK
+	GROUND TRUTH:	outback
+test/word_1490.png	VICTOAN
+	GROUND TRUTH:	VICTORIA'S
+test/word_1495.png	BO
+	GROUND TRUTH:	FOREVER
+test/word_1500.png	BE
+	GROUND TRUTH:	OREVER
+test/word_1516.png	SAL
+	GROUND TRUTH:	SALE
+test/word_1517.png	CO
+	GROUND TRUTH:	ecco
+test/word_1527.png	ALE
+	GROUND TRUTH:	SALE
+test/word_1530.png	FOSI
+	GROUND TRUTH:	FOSSIL
+test/word_1531.png	epicenie
+	GROUND TRUTH:	epiCentre
+test/word_1548.png	PHO
+	GROUND TRUTH:	PHOA
+test/word_1553.png	AYCITY
+	GROUND TRUTH:	CITY
+test/word_1562.png	WALKIR
+	GROUND TRUTH:	WALKIN
+test/word_1564.png	WORKSHOFELEN
+	GROUND TRUTH:	WORKSHOPELEM
+test/word_1580.png	
+	GROUND TRUTH:	LES
+test/word_1604.png	CO
+	GROUND TRUTH:	TOKYO
+test/word_1609.png	DECOTN
+	GROUND TRUTH:	DISCOUNTS
+test/word_1615.png	VICTORIA'S
+	GROUND TRUTH:	VICTORIAS
+test/word_1617.png	VICTORIA'
+	GROUND TRUTH:	VICTORIA'S
+test/word_1631.png	C
+	GROUND TRUTH:	CONCIERGE
+test/word_1640.png	CHABUTON
+	GROUND TRUTH:	CHANBUTON
+test/word_1656.png	$550
+	GROUND TRUTH:	$5
+test/word_1661.png	AMSUIN
+	GROUND TRUTH:	AMSUNG
+test/word_1690.png	SIWSINGG
+	GROUND TRUTH:	SAMSUNG
+test/word_1696.png	Kitchon
+	GROUND TRUTH:	Kitchen
+test/word_1707.png	WAKAI
+	GROUND TRUTH:	WAKA
+test/word_1714.png	Crer
+	GROUND TRUTH:	Crate&Barrel
+test/word_1715.png	thOa
+	GROUND TRUTH:	the
+test/word_1719.png	AlLE
+	GROUND TRUTH:	Blush!
+test/word_1724.png	STRAPS,
+	GROUND TRUTH:	STRAPS
+test/word_1740.png	COLDMEAR
+	GROUND TRUTH:	COLDWEAR
+test/word_1746.png	BENEGA
+	GROUND TRUTH:	BEEGA
+test/word_1754.png	A
+	GROUND TRUTH:	LEVEL
+test/word_1759.png	C
+	GROUND TRUTH:	CHOCOOLATE
+test/word_1762.png	
+	GROUND TRUTH:	OLATE
+test/word_177.png	CAF
+	GROUND TRUTH:	CAFÉ
+test/word_1780.png	Mageon
+	GROUND TRUTH:	Mandarin
+test/word_1798.png	PAOT
+	GROUND TRUTH:	PACT
+test/word_1806.png	real
+	GROUND TRUTH:	reaL
+test/word_1836.png	AE
+	GROUND TRUTH:	TAKEN
+test/word_1844.png	CEAIE
+	GROUND TRUTH:	CHAXLIE
+test/word_1849.png	roa
+	GROUND TRUTH:	real
+test/word_187.png	GYNL
+	GROUND TRUTH:	Calvin
+test/word_1892.png	EES
+	GROUND TRUTH:	IES
+test/word_1894.png	C
+	GROUND TRUTH:	HYPERION
+test/word_1895.png	0og0
+	GROUND TRUTH:	00:009
+test/word_1908.png	GMAS
+	GROUND TRUTH:	GAMES
+test/word_1910.png	STARBUCES
+	GROUND TRUTH:	STARBUCKS
+test/word_1913.png	Fey
+	GROUND TRUTH:	Freshly
+test/word_1917.png	AIO
+	GROUND TRUTH:	GIO
+test/word_1924.png	SHOPNG
+	GROUND TRUTH:	SHOPPING
+test/word_1933.png	BoOs
+	GROUND TRUTH:	Book
+test/word_1940.png	HIE
+	GROUND TRUTH:	SURE
+test/word_1977.png	TOUO
+	GROUND TRUTH:	DOUG
+test/word_2001.png	RENAZA
+	GROUND TRUTH:	RENANZA
+test/word_2004.png	SADRINAGON
+	GROUND TRUTH:	SADRINAGO
+test/word_2020.png	atur
+	GROUND TRUTH:	ature
+test/word_2026.png	AL
+	GROUND TRUTH:	nniiru
+test/word_2027.png	th
+	GROUND TRUTH:	inc
+test/word_2032.png	SL
+	GROUND TRUTH:	STONE
+test/word_2033.png	
+	GROUND TRUTH:	CREAMERY
+test/word_2034.png	BO
+	GROUND TRUTH:	COLD
+test/word_2035.png	mE
+	GROUND TRUTH:	STONE
+test/word_2046.png	ww.ywgroup.com.sg
+	GROUND TRUTH:	www.ywgroup.com.sg
+test/word_21.png	AEROB
+	GROUND TRUTH:	AIROB
+test/word_261.png	CRUSE
+	GROUND TRUTH:	CRUISE
+test/word_273.png	Gariert
+	GROUND TRUTH:	Garrett
+test/word_277.png	cevent
+	GROUND TRUTH:	ceve
+test/word_289.png	$
+	GROUND TRUTH:	$8
+test/word_290.png	$1
+	GROUND TRUTH:	$100
+test/word_296.png	Boere
+	GROUND TRUTH:	Boerien
+test/word_323.png	Tonais
+	GROUND TRUTH:	Tonajs
+test/word_344.png	Relching
+	GROUND TRUTH:	Reking
+test/word_367.png	E
+	GROUND TRUTH:	TEN
+test/word_40.png	VEHICLES
+	GROUND TRUTH:	VEICHLES
+test/word_400.png	STE
+	GROUND TRUTH:	CARE
+test/word_418.png	TAGiNeuR
+	GROUND TRUTH:	TAGHeuer
+test/word_516.png	#GVSuntecCilty
+	GROUND TRUTH:	#GVSuntecCity
+test/word_53.png	Communictios
+	GROUND TRUTH:	Communications
+test/word_531.png	YERSATIUIT
+	GROUND TRUTH:	YERSATIUITT
+test/word_537.png	SEANOR
+	GROUND TRUTH:	SELANGOR
+test/word_552.png	SINCE
+	GROUND TRUTH:	SINCERE
+test/word_553.png	City.
+	GROUND TRUTH:	City
+test/word_570.png	Shops
+	GROUND TRUTH:	shops
+test/word_572.png	More
+	GROUND TRUTH:	more
+test/word_575.png	Hyperfresh
+	GROUND TRUTH:	hyperfresh
+test/word_576.png	Fountain
+	GROUND TRUTH:	fountain
+test/word_577.png	Suntec
+	GROUND TRUTH:	suntec
+test/word_580.png	Office
+	GROUND TRUTH:	office
+test/word_586.png	ding
+	GROUND TRUTH:	dining
+test/word_588.png	cotine
+	GROUND TRUTH:	continues
+test/word_597.png	rObBON
+	GROUND TRUTH:	robinsons
+test/word_600.png	Raffles
+	GROUND TRUTH:	raffles
+test/word_602.png	ROINON
+	GROUND TRUTH:	ROBINSONS
+test/word_603.png	THUT
+	GROUND TRUTH:	THT
+test/word_606.png	CieRGe
+	GROUND TRUTH:	cierge
+test/word_611.png	jACObS
+	GROUND TRUTH:	jacobs
+test/word_621.png	DONT
+	GROUND TRUTH:	dont
+test/word_624.png	bAlLE
+	GROUND TRUTH:	bright
+test/word_626.png	WIAL
+	GROUND TRUTH:	WALK
+test/word_633.png	Desigual
+	GROUND TRUTH:	desigual
+test/word_634.png	ALlUtI
+	GROUND TRUTH:	alluti
+test/word_639.png	SUNSHI
+	GROUND TRUTH:	SUSHI
+test/word_640.png	suShI
+	GROUND TRUTH:	sushi
+test/word_643.png	PERON
+	GROUND TRUTH:	precious
+test/word_644.png	pene
+	GROUND TRUTH:	place
+test/word_657.png	plae
+	GROUND TRUTH:	place
+test/word_668.png	AE
+	GROUND TRUTH:	WORK
+test/word_671.png	poe
+	GROUND TRUTH:	place
+test/word_672.png	Fo
+	GROUND TRUTH:	food
+test/word_675.png	Chimney
+	GROUND TRUTH:	chimney
+test/word_691.png	EECHUAN
+	GROUND TRUTH:	ECHUAN
+test/word_700.png	BO
+	GROUND TRUTH:	NOURISH
+test/word_701.png	BIL
+	GROUND TRUTH:	BELIEVE
+test/word_708.png	RENO
+	GROUND TRUTH:	ROBINSO
+test/word_716.png	OF
+	GROUND TRUTH:	OFF
+test/word_727.png	me
+	GROUND TRUTH:	GEOX
+test/word_728.png	CO
+	GROUND TRUTH:	GEOX
+test/word_729.png	CO
+	GROUND TRUTH:	GEOX
+test/word_733.png	SAL
+	GROUND TRUTH:	SALE
+test/word_745.png	50%A
+	GROUND TRUTH:	50%OFF
+test/word_751.png	HERDIONS
+	GROUND TRUTH:	ROBINSONS
+test/word_758.png	Belgum
+	GROUND TRUTH:	Belgium
+test/word_762.png	MEGA
+	GROUND TRUTH:	OMEGA
+test/word_77.png	BO
+	GROUND TRUTH:	BEYOND
+test/word_775.png	50%of
+	GROUND TRUTH:	50%off
+test/word_78.png	GOU
+	GROUND TRUTH:	FOUR
+test/word_798.png	SOUE
+	GROUND TRUTH:	TOAST
+test/word_805.png	Fo
+	GROUND TRUTH:	Bread
+test/word_806.png	TAL
+	GROUND TRUTH:	Talk
+test/word_81.png	BE
+	GROUND TRUTH:	CLASSROOMS
+test/word_818.png	ror
+	GROUND TRUTH:	Crahtree
+test/word_819.png	Fa
+	GROUND TRUTH:	Evelyn
+test/word_825.png	billie
+	GROUND TRUTH:	billlie
+test/word_832.png	Chices
+	GROUND TRUTH:	Choices
+test/word_838.png	EXPPLENCE
+	GROUND TRUTH:	EXPERIENCE
+test/word_848.png	ELEN
+	GROUND TRUTH:	ELEVEN
+test/word_85.png	BOU
+	GROUND TRUTH:	WORLD
+test/word_850.png	ELEVEn
+	GROUND TRUTH:	ELEVEN
+test/word_859.png	NPCOM
+	GROUND TRUTH:	INFOCOMM
+test/word_86.png	ThE
+	GROUND TRUTH:	THE
+test/word_864.png	PE
+	GROUND TRUTH:	SPECTACLE
+test/word_87.png	SAL
+	GROUND TRUTH:	BEAST
+test/word_877.png	AAR
+	GROUND TRUTH:	TAP
+test/word_88.png	L
+	GROUND TRUTH:	CITY
+test/word_898.png	Accesorize
+	GROUND TRUTH:	Accessorize
+test/word_900.png	MiasterCard
+	GROUND TRUTH:	MasterCard
+test/word_901.png	woob
+	GROUND TRUTH:	woobo
+test/word_913.png	MAUT
+	GROUND TRUTH:	NOT
+test/word_921.png	BO
+	GROUND TRUTH:	guardian
+test/word_93.png	BAOA
+	GROUND TRUTH:	UNSEEN
+test/word_944.png	ROBINSON
+	GROUND TRUTH:	ROBINSONS
+test/word_952.png	wOS
+	GROUND TRUTH:	ios
+train/word_1052.png	Levi0
+	GROUND TRUTH:	Levi's
+train/word_1082.png	SKYLIGHIT
+	GROUND TRUTH:	SKYLIGHT
+train/word_1083.png	SYLI
+	GROUND TRUTH:	SKYLIGHT
+train/word_1092.png	Tidings
+	GROUND TRUTH:	Tidinas
+train/word_1093.png	INTRODUCING...
+	GROUND TRUTH:	INTRODUCING..
+train/word_1096.png	GR
+	GROUND TRUTH:	GRE
+train/word_1098.png	mE
+	GROUND TRUTH:	GRE
+train/word_1115.png	WERE
+	GROUND TRUTH:	WE´RE
+train/word_1121.png	$2.30
+	GROUND TRUTH:	S2.30
+train/word_1145.png	hope
+	GROUND TRUTH:	hoac
+train/word_1151.png	ETIDE
+	GROUND TRUTH:	ETUDE
+train/word_1215.png	South
+	GROUND TRUTH:	south
+train/word_1228.png	Ave
+	GROUND TRUTH:	ave
+train/word_1242.png	INTRODUCKING...
+	GROUND TRUTH:	INTRODUCUCING...
+train/word_1279.png	SHOOIN
+	GROUND TRUTH:	SHOOTING
+train/word_1281.png	SUCES
+	GROUND TRUTH:	SUCCESS
+train/word_1286.png	SUCCES
+	GROUND TRUTH:	SUCCESS
+train/word_1293.png	FON
+	GROUND TRUTH:	PHOTO
+train/word_130.png	OccitaAne
+	GROUND TRUTH:	Occitane
+train/word_1311.png	HUMT
+	GROUND TRUTH:	HUMP
+train/word_1312.png	AHSAD
+	GROUND TRUTH:	AHEAD
+train/word_132.png	VICTOOR
+	GROUND TRUTH:	VICTORIA
+train/word_1356.png	irDD
+	GROUND TRUTH:	iMOD
+train/word_1360.png	It's
+	GROUND TRUTH:	It´s
+train/word_1363.png	AAR
+	GROUND TRUTH:	ARS
+train/word_137.png	WAVSAS
+	GROUND TRUTH:	WAVES
+train/word_1409.png	CAF
+	GROUND TRUTH:	CAFÉ
+train/word_1422.png	YIIP
+	GROUND TRUTH:	YIP
+train/word_1455.png	Sseboinn
+	GROUND TRUTH:	Scrapbooking
+train/word_1465.png	AO
+	GROUND TRUTH:	Alpha
+train/word_1468.png	Pe
+	GROUND TRUTH:	Ribbon
+train/word_1472.png	AL
+	GROUND TRUTH:	Alpha
+train/word_1489.png	MEDICALENC
+	GROUND TRUTH:	MEDICAL
+train/word_1496.png	CO
+	GROUND TRUTH:	Columbia
+train/word_1511.png	ww.sb.sg
+	GROUND TRUTH:	www.sbl.sg
+train/word_1514.png	Scc
+	GROUND TRUTH:	scc
+train/word_1515.png	SLE
+	GROUND TRUTH:	SALE
+train/word_1525.png	SOPALDING
+	GROUND TRUTH:	SPALDING
+train/word_1550.png	Worlds
+	GROUND TRUTH:	World´s
+train/word_1559.png	AEe
+	GROUND TRUTH:	SAMSUNG
+train/word_1564.png	
+	GROUND TRUTH:	ECO
+train/word_1565.png	BlOE
+	GROUND TRUTH:	full-flat
+train/word_1570.png	Primereh
+	GROUND TRUTH:	PrimeFresh
+train/word_1592.png	IIaoIiao
+	GROUND TRUTH:	IIaoIIao
+train/word_1629.png	STABITY
+	GROUND TRUTH:	STABILITY
+train/word_1660.png	107
+	GROUND TRUTH:	117
+train/word_1669.png	1:24
+	GROUND TRUTH:	11:42
+train/word_167.png	BOD
+	GROUND TRUTH:	BDT
+train/word_1670.png	Retineme
+	GROUND TRUTH:	Retine
+train/word_1702.png	ESHOCRHER
+	GROUND TRUTH:	SROCR
+train/word_1735.png	GO
+	GROUND TRUTH:	ALDO
+train/word_1737.png	grordanoian
+	GROUND TRUTH:	giordano/ladies
+train/word_1741.png	AUROR
+	GROUND TRUTH:	AURORA
+train/word_1782.png	Chalenger
+	GROUND TRUTH:	Challenger
+train/word_1791.png	BL
+	GROUND TRUTH:	TWENTY
+train/word_1802.png	COLOURFUELY
+	GROUND TRUTH:	COLOURFULLY
+train/word_1813.png	me
+	GROUND TRUTH:	GALAXY
+train/word_1815.png	CAN
+	GROUND TRUTH:	CAM
+train/word_1821.png	GENERAL
+	GROUND TRUTH:	GENEREAL
+train/word_1823.png	AE
+	GROUND TRUTH:	DAN BROWN
+train/word_1843.png	Jock's
+	GROUND TRUTH:	Jack's
+train/word_1854.png	GAme
+	GROUND TRUTH:	Game
+train/word_1856.png	SKECEN
+	GROUND TRUTH:	SKECHERS
+train/word_1876.png	Saslas
+	GROUND TRUTH:	Sanlas
+train/word_1893.png	instincs
+	GROUND TRUTH:	instinct
+train/word_1902.png	SHI
+	GROUND TRUTH:	SUSHI
+train/word_1919.png	STREETWISE
+	GROUND TRUTH:	STREETWISE.
+train/word_192.png	TECTENOLOGICAL
+	GROUND TRUTH:	TECHNOLOGICAL
+train/word_1923.png	MERREL
+	GROUND TRUTH:	MERRELL
+train/word_1938.png	BALROS
+	GROUND TRUTH:	SALADWORKS
+train/word_1940.png	FRO
+	GROUND TRUTH:	FRE
+train/word_1947.png	Gocd
+	GROUND TRUTH:	Good
+train/word_1951.png	ET1
+	GROUND TRUTH:	ET 1
+train/word_1990.png	FURHER
+	GROUND TRUTH:	FURTHER
+train/word_1991.png	ROUTON
+	GROUND TRUTH:	REDUCTION
+train/word_1994.png	WITCH
+	GROUND TRUTH:	ATCH
+train/word_2026.png	SHGAPO
+	GROUND TRUTH:	SH O
+train/word_2037.png	Fairrice
+	GROUND TRUTH:	FairPrice
+train/word_2039.png	dica
+	GROUND TRUTH:	dic
+train/word_2047.png	SO
+	GROUND TRUTH:	Blanc
+train/word_205.png	SAETY
+	GROUND TRUTH:	SAFETY
+train/word_2074.png	REVLON
+	GROUND TRUTH:	REVION
+train/word_21.png	buna
+	GROUND TRUTH:	bua
+train/word_2100.png	LoVE
+	GROUND TRUTH:	LOVE
+train/word_2101.png	OPTICAL88
+	GROUND TRUTH:	OPTICAL 88
+train/word_2113.png	FESTAVE
+	GROUND TRUTH:	FESIAT
+train/word_2120.png	EVHRYONE
+	GROUND TRUTH:	EVERYONE
+train/word_2137.png	Everydy
+	GROUND TRUTH:	Everyday
+train/word_2143.png	AE
+	GROUND TRUTH:	VIETNAM
+train/word_2144.png	INTERNAINAL
+	GROUND TRUTH:	INTERNATIONAL
+train/word_2169.png	HOSLANAN
+	GROUND TRUTH:	HORSLANAN
+train/word_2173.png	Sot
+	GROUND TRUTH:	Sottis
+train/word_2177.png	BE
+	GROUND TRUTH:	DZEN
+train/word_2185.png	Chrishias
+	GROUND TRUTH:	Christmas
+train/word_2187.png	ORG AL
+	GROUND TRUTH:	URG AL
+train/word_2191.png	ver
+	GROUND TRUTH:	very
+train/word_2193.png	Chosinaes
+	GROUND TRUTH:	Christmas
+train/word_2203.png	A
+	GROUND TRUTH:	IMAX
+train/word_2244.png	Inspire
+	GROUND TRUTH:	Inspired
+train/word_2245.png	Motivared
+	GROUND TRUTH:	Motivated
+train/word_2248.png	VICNCI
+	GROUND TRUTH:	VACANCY
+train/word_2261.png	Nesin
+	GROUND TRUTH:	Nelson
+train/word_2262.png	DeMl
+	GROUND TRUTH:	DeMille
+train/word_2264.png	Mile
+	GROUND TRUTH:	Mille
+train/word_2268.png	ROWING
+	GROUND TRUTH:	ROWLING
+train/word_2269.png	CASAL
+	GROUND TRUTH:	CASUAL
+train/word_2272.png	ROS
+	GROUND TRUTH:	ROSIE
+train/word_2276.png	chldren's
+	GROUND TRUTH:	children's
+train/word_2281.png	fILOFAX
+	GROUND TRUTH:	FILOFAX
+train/word_2284.png	accesoris
+	GROUND TRUTH:	accessories
+train/word_2286.png	lfestyle
+	GROUND TRUTH:	lifestyle
+train/word_23.png	Geneis
+	GROUND TRUTH:	Gen is
+train/word_2302.png	FEP
+	GROUND TRUTH:	PEP
+train/word_2309.png	Pe
+	GROUND TRUTH:	Payless
+train/word_2310.png	
+	GROUND TRUTH:	SHOESOURCE
+train/word_2321.png	Chrre
+	GROUND TRUTH:	chrec
+train/word_2334.png	Generatione
+	GROUND TRUTH:	Generation
+train/word_2338.png	McDoadss
+	GROUND TRUTH:	McDonalds
+train/word_2341.png	Sperial
+	GROUND TRUTH:	Special
+train/word_2354.png	SHOOL
+	GROUND TRUTH:	SCHOOL
+train/word_2360.png	Brter
+	GROUND TRUTH:	Better
+train/word_2364.png	.com
+	GROUND TRUTH:	com
+train/word_2376.png	BERTR
+	GROUND TRUTH:	BERTH
+train/word_2387.png	sunflowe
+	GROUND TRUTH:	sunflower
+train/word_2396.png	Magolae
+	GROUND TRUTH:	Magnolia
+train/word_2397.png	Croie
+	GROUND TRUTH:	Choice
+train/word_2424.png	European e
+	GROUND TRUTH:	European H
+train/word_2434.png	LOU
+	GROUND TRUTH:	ADU
+train/word_2435.png	O
+	GROUND TRUTH:	AUTHOR
+train/word_2437.png	ACO
+	GROUND TRUTH:	AOJIEOJBAKAS
+train/word_2438.png	AEO
+	GROUND TRUTH:	Econometrics
+train/word_2440.png	AWO
+	GROUND TRUTH:	DEBUNKING
+train/word_2441.png	AEWO
+	GROUND TRUTH:	ECONOMICS
+train/word_2463.png	theFt
+	GROUND TRUTH:	theft
+train/word_2470.png	uo
+	GROUND TRUTH:	union
+train/word_2471.png	m
+	GROUND TRUTH:	LD OF SPORTS
+train/word_2474.png	SingTel
+	GROUND TRUTH:	Singtel
+train/word_2501.png	Gbps
+	GROUND TRUTH:	1Gbps
+train/word_2509.png	AQuOS
+	GROUND TRUTH:	AQUOS
+train/word_2510.png	MRET
+	GROUND TRUTH:	MRBT
+train/word_2514.png	FO
+	GROUND TRUTH:	cache
+train/word_2515.png	FO
+	GROUND TRUTH:	cocho
+train/word_2516.png	cace@che
+	GROUND TRUTH:	cache
+train/word_2541.png	dENiZEN
+	GROUND TRUTH:	dENIZEN
+train/word_2562.png	Do your Note?
+	GROUND TRUTH:	Do you Note?
+train/word_2590.png	SUDS
+	GROUND TRUTH:	BIRDS
+train/word_2614.png	SiLVERS
+	GROUND TRUTH:	SILVERS
+train/word_2620.png	SA
+	GROUND TRUTH:	S ON
+train/word_2632.png	Harboran
+	GROUND TRUTH:	HarbourFront
+train/word_2635.png	PO
+	GROUND TRUTH:	POH
+train/word_2696.png	$31
+	GROUND TRUTH:	S31
+train/word_2704.png	ORIGANS
+	GROUND TRUTH:	ORIGINS
+train/word_2708.png	CO
+	GROUND TRUTH:	COA
+train/word_2713.png	Me
+	GROUND TRUTH:	Superdry.
+train/word_2720.png	cin
+	GROUND TRUTH:	citing
+train/word_2721.png	pier
+	GROUND TRUTH:	privileges
+train/word_2738.png	M
+	GROUND TRUTH:	Xpressflower.com
+train/word_2740.png	Garrer
+	GROUND TRUTH:	Garrett
+train/word_2743.png	BE
+	GROUND TRUTH:	JAPANESE
+train/word_2744.png	SOU
+	GROUND TRUTH:	GOUR
+train/word_2757.png	HO
+	GROUND TRUTH:	GHO
+train/word_2767.png	WI
+	GROUND TRUTH:	life
+train/word_2768.png	thn
+	GROUND TRUTH:	chi
+train/word_278.png	Sioeis
+	GROUND TRUTH:	Singapore's
+train/word_2789.png	SAT
+	GROUND TRUTH:	SAL
+train/word_2795.png	REOUSE
+	GROUND TRUTH:	REHOUSE
+train/word_2797.png	Calin
+	GROUND TRUTH:	Calvin
+train/word_2806.png	LCOCTINE
+	GROUND TRUTH:	L'OCCITANE
+train/word_281.png	The
+	GROUND TRUTH:	the
+train/word_2819.png	KO
+	GROUND TRUTH:	KOI
+train/word_2855.png	for
+	GROUND TRUTH:	FOR
+train/word_2871.png	AHIEARGYM
+	GROUND TRUTH:	AHITARGYM
+train/word_2889.png	tehiban
+	GROUND TRUTH:	lehiban
+train/word_2917.png	rerelers
+	GROUND TRUTH:	re
+train/word_2918.png	MRET
+	GROUND TRUTH:	ETT
+train/word_2919.png	CITYLiNK
+	GROUND TRUTH:	CiTYLiNK
+train/word_2924.png	B A7A
+	GROUND TRUTH:	B  ATA
+train/word_2925.png	CONCTO
+	GROUND TRUTH:	CONNECTION
+train/word_293.png	Transit
+	GROUND TRUTH:	Transist
+train/word_2933.png	KISSane
+	GROUND TRUTH:	KISSJane
+train/word_2939.png	Tnloerrss
+	GROUND TRUTH:	ThaiExpress
+train/word_294.png	FRESVER
+	GROUND TRUTH:	FRESEVER
+train/word_2940.png	SADSTOP!
+	GROUND TRUTH:	SALADSTOP!
+train/word_2994.png	Me
+	GROUND TRUTH:	MORE
+train/word_2995.png	SOUN
+	GROUND TRUTH:	MORE
+train/word_2996.png	EL
+	GROUND TRUTH:	LEVEL2
+train/word_2997.png	SAaN
+	GROUND TRUTH:	SHOPS
+train/word_2998.png	VO
+	GROUND TRUTH:	SHOPS
+train/word_2999.png	EL
+	GROUND TRUTH:	LEVEL2
+train/word_3000.png	VASSS
+	GROUND TRUTH:	VIASS
+train/word_3005.png	YDUR
+	GROUND TRUTH:	YDU
+train/word_3010.png	BOUTQUE
+	GROUND TRUTH:	BOUTIQUE
+train/word_3016.png	ViCtoINs
+	GROUND TRUTH:	victoria's
+train/word_3017.png	SECRT
+	GROUND TRUTH:	SECRET
+train/word_3021.png	PRECIOUS
+	GROUND TRUTH:	PRESIOUS
+train/word_3022.png	Tocts
+	GROUND TRUTH:	thots
+train/word_3038.png	COF
+	GROUND TRUTH:	OFF
+train/word_3041.png	me
+	GROUND TRUTH:	mentos
+train/word_3042.png	C
+	GROUND TRUTH:	mentos
+train/word_3043.png	me
+	GROUND TRUTH:	mentos
+train/word_3044.png	me
+	GROUND TRUTH:	mentos
+train/word_3046.png	me
+	GROUND TRUTH:	mentos
+train/word_3047.png	men
+	GROUND TRUTH:	mentos
+train/word_3048.png	men
+	GROUND TRUTH:	mentos
+train/word_3049.png	men
+	GROUND TRUTH:	mentos
+train/word_3050.png	men
+	GROUND TRUTH:	mento
+train/word_3059.png	MARKETLALE
+	GROUND TRUTH:	MARKETPLACE
+train/word_306.png	chll
+	GROUND TRUTH:	chill
+train/word_3066.png	AENENE
+	GROUND TRUTH:	ANE
+train/word_3071.png	SuSHI
+	GROUND TRUTH:	SUSHI
+train/word_3075.png	col
+	GROUND TRUTH:	sant
+train/word_3079.png	fod
+	GROUND TRUTH:	food
+train/word_3080.png	Boebcice
+	GROUND TRUTH:	foodrepublic
+train/word_3089.png	GAE
+	GROUND TRUTH:	CANS
+train/word_3090.png	BE
+	GROUND TRUTH:	PLASTIC
+train/word_3094.png	glde
+	GROUND TRUTH:	glide
+train/word_3095.png	pou
+	GROUND TRUTH:	our
+train/word_3096.png	S
+	GROUND TRUTH:	potential
+train/word_3097.png	wih
+	GROUND TRUTH:	with
+train/word_3102.png	norherswork
+	GROUND TRUTH:	notherswork
+train/word_3111.png	Blem
+	GROUND TRUTH:	Bleem
+train/word_3142.png	SKAING
+	GROUND TRUTH:	SKATING
+train/word_315.png	O
+	GROUND TRUTH:	OBAR
+train/word_316.png	A
+	GROUND TRUTH:	AMIN
+train/word_3177.png	cavali
+	GROUND TRUTH:	cavalli
+train/word_3205.png	YOKYO
+	GROUND TRUTH:	TOKYO
+train/word_3208.png	SUSHE
+	GROUND TRUTH:	SUSHI
+train/word_3219.png	CHNL
+	GROUND TRUTH:	CHANEL
+train/word_3227.png	HALANAD
+	GROUND TRUTH:	HALANA
+train/word_3234.png	GUSCI
+	GROUND TRUTH:	GUCCI
+train/word_3241.png	AD
+	GROUND TRUTH:	AED
+train/word_3243.png	NARDIN
+	GROUND TRUTH:	MARDIN
+train/word_325.png	WSONs
+	GROUND TRUTH:	WATSONS
+train/word_327.png	roemed
+	GROUND TRUTH:	redeeme
+train/word_3278.png	Eay
+	GROUND TRUTH:	Ean
+train/word_3287.png	SDT
+	GROUND TRUTH:	smrt
+train/word_3288.png	piaae
+	GROUND TRUTH:	iae
+train/word_3294.png	aoa
+	GROUND TRUTH:	ant
+train/word_3296.png	CONNETON
+	GROUND TRUTH:	CONNECTION
+train/word_331.png	HIVA
+	GROUND TRUTH:	HIVa
+train/word_332.png	Geat
+	GROUND TRUTH:	Great
+train/word_3321.png	LOBBYA
+	GROUND TRUTH:	LOBBY A
+train/word_3322.png	
+	GROUND TRUTH:	TOPSHOP
+train/word_3323.png	
+	GROUND TRUTH:	TOPMAN
+train/word_3324.png	PO
+	GROUND TRUTH:	TOPSHOP
+train/word_3339.png	OfNE
+	GROUND TRUTH:	off
+train/word_334.png	BAE
+	GROUND TRUTH:	PLAIN
+train/word_3343.png	SHOPING
+	GROUND TRUTH:	SHOPPING
+train/word_3352.png	pood
+	GROUND TRUTH:	promod
+train/word_3355.png	Sjyd
+	GROUND TRUTH:	Enjoyd
+train/word_336.png	TEE
+	GROUND TRUTH:	PLAIN
+train/word_3362.png	C
+	GROUND TRUTH:	SKE
+train/word_337.png	FEA
+	GROUND TRUTH:	PLAIN
+train/word_3374.png	Calim
+	GROUND TRUTH:	Calvin
+train/word_3378.png	ucCrar
+	GROUND TRUTH:	underwear
+train/word_338.png	Panadal
+	GROUND TRUTH:	Panadol
+train/word_3392.png	$10
+	GROUND TRUTH:	S10
+train/word_3403.png	RSALE
+	GROUND TRUTH:	SALE
+train/word_3429.png	SAL
+	GROUND TRUTH:	SALE
+train/word_3454.png	BODY
+	GROUND TRUTH:	ODY
+train/word_3484.png	SADE
+	GROUND TRUTH:	SALE
+train/word_3486.png	SWAROVS
+	GROUND TRUTH:	SWAROVSKI
+train/word_3487.png	SAREON
+	GROUND TRUTH:	SWAROVSKI
+train/word_3500.png	AE
+	GROUND TRUTH:	FOREVER
+train/word_3501.png	BE
+	GROUND TRUTH:	citibank
+train/word_3508.png	FOMR
+	GROUND TRUTH:	SINGA
+train/word_3509.png	C MPER
+	GROUND TRUTH:	C  MPER
+train/word_3510.png	LOVEE
+	GROUND TRUTH:	LOVE
+train/word_3515.png	REBASURAL
+	GROUND TRUTH:	URAL
+train/word_3528.png	DIFECTORY
+	GROUND TRUTH:	DIRECTORY
+train/word_3534.png	TENRYO
+	GROUND TRUTH:	TENRY
+train/word_3547.png	SHAROVS
+	GROUND TRUTH:	SWAROVS
+train/word_3554.png	Thais
+	GROUND TRUTH:	Thai
+train/word_3555.png	Thav
+	GROUND TRUTH:	Thava
+train/word_3558.png	Thav
+	GROUND TRUTH:	Thave
+train/word_3570.png	F.NIELLY
+	GROUND TRUTH:	F. NIELLY
+train/word_3575.png	GARTOUX
+	GROUND TRUTH:	BARTOUX
+train/word_3602.png	IoN
+	GROUND TRUTH:	Ion
+train/word_3613.png	Barrct
+	GROUND TRUTH:	Barret
+train/word_3633.png	Alic
+	GROUND TRUTH:	Alice
+train/word_3634.png	Pos
+	GROUND TRUTH:	Pols
+train/word_3659.png	SRINCARE
+	GROUND TRUTH:	GRINGARE
+train/word_3662.png	SEMI-ANHUAL
+	GROUND TRUTH:	SEMI-ANNUAL
+train/word_3666.png	F
+	GROUND TRUTH:	KIKKI.K
+train/word_3677.png	all.
+	GROUND TRUTH:	all
+train/word_3692.png	Marna
+	GROUND TRUTH:	Marina
+train/word_370.png	particulars
+	GROUND TRUTH:	particulary
+train/word_3700.png	Shtke
+	GROUND TRUTH:	Sookee
+train/word_3710.png	BreaTalk
+	GROUND TRUTH:	BreadTalk
+train/word_3714.png	ElI
+	GROUND TRUTH:	Eli
+train/word_3715.png	EXT
+	GROUND TRUTH:	EXIT
+train/word_3725.png	GRAPHICc
+	GROUND TRUTH:	GRAPHICS
+train/word_373.png	CanhCrdPtaniray
+	GROUND TRUTH:	CashCard/FlashPay/
+train/word_3730.png	SERET
+	GROUND TRUTH:	SECRET
+train/word_3733.png	lok
+	GROUND TRUTH:	lock
+train/word_3744.png	Grrct
+	GROUND TRUTH:	Garrett
+train/word_3745.png	THEFACESH
+	GROUND TRUTH:	THEFACESHO
+train/word_3747.png	Edtien
+	GROUND TRUTH:	Eddition
+train/word_3749.png	COLLC
+	GROUND TRUTH:	COLLECT
+train/word_3760.png	TA
+	GROUND TRUTH:	THE
+train/word_3761.png	SAIU
+	GROUND TRUTH:	SKIn
+train/word_3762.png	SOUN
+	GROUND TRUTH:	STUDIO
+train/word_3768.png	FON
+	GROUND TRUTH:	Hollk
+train/word_3769.png	Graad
+	GROUND TRUTH:	Grand
+train/word_3787.png	Aniversary
+	GROUND TRUTH:	Anniversary
+train/word_3810.png	colectpoit
+	GROUND TRUTH:	colectpoint
+train/word_3815.png	OSS
+	GROUND TRUTH:	SIS
+train/word_3825.png	REUER
+	GROUND TRUTH:	REVER
+train/word_3832.png	BL
+	GROUND TRUTH:	Blush!
+train/word_3834.png	Fon
+	GROUND TRUTH:	Freshly
+train/word_3835.png	bald
+	GROUND TRUTH:	baked
+train/word_3836.png	crinchy
+	GROUND TRUTH:	crunchy
+train/word_3839.png	coure
+	GROUND TRUTH:	course
+train/word_3859.png	LOTS
+	GROUND TRUTH:	OTS
+train/word_3865.png	ROBDSONS
+	GROUND TRUTH:	ROBINSONS
+train/word_3909.png	STORE,
+	GROUND TRUTH:	STORES,
+train/word_3912.png	THRIL
+	GROUND TRUTH:	THRILLS
+train/word_3913.png	BRANDS
+	GROUND TRUTH:	BRANDS,
+train/word_3916.png	RONON
+	GROUND TRUTH:	ROBINSONS
+train/word_3933.png	RETAL
+	GROUND TRUTH:	RETAIL
+train/word_3999.png	IMAGES
+	GROUND TRUTH:	I.MAGES
+train/word_4017.png	Singel
+	GROUND TRUTH:	SingTel
+train/word_4028.png	MATHARI
+	GROUND TRUTH:	MATAHARI
+train/word_4039.png	License
+	GROUND TRUTH:	Licence
+train/word_4049.png	LOREAL
+	GROUND TRUTH:	L'OREAL
+train/word_4052.png	msmes
+	GROUND TRUTH:	sms
+train/word_4059.png	Pre
+	GROUND TRUTH:	Price
+train/word_4070.png	DISCOUNTS!
+	GROUND TRUTH:	DISCOUNTS!!
+train/word_4079.png	HILOXENOS
+	GROUND TRUTH:	PHILOXENOS
+train/word_408.png	INFLUSE
+	GROUND TRUTH:	INFULSE
+train/word_4080.png	Veie
+	GROUND TRUTH:	Venice
+train/word_4102.png	KABAN
+	GROUND TRUTH:	KABAYAN
+train/word_4103.png	025
+	GROUND TRUTH:	02-25
+train/word_4131.png	AATEED
+	GROUND TRUTH:	ATTED
+train/word_4132.png	UGKY
+	GROUND TRUTH:	sexy
+train/word_4152.png	MaY
+	GROUND TRUTH:	HAPPY
+train/word_4156.png	Avalolil
+	GROUND TRUTH:	Available
+train/word_4157.png	Foal
+	GROUND TRUTH:	Foot
+train/word_4169.png	Tire
+	GROUND TRUTH:	Miguel
+train/word_4170.png	KICENE
+	GROUND TRUTH:	EXCELLENCE
+train/word_4182.png	Hais
+	GROUND TRUTH:	Hair
+train/word_4183.png	oalr
+	GROUND TRUTH:	salon
+train/word_4189.png	Seafood
+	GROUND TRUTH:	seafood
+train/word_4193.png	Highest
+	GROUND TRUTH:	Higest
+train/word_420.png	WELCOME
+	GROUND TRUTH:	WELKOME
+train/word_4217.png	TRA
+	GROUND TRUTH:	TRAS
+train/word_4218.png	RE
+	GROUND TRUTH:	RECYCLE
+train/word_4219.png	UESEN
+	GROUND TRUTH:	LASTIC
+train/word_4221.png	HER
+	GROUND TRUTH:	HERE
+train/word_4223.png	sensit
+	GROUND TRUTH:	sensitiv
+train/word_4230.png	efcy
+	GROUND TRUTH:	efficacy
+train/word_426.png	AO
+	GROUND TRUTH:	BECAUSE
+train/word_427.png	YO
+	GROUND TRUTH:	YOU
+train/word_4273.png	wIN
+	GROUND TRUTH:	WIN
+train/word_428.png	WI
+	GROUND TRUTH:	WILL
+train/word_4292.png	PO
+	GROUND TRUTH:	PEPERO
+train/word_4293.png	LO
+	GROUND TRUTH:	LOTTE
+train/word_4297.png	Krkare
+	GROUND TRUTH:	KitKat
+train/word_4331.png	Guss
+	GROUND TRUTH:	Gus
+train/word_4332.png	FNEN
+	GROUND TRUTH:	FNE
+train/word_4333.png	FO
+	GROUND TRUTH:	MACCHA
+train/word_4334.png	CO
+	GROUND TRUTH:	HOUSE
+train/word_4345.png	SE
+	GROUND TRUTH:	KILLNEY
+train/word_4346.png	BO
+	GROUND TRUTH:	BOAD
+train/word_4363.png	Orse
+	GROUND TRUTH:	orse
+train/word_4410.png	E
+	GROUND TRUTH:	AMKISOKI
+train/word_4417.png	CAPION
+	GROUND TRUTH:	CHAMPION
+train/word_4418.png	NANTSUTE
+	GROUND TRUTH:	NANTSUTTE
+train/word_4419.png	SINGAFORE
+	GROUND TRUTH:	SINGAPORE
+train/word_442.png	Silkwon
+	GROUND TRUTH:	Silkworm
+train/word_4420.png	SYERS
+	GROUND TRUTH:	5YEARS
+train/word_4430.png	BER
+	GROUND TRUTH:	BEER
+train/word_4447.png	BRMAL
+	GROUND TRUTH:	BR  AL
+train/word_4458.png	CAKELBEK
+	GROUND TRUTH:	CAMELBAK
+train/word_4467.png	exclisie
+	GROUND TRUTH:	exclusives
+train/word_447.png	AL
+	GROUND TRUTH:	Silkworm
+train/word_450.png	pucsaned
+	GROUND TRUTH:	purchases
+train/word_454.png	Pillo.
+	GROUND TRUTH:	Pillow.
+train/word_462.png	SEASONI
+	GROUND TRUTH:	SESONI
+train/word_475.png	JAROVICH
+	GROUND TRUTH:	VAROVICH
+train/word_476.png	AWO
+	GROUND TRUTH:	AWOOD
+train/word_477.png	AlWO
+	GROUND TRUTH:	ATWOOD
+train/word_479.png	ATWO
+	GROUND TRUTH:	ATWOOD
+train/word_480.png	SEN
+	GROUND TRUTH:	MENS
+train/word_481.png	SEO
+	GROUND TRUTH:	WEASEL
+train/word_482.png	SEN
+	GROUND TRUTH:	MENS
+train/word_486.png	RAN
+	GROUND TRUTH:	RISING
+train/word_488.png	RAN
+	GROUND TRUTH:	RISING
+train/word_489.png	PO
+	GROUND TRUTH:	000
+train/word_490.png	SEL
+	GROUND TRUTH:	ELLE
+train/word_491.png	BA
+	GROUND TRUTH:	JEFFREY
+train/word_492.png	BEL
+	GROUND TRUTH:	JEFFREY
+train/word_493.png	BOL
+	GROUND TRUTH:	ARCHER
+train/word_494.png	A
+	GROUND TRUTH:	ARCHER
+train/word_496.png	LARt
+	GROUND TRUTH:	Target
+train/word_519.png	ARE
+	GROUND TRUTH:	ART
+train/word_520.png	COMIN
+	GROUND TRUTH:	COMMON
+train/word_522.png	choqura
+	GROUND TRUTH:	choque
+train/word_566.png	THE-MAMAGEMENT
+	GROUND TRUTH:	THEMANAGEMENT
+train/word_581.png	BEaUty
+	GROUND TRUTH:	BEAUTY
+train/word_611.png	Vanila
+	GROUND TRUTH:	Vanilla
+train/word_614.png	PaOadol
+	GROUND TRUTH:	PANAD
+train/word_620.png	Pour
+	GROUND TRUTH:	hour
+train/word_64.png	Passenger
+	GROUND TRUTH:	Pasenger
+train/word_657.png	Passenger
+	GROUND TRUTH:	Passanger
+train/word_660.png	Pasier
+	GROUND TRUTH:	Passenger
+train/word_682.png	Singapore
+	GROUND TRUTH:	Sinagpore
+train/word_684.png	Say
+	GROUND TRUTH:	Sav
+train/word_685.png	SALE
+	GROUND TRUTH:	5367
+train/word_690.png	Toastwich
+	GROUND TRUTH:	toastwich
+train/word_70.png	hela
+	GROUND TRUTH:	nela
+train/word_709.png	BE
+	GROUND TRUTH:	Umisushi
+train/word_717.png	TUCSHOP
+	GROUND TRUTH:	TUCKSHOP
+train/word_737.png	KECEMASE
+	GROUND TRUTH:	KECEMASA
+train/word_744.png	UnioPay
+	GROUND TRUTH:	UnionPay
+train/word_760.png	SO
+	GROUND TRUTH:	Recycle!
+train/word_796.png	Iskandar
+	GROUND TRUTH:	Iskadar
+train/word_80.png	with
+	GROUND TRUTH:	wiht
+train/word_806.png	(US$1.57
+	GROUND TRUTH:	(US$1,57
+train/word_822.png	home
+	GROUND TRUTH:	home.
+train/word_827.png	Waling
+	GROUND TRUTH:	Walking
+train/word_833.png	SAM
+	GROUND TRUTH:	SAH
+train/word_839.png	sww.ioo.sn
+	GROUND TRUTH:	www.imob.sg
+train/word_840.png	space
+	GROUND TRUTH:	Space
+train/word_842.png	IMOP
+	GROUND TRUTH:	iMOD
+train/word_86.png	nae
+	GROUND TRUTH:	rale
+train/word_90.png	Facuty
+	GROUND TRUTH:	Faculty
+train/word_906.png	BEAUTIL
+	GROUND TRUTH:	BEAUTIFUL
+train/word_91.png	Engie
+	GROUND TRUTH:	Engine
+train/word_949.png	Ss
+	GROUND TRUTH:	Sbge

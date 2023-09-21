@@ -95,12 +95,12 @@ class BaseDataAugmentation(object):
         if random.random() <= self.reverse_prob:
             img = 255 - img
 
-        if random.random() <= 0.1:
+        if random.random() <= 0.4:
             seq = iaa.Sequential([
                 iaa.Affine(
                     # scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
                     # translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)},
-                    rotate=(-1, 1),
+                    rotate=(-6, 6),
                     # shear=(-8, 8),
                     fit_output=True,
                     cval=128

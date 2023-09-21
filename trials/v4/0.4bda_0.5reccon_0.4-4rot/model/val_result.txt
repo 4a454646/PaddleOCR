@@ -1,0 +1,940 @@
+cards_crops/headings/0_2021_1c0bf4daff30c89f1f7482a446db33e2ad5c4549.jpg	JACOR
+															GROUND TRUTH:	JACOB
+cards_crops/headings/1_2021_0f9f8ce9bf466afea9c559da6bc1d5cd2ce73c69.jpg	SMEDINA
+															GROUND TRUTH:	MEDINA
+cards_crops/headings/1_2021_1c5d386c61dda5a072f463a0cdcaffcef27fbde6.jpg	TPIJOLS
+															GROUND TRUTH:	PUJOLS
+cards_crops/headings/2_2021_00fa43c3250d51b7fe9dc6e7b6a37296af8d6691.jpg	GHICAGO
+															GROUND TRUTH:	CHICAGO
+cards_crops/headings/2_2021_1c0bf4daff30c89f1f7482a446db33e2ad5c4549.jpg	NEN
+															GROUND TRUTH:	NEW
+cards_crops/headings/3_2021_00fa43c3250d51b7fe9dc6e7b6a37296af8d6691.jpg	WRITE
+															GROUND TRUTH:	WHITE
+gc_ori/0_42.jpg	Beisbo
+GROUND TRUTH:	Beisbol
+gc_ori/122_43.jpg	Baseball
+	GROUND TRUTH:	Basaball
+gc_ori/125_21.jpg	Inc.
+	GROUND TRUTH:	inc.
+gc_ori/12_34.jpg	THROWS:
+	GROUND TRUTH:	THROWS
+gc_ori/12_37.jpg	SGND:
+	GROUND TRUTH:	SGND
+gc_ori/13_18.jpg	#6-JUNE.
+	GROUND TRUTH:	#6-JUNE
+gc_ori/13_4.jpg	BOCKIES
+GROUND TRUTH:	ROCKIES
+gc_ori/142_14.jpg	Boston
+	GROUND TRUTH:	Bostor
+gc_ori/152_14.jpg	TOPPS
+	GROUND TRUTH:	TOPP
+gc_ori/158_14.jpg	COMPANY
+	GROUND TRUTH:	CMPAWY
+gc_ori/171_14.jpg	Basebell
+	GROUND TRUTH:	Baseball
+gc_ori/17_39.jpg	#1-JUNE
+	GROUND TRUTH:	#1-JUNE,
+gc_ori/180_16.jpg	MLOPLAYERS.
+	GROUND TRUTH:	MLBPLAYERS
+gc_ori/185_16.jpg	Licene
+	GROUND TRUTH:	Licensed
+gc_ori/188_9.jpg	INC.
+	GROUND TRUTH:	INC
+gc_ori/189_26.jpg	RADE
+	GROUND TRUTH:	TRADE
+gc_ori/192_14.jpg	Offcially
+	GROUND TRUTH:	Officially
+gc_ori/192_41.jpg	Baseball
+	GROUND TRUTH:	Baseball.
+gc_ori/19_4.jpg	ROCKIES,
+GROUND TRUTH:	ROCKIES
+gc_ori/1_37.jpg	SAINSHIEZ
+GROUND TRUTH:	SANCHEZ
+gc_ori/1_42.jpg	Chicagos
+GROUND TRUTH:	Chicago
+gc_ori/20_37.jpg	D.R.
+	GROUND TRUTH:	O.R.
+gc_ori/231_37.jpg	Produc
+	GROUND TRUTH:	Product
+gc_ori/238_28.jpg	UICENSED
+	GROUND TRUTH:	LICENSED
+gc_ori/24_4.jpg	BEACH,
+GROUND TRUTH:	BEACH.
+gc_ori/283_36.jpg	LAYERS.COM
+	GROUND TRUTH:	LAYERS.COM.
+gc_ori/285_8.jpg	.COM
+	GROUND TRUTH:	.COM.
+gc_ori/28_28.jpg	MONICA
+	GROUND TRUTH:	MONICA.
+gc_ori/292_18.jpg	LBPLAYERS.COM.
+	GROUND TRUTH:	LBPLAYERS.COM
+gc_ori/29_37.jpg	PHILLIES,
+	GROUND TRUTH:	PHILLIES.
+gc_ori/34_18.jpg	9-17-90.
+	GROUND TRUTH:	9-17-90
+gc_ori/3_11.jpg	JO
+GROUND TRUTH:	J0
+gc_ori/4_43.jpg	GRANOAL
+GROUND TRUTH:	GRANDAL
+gc_ori/51_21.jpg	career,
+	GROUND TRUTH:	career.
+gc_ori/58_8.jpg	(2018-19)
+GROUND TRUTH:	(2018-19
+gc_ori/5_40.jpg	FLAHERTY/
+GROUND TRUTH:	FLAHERTY/P
+gc_ori/5_7.jpg	CHRNSTAN
+GROUND TRUTH:	CHRISTIAN
+gc_ori/66_43.jpg	\How
+	GROUND TRUTH:	How
+gc_ori/74_21.jpg	
+	GROUND TRUTH:	P
+gc_ori/7_10.jpg	M
+GROUND TRUTH:	NM
+gc_ori/7_7.jpg	RERERS
+GROUND TRUTH:	BREWERS
+gc_ori/89_3.jpg	starter,
+GROUND TRUTH:	starter.
+output/color_image/images/000000077.jpg	MUMBOOUMBO
+						GROUND TRUTH:	MUMBOJUMBO
+output/color_image/images/000000380.jpg	SUPERCOMPUTER,
+						GROUND TRUTH:	SUPERCOMPUTER.
+output/compact_char_spacing/images/000000035.jpg	guardted
+									GROUND TRUTH:	guarded
+output/compact_char_spacing/images/000000038.jpg	PRARES,
+									GROUND TRUTH:	PRAIRIES,
+output/compact_char_spacing/images/000000053.jpg	23
+									GROUND TRUTH:	.23
+output/compact_char_spacing/images/000000099.jpg	Qirecwuap,
+									GROUND TRUTH:	Quirkelburp,
+output/compact_char_spacing/images/000000119.jpg	,.,
+									GROUND TRUTH:	,..
+output/compact_char_spacing/images/000000137.jpg	Mumtbogjumibo
+									GROUND TRUTH:	Mumbojumbo
+output/compact_char_spacing/images/000000192.jpg	lesage
+									GROUND TRUTH:	beverage,
+output/compact_char_spacing/images/000000247.jpg	goolplerian
+									GROUND TRUTH:	googolplexian
+output/compact_char_spacing/images/000000263.jpg	90,
+									GROUND TRUTH:	90;
+output/compact_char_spacing/images/000000266.jpg	NFINTY
+									GROUND TRUTH:	INFINITY
+output/compact_char_spacing/images/000000275.jpg	Dooladir,
+									GROUND TRUTH:	Doodadifier,
+output/compact_char_spacing/images/000000312.jpg	Capain
+									GROUND TRUTH:	Captain
+output/compact_char_spacing/images/000000313.jpg	CONTINUUM
+									GROUND TRUTH:	CONTINUUM,
+output/compact_char_spacing/images/000000319.jpg	Captin
+									GROUND TRUTH:	Captain
+output/compact_char_spacing/images/000000370.jpg	I0I
+									GROUND TRUTH:	III
+output/compact_char_spacing/images/000000385.jpg	.,.,
+									GROUND TRUTH:	.,-,.
+output/compact_char_spacing/images/000000393.jpg	EARTH
+									GROUND TRUTH:	EARTH,
+output/compact_char_spacing/images/000000407.jpg	pidis,
+									GROUND TRUTH:	prairies,
+output/compact_char_spacing/images/000000443.jpg	10,09
+									GROUND TRUTH:	19,999
+output/compact_char_spacing/images/000000454.jpg	thraugh
+									GROUND TRUTH:	through
+output/compact_char_spacing/images/000000474.jpg	fluux
+									GROUND TRUTH:	flux
+output/compact_char_spacing/images/000000516.jpg	fcdled
+									GROUND TRUTH:	frolicked
+output/compact_char_spacing/images/000000540.jpg	aebna
+									GROUND TRUTH:	zebra
+output/compact_char_spacing/images/000000545.jpg	7,8654,321
+									GROUND TRUTH:	7,654,321
+output/compact_char_spacing/images/000000568.jpg	Qest
+									GROUND TRUTH:	Quest
+output/compact_char_spacing/images/000000584.jpg	beverag.
+									GROUND TRUTH:	beverage,
+output/compact_char_spacing/images/000000591.jpg	1
+									GROUND TRUTH:	.1
+output/compact_char_spacing/images/000000626.jpg	4,1b7,100
+									GROUND TRUTH:	4,567,890
+output/dropout_horizontal/images/000000006.jpg	4,567,990
+								GROUND TRUTH:	4,567,890
+output/dropout_horizontal/images/000000035.jpg	FLOX
+								GROUND TRUTH:	FLUX
+output/dropout_horizontal/images/000000093.jpg	493-LLADLD
+								GROUND TRUTH:	493-HEADED
+output/dropout_horizontal/images/000000126.jpg	nis
+								GROUND TRUTH:	his
+output/dropout_horizontal/images/000000150.jpg	ewz
+								GROUND TRUTH:	owz
+output/dropout_horizontal/images/000000247.jpg	#f
+								GROUND TRUTH:	#
+output/dropout_horizontal/images/000000271.jpg	OF
+								GROUND TRUTH:	OP
+output/dropout_horizontal/images/000000279.jpg	TO,
+								GROUND TRUTH:	78,
+output/dropout_horizontal/images/000000315.jpg	Of
+								GROUND TRUTH:	of
+output/dropout_horizontal/images/000000325.jpg	qulckly
+								GROUND TRUTH:	quickly
+output/dropout_horizontal/images/000000343.jpg	2+5-7
+								GROUND TRUTH:	2+5=7
+output/dropout_horizontal/images/000000348.jpg	cra
+								GROUND TRUTH:	era
+output/dropout_horizontal/images/000000350.jpg	Plnet
+								GROUND TRUTH:	Planet
+output/dropout_horizontal/images/000000437.jpg	us
+								GROUND TRUTH:	as
+output/dropout_horizontal/images/000000465.jpg	OUICKLY
+								GROUND TRUTH:	QUICKLY
+output/dropout_horizontal/images/000000477.jpg	Froobiedinks
+								GROUND TRUTH:	Froobledinks
+output/dropout_horizontal/images/000000576.jpg	AMIDET
+								GROUND TRUTH:	AMIDST
+output/dropout_horizontal/images/000000616.jpg	SUPERGOMPUTER,
+								GROUND TRUTH:	SUPERCOMPUTER.
+output/dropout_horizontal/images/000000642.jpg	ZIXRLORT
+								GROUND TRUTH:	ZIXBLORT
+output/dropout_horizontal/images/000000670.jpg	cvmcocted
+								GROUND TRUTH:	concocted
+output/dropout_horizontal/images/000000674.jpg	,,
+								GROUND TRUTH:	.,,
+output/dropout_horizontal/images/000000678.jpg	lear
+								GROUND TRUTH:	lean
+output/dropout_rand/images/000000011.jpg	2
+							GROUND TRUTH:	a
+output/dropout_rand/images/000000017.jpg	NEBUL0TRON-42
+							GROUND TRUTH:	NEBULOTRON-42
+output/dropout_rand/images/000000134.jpg	SUPERCOMPUTER,
+							GROUND TRUTH:	SUPERCOMPUTER.
+output/dropout_rand/images/000000139.jpg	ap
+							GROUND TRUTH:	III
+output/dropout_rand/images/000000388.jpg	comicaliy
+							GROUND TRUTH:	comically
+output/dropout_rand/images/000000560.jpg	GIGGLEBLASTER-9OO0,
+							GROUND TRUTH:	GIGGLEBLASTER-9000.
+output/dropout_vertical/images/000000005.jpg	.
+								GROUND TRUTH:	A
+output/dropout_vertical/images/000000009.jpg	u,.
+								GROUND TRUTH:	Ali
+output/dropout_vertical/images/000000014.jpg	hebde,
+								GROUND TRUTH:	Nebula,
+output/dropout_vertical/images/000000015.jpg	.,.,.
+								GROUND TRUTH:	.,-,.
+output/dropout_vertical/images/000000016.jpg	31,
+								GROUND TRUTH:	34,
+output/dropout_vertical/images/000000017.jpg	on
+								GROUND TRUTH:	of
+output/dropout_vertical/images/000000029.jpg	19,997
+								GROUND TRUTH:	19,999
+output/dropout_vertical/images/000000039.jpg	ANIDST
+								GROUND TRUTH:	AMIDST
+output/dropout_vertical/images/000000051.jpg	Saream
+								GROUND TRUTH:	Scream
+output/dropout_vertical/images/000000062.jpg	the
+								GROUND TRUTH:	THE
+output/dropout_vertical/images/000000070.jpg	zorO
+								GROUND TRUTH:	zero
+output/dropout_vertical/images/000000085.jpg	BLASTER
+								GROUND TRUTH:	BLASTER,
+output/dropout_vertical/images/000000093.jpg	DEVIGE
+								GROUND TRUTH:	DEVICE
+output/dropout_vertical/images/000000129.jpg	oof
+								GROUND TRUTH:	of
+output/dropout_vertical/images/000000132.jpg	aliery
+								GROUND TRUTH:	aliens
+output/dropout_vertical/images/000000138.jpg	a
+								GROUND TRUTH:	12,
+output/dropout_vertical/images/000000147.jpg	54,
+								GROUND TRUTH:	34,
+output/dropout_vertical/images/000000152.jpg	Th
+								GROUND TRUTH:	A
+output/dropout_vertical/images/000000157.jpg	Earh,
+								GROUND TRUTH:	Earth,
+output/dropout_vertical/images/000000166.jpg	favarie
+								GROUND TRUTH:	favorite
+output/dropout_vertical/images/000000169.jpg	NAVIGA-TING
+								GROUND TRUTH:	NAVIGATING
+output/dropout_vertical/images/000000189.jpg	oversize:l
+								GROUND TRUTH:	oversized
+output/dropout_vertical/images/000000192.jpg	PCLKA-LO'T
+								GROUND TRUTH:	POLKA-DOT
+output/dropout_vertical/images/000000201.jpg	2.-5=7
+								GROUND TRUTH:	2+5=7
+output/dropout_vertical/images/000000236.jpg	SVS
+								GROUND TRUTH:	,..
+output/dropout_vertical/images/000000243.jpg	LES
+								GROUND TRUTH:	LED
+output/dropout_vertical/images/000000244.jpg	TEANSDIMENSIONAL
+								GROUND TRUTH:	TRANSDIMENSIONAL
+output/dropout_vertical/images/000000259.jpg	ths
+								GROUND TRUTH:	.,-,.
+output/dropout_vertical/images/000000265.jpg	Frobpledinrs
+								GROUND TRUTH:	Froobledinks
+output/dropout_vertical/images/000000290.jpg	MEAMWHILE,
+								GROUND TRUTH:	MEANWHILE,
+output/dropout_vertical/images/000000299.jpg	jouney
+								GROUND TRUTH:	journey
+output/dropout_vertical/images/000000300.jpg	INNENTOR
+								GROUND TRUTH:	INVENTOR
+output/dropout_vertical/images/000000309.jpg	NVB2=1
+								GROUND TRUTH:	9/3=1
+output/dropout_vertical/images/000000313.jpg	Mumboumbo
+								GROUND TRUTH:	Mumbojumbo
+output/dropout_vertical/images/000000331.jpg	3-5=7
+								GROUND TRUTH:	2+5=7
+output/dropout_vertical/images/000000335.jpg	tith
+								GROUND TRUTH:	with
+output/dropout_vertical/images/000000340.jpg	a
+								GROUND TRUTH:	A
+output/dropout_vertical/images/000000358.jpg	Oz
+								GROUND TRUTH:	Oz,
+output/dropout_vertical/images/000000382.jpg	tHE
+								GROUND TRUTH:	the
+output/dropout_vertical/images/000000383.jpg	spaceshp
+								GROUND TRUTH:	spaceship
+output/dropout_vertical/images/000000389.jpg	tER
+								GROUND TRUTH:	YEAR
+output/dropout_vertical/images/000000395.jpg	9
+								GROUND TRUTH:	A
+output/dropout_vertical/images/000000410.jpg	O
+								GROUND TRUTH:	Op
+output/dropout_vertical/images/000000418.jpg	RINOWNED
+								GROUND TRUTH:	RENOWNED
+output/dropout_vertical/images/000000427.jpg	LASER,
+								GROUND TRUTH:	LASER
+output/dropout_vertical/images/000000437.jpg	EARTIX,
+								GROUND TRUTH:	EARTH,
+output/dropout_vertical/images/000000442.jpg	7,65=,321
+								GROUND TRUTH:	7,654,321
+output/dropout_vertical/images/000000460.jpg	Meanahile,
+								GROUND TRUTH:	Meanwhile,
+output/dropout_vertical/images/000000483.jpg	o
+								GROUND TRUTH:	BY
+output/dropout_vertical/images/000000485.jpg	tp
+								GROUND TRUTH:	TO
+output/dropout_vertical/images/000000490.jpg	eot
+								GROUND TRUTH:	lean
+output/dropout_vertical/images/000000495.jpg	Snickleshnort
+								GROUND TRUTH:	Snickleshnort,
+output/dropout_vertical/images/000000504.jpg	knowm
+								GROUND TRUTH:	known
+output/dropout_vertical/images/000000511.jpg	SPPING
+								GROUND TRUTH:	SIPPING
+output/dropout_vertical/images/000000536.jpg	TH
+								GROUND TRUTH:	up
+output/dropout_vertical/images/000000563.jpg	T.
+								GROUND TRUTH:	Ali
+output/dropout_vertical/images/000000567.jpg	3545
+								GROUND TRUTH:	3,246
+output/dropout_vertical/images/000000578.jpg	of
+								GROUND TRUTH:	&
+output/dropout_vertical/images/000000611.jpg	HYORSA.
+								GROUND TRUTH:	HYDRA.
+output/dropout_vertical/images/000000613.jpg	ion
+								GROUND TRUTH:	in
+output/dropout_vertical/images/000000625.jpg	io
+								GROUND TRUTH:	#
+output/dropout_vertical/images/000000628.jpg	oop
+								GROUND TRUTH:	in
+output/dropout_vertical/images/000000631.jpg	th
+								GROUND TRUTH:	the
+output/dropout_vertical/images/000000672.jpg	oad
+								GROUND TRUTH:	sail.
+output/dropout_vertical/images/000000673.jpg	gudance
+								GROUND TRUTH:	guidance
+output/dropout_vertical/images/000000687.jpg	If
+								GROUND TRUTH:	IN
+output/dropout_vertical/images/000000689.jpg	supercomputer,
+								GROUND TRUTH:	supercomputer.
+output/dropout_vertical/images/000000691.jpg	HYORA.
+								GROUND TRUTH:	HYDRA.
+output/emboss/images/000000341.jpg	OWZ
+					GROUND TRUTH:	owz
+output/emboss/images/000000488.jpg	SeCuTc
+					GROUND TRUTH:	secure
+output/emboss/images/000000574.jpg	10,703
+					GROUND TRUTH:	18,763
+output/extra_text_line_layout/images/000000192.jpg	OwZ
+									GROUND TRUTH:	owz
+output/extra_text_line_layout/images/000000597.jpg	SUPERCOMPVTER,
+									GROUND TRUTH:	SUPERCOMPUTER.
+output/large_char_spacing/images/000000300.jpg	oWZ
+								GROUND TRUTH:	OWZ
+output/large_char_spacing/images/000000338.jpg	fog+
+								GROUND TRUTH:	fog.
+output/large_char_spacing/images/000000570.jpg	TIME.TRAVELING
+								GROUND TRUTH:	TIME-TRAVELING
+output/line_horizontal_middle/images/000000035.jpg	COMCALLY
+									GROUND TRUTH:	COMICALLY
+output/line_horizontal_middle/images/000000044.jpg	.,,
+									GROUND TRUTH:	..,
+output/line_horizontal_middle/images/000000048.jpg	wormboles
+									GROUND TRUTH:	wormholes
+output/line_horizontal_middle/images/000000177.jpg	Oo:oO,
+									GROUND TRUTH:	Oo.0O,
+output/line_horizontal_middle/images/000000260.jpg	jollyfish
+									GROUND TRUTH:	jellyfish
+output/line_horizontal_middle/images/000000276.jpg	whimsicall
+									GROUND TRUTH:	whimsical
+output/line_horizontal_middle/images/000000308.jpg	EOCH
+									GROUND TRUTH:	EACH
+output/line_horizontal_middle/images/000000556.jpg	strotchod
+									GROUND TRUTH:	stretched
+output/line_horizontal_middle/images/000000577.jpg	cra
+									GROUND TRUTH:	era
+output/line_horizontal_middle/images/000000682.jpg	is_Ill
+									GROUND TRUTH:	is_Ill.
+output/line_horizontal_middle/images/000000691.jpg	code,
+									GROUND TRUTH:	code:
+output/line_left/images/000000045.jpg	Oo:OO,
+						GROUND TRUTH:	Oo.0O,
+output/line_left/images/000000051.jpg	II
+						GROUND TRUTH:	III
+output/line_left/images/000000173.jpg	,9087
+						GROUND TRUTH:	.9087
+output/line_left/images/000000545.jpg	SUPERCOMPUTER,
+						GROUND TRUTH:	SUPERCOMPUTER.
+output/line_right/images/000000231.jpg	FAVORTE
+						GROUND TRUTH:	FAVORITE
+output/line_right/images/000000409.jpg	120
+						GROUND TRUTH:	1:20
+output/line_top/images/000000094.jpg	whimsica
+						GROUND TRUTH:	whimsical
+output/line_top_left/images/000000560.jpg	koown
+							GROUND TRUTH:	known
+output/line_top_right/images/000000143.jpg	Oo.00,
+							GROUND TRUTH:	Oo.0O,
+output/line_top_right/images/000000624.jpg	WHIMSICAT
+							GROUND TRUTH:	WHIMSICAL
+output/line_top_right/images/000000626.jpg	owz
+							GROUND TRUTH:	OWZ
+output/line_vertical_middle/images/000000013.jpg	Frbobledinks
+									GROUND TRUTH:	Froobledinks
+output/line_vertical_middle/images/000000014.jpg	ZOGGIONIA,
+									GROUND TRUTH:	ZOGGLONIA,
+output/line_vertical_middle/images/000000034.jpg	INFNITY
+									GROUND TRUTH:	INFINITY
+output/line_vertical_middle/images/000000057.jpg	FROOBLEDIUKS
+									GROUND TRUTH:	FROOBLEDINKS
+output/line_vertical_middle/images/000000255.jpg	fluc
+									GROUND TRUTH:	flux
+output/line_vertical_middle/images/000000579.jpg	kndwn
+									GROUND TRUTH:	known
+output/line_vertical_middle/images/000000654.jpg	FAVDRITE
+									GROUND TRUTH:	FAVORITE
+output/line_vertical_middle/images/000000656.jpg	SUPERCOMPUTER,
+									GROUND TRUTH:	SUPERCOMPUTER.
+output/padding/images/000000324.jpg	Doodadificr,
+					GROUND TRUTH:	Doodadifier,
+output/same_line_layout_different_font_size/images/000000430.jpg	Heo  World!
+													GROUND TRUTH:	Hello  World!
+rec_test_crops/0_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	CHMPLONS
+												GROUND TRUTH:	CHAMPIONS
+rec_test_crops/0_3e17aa8f-485b-4cad-8981-f12fd38cb505_cropped.png	ALDEADERS
+													GROUND TRUTH:	AL LEADERS
+rec_test_crops/0_4bc4a412-9ff6-4496-ac21-93d651937be6_cropped.png	ANGKLS
+													GROUND TRUTH:	ANGELS
+rec_test_crops/100_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	RECORO
+												GROUND TRUTH:	RECORD
+rec_test_crops/106_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	OF
+												GROUND TRUTH:	or
+rec_test_crops/109_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	eitherMaior
+												GROUND TRUTH:	either Maior
+rec_test_crops/10_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	HT:6'4'
+												GROUND TRUTH:	HT:6'4
+rec_test_crops/10_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	BBAVES
+												GROUND TRUTH:	BRAVES
+rec_test_crops/110_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	League,Baseball
+												GROUND TRUTH:	League.Baseball
+rec_test_crops/111_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	oF
+												GROUND TRUTH:	or
+rec_test_crops/112_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	@TM&C
+												GROUND TRUTH:	.TM&C
+rec_test_crops/114_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Pronerties
+												GROUND TRUTH:	Properties
+rec_test_crops/116_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	COMPLNY
+												GROUND TRUTH:	COMPANY
+rec_test_crops/117_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	0
+												GROUND TRUTH:	O
+rec_test_crops/118_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	IS
+												GROUND TRUTH:	is
+rec_test_crops/119_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	RICHTS
+												GROUND TRUTH:	RIGHTS
+rec_test_crops/123_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	tOPPS
+												GROUND TRUTH:	TOPPS
+rec_test_crops/126_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	WWW
+												GROUND TRUTH:	www.
+rec_test_crops/128_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	topps
+												GROUND TRUTH:	toppS
+rec_test_crops/128_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Con
+												GROUND TRUTH:	com
+rec_test_crops/129_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	8@2019THE
+												GROUND TRUTH:	&2019THE
+rec_test_crops/130_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	3W
+												GROUND TRUTH:	3
+rec_test_crops/132_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	NC
+												GROUND TRUTH:	INC
+rec_test_crops/134_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	RIGHIS
+												GROUND TRUTH:	RIGHTS
+rec_test_crops/135_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	RESERVED
+												GROUND TRUTH:	BESERVED
+rec_test_crops/136_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	@
+												GROUND TRUTH:	O
+rec_test_crops/138_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Ranini
+												GROUND TRUTH:	Panini
+rec_test_crops/138_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	0
+												GROUND TRUTH:	D
+rec_test_crops/139_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	America,
+												GROUND TRUTH:	America
+rec_test_crops/13_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	THRIWS
+												GROUND TRUTH:	THROWS
+rec_test_crops/13_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	6'4"
+												GROUND TRUTH:	6'4''
+rec_test_crops/142_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	OFTHE
+												GROUND TRUTH:	OF THE
+rec_test_crops/142_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	inthe
+												GROUND TRUTH:	in the
+rec_test_crops/145_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	INC.
+												GROUND TRUTH:	.INC.
+rec_test_crops/149_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Players.
+												GROUND TRUTH:	Plavers.
+rec_test_crops/150_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Inc
+												GROUND TRUTH:	-Inc
+rec_test_crops/155_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	0
+												GROUND TRUTH:	G
+rec_test_crops/156_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	ofFame
+												GROUND TRUTH:	of Fame
+rec_test_crops/161_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Inc.
+												GROUND TRUTH:	Inc,
+rec_test_crops/162_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	DFFICTALLY
+												GROUND TRUTH:	DFFICIALLY
+rec_test_crops/163_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	LICEVSED
+												GROUND TRUTH:	LICENSED
+rec_test_crops/163_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	C
+												GROUND TRUTH:	8
+rec_test_crops/164_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	PRODUC
+												GROUND TRUTH:	PRODUCT
+rec_test_crops/16_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	DRAFTFD
+												GROUND TRUTH:	DRAFTED
+rec_test_crops/172_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	ofFarme
+												GROUND TRUTH:	of Fame
+rec_test_crops/176_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	.
+												GROUND TRUTH:	-
+rec_test_crops/177_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	(65
+												GROUND TRUTH:	(5
+rec_test_crops/182_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	749,1
+												GROUND TRUTH:	749.1
+rec_test_crops/185_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	COMPANY
+												GROUND TRUTH:	CDMPANY
+rec_test_crops/18_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	#1-IUNE
+												GROUND TRUTH:	#1-JUNE
+rec_test_crops/195_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	02020
+												GROUND TRUTH:	2020
+rec_test_crops/198_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	CONPANY
+												GROUND TRUTH:	COMPANY
+rec_test_crops/19_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	RUNs
+												GROUND TRUTH:	RUNS
+rec_test_crops/1_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	HINTER
+												GROUND TRUTH:	HUNTER
+rec_test_crops/1_IMG20230622110520.jpg	GARSIA
+						GROUND TRUTH:	GARCIA
+rec_test_crops/201_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	BIGHTS
+												GROUND TRUTH:	RIGHTS
+rec_test_crops/206_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	copyright:
+												GROUND TRUTH:	copvrights
+rec_test_crops/207_IMG20230622110003.jpg	INC.
+							GROUND TRUTH:	INC
+rec_test_crops/209_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	tOPPS
+												GROUND TRUTH:	TOPPS
+rec_test_crops/20_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	BORN:
+												GROUND TRUTH:	BORN
+rec_test_crops/215_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	tradamzrks
+												GROUND TRUTH:	trademarks
+rec_test_crops/216_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	Inc.
+												GROUND TRUTH:	Inc,
+rec_test_crops/219_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	usad
+												GROUND TRUTH:	used
+rec_test_crops/21_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Colombla
+												GROUND TRUTH:	Colombia
+rec_test_crops/222_IMG20230622110003.jpg	.com.
+							GROUND TRUTH:	.com
+rec_test_crops/224_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	com
+												GROUND TRUTH:	.com
+rec_test_crops/225_IMG20230622110003.jpg	PRODUCT
+							GROUND TRUTH:	PRODUC
+rec_test_crops/230_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	PROOUCT
+												GROUND TRUTH:	PRODUCT
+rec_test_crops/232_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	players
+												GROUND TRUTH:	Plavers
+rec_test_crops/235_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	MLBPlayers.com
+												GROUND TRUTH:	MLBPlavers.com
+rec_test_crops/238_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	Maror
+												GROUND TRUTH:	Maior
+rec_test_crops/23_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Rol-2017,32n
+												GROUND TRUTH:	Rd1-2017.32nc
+rec_test_crops/23_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	CIANTS
+												GROUND TRUTH:	GIANTS
+rec_test_crops/241_IMG20230622110003.jpg	web.
+							GROUND TRUTH:	web
+rec_test_crops/244_IMG20230622110003.jpg	MLBPLAYERS
+							GROUND TRUTH:	IMLBPLAYERS
+rec_test_crops/245_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	WWWTOPRS.COM
+												GROUND TRUTH:	WWW.TOPPS.COM
+rec_test_crops/251_IMG20230622110003.jpg	Inc.
+							GROUND TRUTH:	Inc
+rec_test_crops/256_IMG20230622110003.jpg	WWW.TOPPS.COM.
+							GROUND TRUTH:	WWW.TOPPS.COM
+rec_test_crops/26_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	Majors,
+												GROUND TRUTH:	Majors.
+rec_test_crops/27_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Naliforna
+												GROUND TRUTH:	California
+rec_test_crops/29_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	All-Star
+												GROUND TRUTH:	All-Star..
+rec_test_crops/2_3e17aa8f-485b-4cad-8981-f12fd38cb505_cropped.png	ICHIRD
+													GROUND TRUTH:	ICHIRO
+rec_test_crops/2_3fe4d9b5-e5cd-4a30-b31e-38d834e7f793_cropped.png	hrome
+													GROUND TRUTH:	Chrome
+rec_test_crops/34_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	doubles,
+												GROUND TRUTH:	doubles
+rec_test_crops/34_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Ranchd
+												GROUND TRUTH:	Ranchr
+rec_test_crops/36_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	FIGHT
+												GROUND TRUTH:	EIGHT
+rec_test_crops/37_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	@folty25
+												GROUND TRUTH:	@foltv25
+rec_test_crops/39_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	.-Posted
+												GROUND TRUTH:	..Posted
+rec_test_crops/3_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	I
+												GROUND TRUTH:	1
+rec_test_crops/3_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	PAHN
+												GROUND TRUTH:	PANINI
+rec_test_crops/3_0f138090-fc33-4106-9786-d20a36606e82_cropped.png	Ps
+													GROUND TRUTH:	35
+rec_test_crops/3_1a727c0a-8228-4984-9ac8-bd944a904565_cropped.png	top
+													GROUND TRUTH:	topps
+rec_test_crops/3_1b882cdc-bf70-44ed-bc9f-ee72276a5d7f_cropped.png	HEW
+													GROUND TRUTH:	NEW
+rec_test_crops/3_3d57ec08-2c05-4b1e-b64e-e6b9b42b2909_cropped.png	EORESS
+													GROUND TRUTH:	FEARLESS
+rec_test_crops/3_4bc4a412-9ff6-4496-ac21-93d651937be6_cropped.png	APaURT
+													GROUND TRUTH:	1986-2021
+rec_test_crops/40_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	untoucbable,
+												GROUND TRUTH:	untouchable
+rec_test_crops/43_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	aight-star
+												GROUND TRUTH:	eight-star
+rec_test_crops/45_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	&&
+												GROUND TRUTH:	&
+rec_test_crops/45_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	4/18.No.
+												GROUND TRUTH:	4/18...No.
+rec_test_crops/45_IMG20230622110003.jpg	Mookje
+						GROUND TRUTH:	Mookie
+rec_test_crops/46_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	@
+												GROUND TRUTH:	C
+rec_test_crops/46_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	under
+												GROUND TRUTH:	-under
+rec_test_crops/47_IMG20230622110003.jpg	blockbuster
+						GROUND TRUTH:	blockbuste
+rec_test_crops/4_1ae40c87-5a66-42d4-bf64-2a6b48a5b22a_cropped.png	JAHMAL
+													GROUND TRUTH:	JAHMAI
+rec_test_crops/51_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Well-rounded
+												GROUND TRUTH:	Well-roundec
+rec_test_crops/53_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	RIGHTS
+												GROUND TRUTH:	RICHTS
+rec_test_crops/53_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	.Stays
+												GROUND TRUTH:	...Stays
+rec_test_crops/54_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	RESERVEHD
+												GROUND TRUTH:	RESERVED
+rec_test_crops/54_IMG20230622110003.jpg	2020,
+						GROUND TRUTH:	2020.
+rec_test_crops/56_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	ISA
+												GROUND TRUTH:	IS A
+rec_test_crops/58_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	TRADEMARE
+												GROUND TRUTH:	TRADEMARK
+rec_test_crops/59_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	offenslve
+												GROUND TRUTH:	offensive
+rec_test_crops/5_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	ROYALS@
+												GROUND TRUTH:	ROYALS
+rec_test_crops/5_1a727c0a-8228-4984-9ac8-bd944a904565_cropped.png	T
+													GROUND TRUTH:	j
+rec_test_crops/5_3d57ec08-2c05-4b1e-b64e-e6b9b42b2909_cropped.png	PRXZM
+													GROUND TRUTH:	PRIZM
+rec_test_crops/5_4bc4a412-9ff6-4496-ac21-93d651937be6_cropped.png	NAIMERNS
+													GROUND TRUTH:	ANNIVERSAR
+rec_test_crops/61_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Opportunisti
+												GROUND TRUTH:	Opportunistic
+rec_test_crops/65_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	League
+												GROUND TRUTH:	Leaque
+rec_test_crops/65_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	o"
+												GROUND TRUTH:	O"
+rec_test_crops/65_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	THOUSANE
+												GROUND TRUTH:	THOUSAND
+rec_test_crops/66_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	witha6.6
+												GROUND TRUTH:	with a 6.6
+rec_test_crops/66_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	Two
+												GROUND TRUTH:	TWO
+rec_test_crops/67_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	rademarks
+												GROUND TRUTH:	trademarks
+rec_test_crops/67_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	SO-tO-RH
+												GROUND TRUTH:	SO-to-BE
+rec_test_crops/67_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	HUNDRET
+												GROUND TRUTH:	HUNDREI
+rec_test_crops/68_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	ratio
+												GROUND TRUTH:	ratio.
+rec_test_crops/69_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	copyiights
+												GROUND TRUTH:	copyrights
+rec_test_crops/6_0f138090-fc33-4106-9786-d20a36606e82_cropped.png	STARTEDR
+													GROUND TRUTH:	STARTFOR
+rec_test_crops/6_1a727c0a-8228-4984-9ac8-bd944a904565_cropped.png	odgers
+													GROUND TRUTH:	Dodgers
+rec_test_crops/6_1f91aba6be02e778fcee7d3c43f3427d00e36345.jpg	SERLES
+												GROUND TRUTH:	SERIES
+rec_test_crops/6_IMG20230622110003.jpg	BOSTON
+						GROUND TRUTH:	BOST0
+rec_test_crops/71_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	arm.
+												GROUND TRUTH:	arm
+rec_test_crops/74_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	22,
+												GROUND TRUTH:	22.
+rec_test_crops/76_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	SROM
+												GROUND TRUTH:	FROM:
+rec_test_crops/77_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	SUDLERVILLEMD
+												GROUND TRUTH:	SUDLERVILLE.MD
+rec_test_crops/78_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Panim
+												GROUND TRUTH:	Panini
+rec_test_crops/79_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Acguired
+												GROUND TRUTH:	Acquired
+rec_test_crops/7_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	RASEMAN
+												GROUND TRUTH:	BASEMAN
+rec_test_crops/7_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	ANGELES
+												GROUND TRUTH:	ANGLES
+rec_test_crops/80_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	HEIGHT WEIGHT
+												GROUND TRUTH:	HEIGHT/WEIGHT
+rec_test_crops/81_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	BATSTHROWS
+												GROUND TRUTH:	BATS/THROWS
+rec_test_crops/82_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	Six
+												GROUND TRUTH:	SIX
+rec_test_crops/84_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	12/21/18,
+												GROUND TRUTH:	12/21/18.
+rec_test_crops/8_00ba10db-4f1a-4f32-8ebc-7961d6f7109a_cropped.png	ST
+													GROUND TRUTH:	ST.
+rec_test_crops/8_1a727c0a-8228-4984-9ac8-bd944a904565_cropped.png	Dodges
+													GROUND TRUTH:	Dodgers
+rec_test_crops/8_1b249ee04fa321f15675edffd27e6f28ecc8b915.jpg	METS
+												GROUND TRUTH:	METS"
+rec_test_crops/8_3e17aa8f-485b-4cad-8981-f12fd38cb505_cropped.png	ORDONEZ
+													GROUND TRUTH:	ORDONEZ.
+rec_test_crops/90_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Basebal
+												GROUND TRUTH:	Baseball
+rec_test_crops/91_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	PoUNDs
+												GROUND TRUTH:	POUNDS
+rec_test_crops/91_IMG20230622110003.jpg	games,
+						GROUND TRUTH:	games
+rec_test_crops/92_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	League
+												GROUND TRUTH:	Leaque
+rec_test_crops/92_0df3a9b2ae02fc6253abe29deb5a335995885c0c.jpg	Moved
+												GROUND TRUTH:	.Moved
+rec_test_crops/93_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	RORNHOME
+												GROUND TRUTH:	BORN/HOME
+rec_test_crops/95_0e32421cf6dadf4ce7d6b7e3aa42192c6be26765.jpg	Properties
+												GROUND TRUTH:	Properties.
+rec_test_crops/97_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	MLBPlayers.com
+												GROUND TRUTH:	MLBPlavers.com
+rec_test_crops/97_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	SEPTEMRER
+												GROUND TRUTH:	SEPTEMBER
+rec_test_crops/99_0aa9d03fb99cc59b9c6bb122b59a33e86fb6a635.jpg	CODE#CMPO35382
+												GROUND TRUTH:	C0DE#CMP03538'
+rec_test_crops/9_1c3f7f3ef84774a956fcfc5d46f8cd0300fb3858.jpg	STAIISTIGS
+												GROUND TRUTH:	STATISTICS
+rec_test_crops/9_3e17aa8f-485b-4cad-8981-f12fd38cb505_cropped.png	CHIRO
+													GROUND TRUTH:	ICHIRO
+rec_test_crops/9_3fe4d9b5-e5cd-4a30-b31e-38d834e7f793_cropped.png	Cohuctias
+													GROUND TRUTH:	Cardinals
+test/word_1001.png	Passsgoe
+	GROUND TRUTH:	Passages
+test/word_1009.png	esplanadt
+	GROUND TRUTH:	esplanade
+test/word_1010.png	LM
+	GROUND TRUTH:	Ltd
+test/word_1020.png	ibrary
+	GROUND TRUTH:	library
+test/word_1032.png	e
+	GROUND TRUTH:	BUD
+test/word_1042.png	Glaut
+	GROUND TRUTH:	GIANT
+test/word_1068.png	SUP
+	GROUND TRUTH:	SOUP
+test/word_107.png	ATE
+	GROUND TRUTH:	AYE
+test/word_1094.png	THee
+	GROUND TRUTH:	Three
+test/word_1104.png	Pirperoni
+	GROUND TRUTH:	Peperoni
+test/word_1112.png	BEFHEL
+	GROUND TRUTH:	BUFFEL
+test/word_1129.png	Shin
+	GROUND TRUTH:	Skin
+test/word_1130.png	(ore
+	GROUND TRUTH:	Care
+test/word_1147.png	cre
+	GROUND TRUTH:	sale
+test/word_1178.png	tradtvariur
+	GROUND TRUTH:	stradivarius
+test/word_1188.png	CEFL
+	GROUND TRUTH:	CBTL
+test/word_1256.png	siHC!
+	GROUND TRUTH:	SINC
+test/word_1260.png	dintaifungSC
+	GROUND TRUTH:	dintaifungSG
+test/word_1290.png	BO
+	GROUND TRUTH:	VUEDA
+test/word_1420.png	MULBEWRY
+	GROUND TRUTH:	MULBERRY
+test/word_1435.png	Tinins
+	GROUND TRUTH:	Timms
+test/word_1456.png	wAn
+	GROUND TRUTH:	WAY!
+test/word_1537.png	SULE
+	GROUND TRUTH:	SLE
+test/word_1546.png	FECDIL
+	GROUND TRUTH:	ECOIL
+test/word_1563.png	im
+	GROUND TRUTH:	#22
+test/word_1574.png	SALE!
+	GROUND TRUTH:	SALE
+test/word_159.png	CALAYY
+	GROUND TRUTH:	GALAXY
+test/word_1606.png	AIBEC
+	GROUND TRUTH:	RIBEC
+test/word_1608.png	PURTER
+	GROUND TRUTH:	FURTHER
+test/word_1646.png	Ser
+	GROUND TRUTH:	Set
+test/word_1647.png	VIGuN
+	GROUND TRUTH:	KITCHEN
+test/word_1657.png	CAROS
+	GROUND TRUTH:	CANDY
+test/word_1673.png	70%
+	GROUND TRUTH:	70%OFF
+test/word_1683.png	70%
+	GROUND TRUTH:	70%OFF
+test/word_1685.png	MERRT
+	GROUND TRUTH:	MERRY
+test/word_1686.png	AlE
+	GROUND TRUTH:	SALE
+test/word_1703.png	Unlerground
+	GROUND TRUTH:	Underground
+test/word_1711.png	orchardgateuau
+	GROUND TRUTH:	orchardgateway
+test/word_1717.png	fashlon
+	GROUND TRUTH:	fashion
+test/word_1751.png	
+	GROUND TRUTH:	DOROTHYPERKINS
+test/word_1763.png	Marche
+	GROUND TRUTH:	Marché
+test/word_1831.png	NAMI
+	GROUND TRUTH:	NAM
+test/word_185.png	GO
+	GROUND TRUTH:	Klein
+test/word_1850.png	SO
+	GROUND TRUTH:	real
+test/word_186.png	SO
+	GROUND TRUTH:	Jeans
+test/word_1866.png	BOUNI
+	GROUND TRUTH:	ROUND
+test/word_1876.png	ROARDS
+	GROUND TRUTH:	BOARDS
+test/word_1939.png	enlO
+	GROUND TRUTH:	ENJOY
+test/word_200.png	ZOkY
+	GROUND TRUTH:	ZONY
+test/word_2023.png	T00
+	GROUND TRUTH:	TOO
+test/word_2031.png	BO
+	GROUND TRUTH:	COLD
+test/word_219.png	AGER
+	GROUND TRUTH:	GER
+test/word_221.png	Collal
+	GROUND TRUTH:	CocaCola
+test/word_222.png	Coalal
+	GROUND TRUTH:	CocaCola
+test/word_230.png	chan
+	GROUND TRUTH:	cha
+test/word_246.png	QUEING
+	GROUND TRUTH:	QUEUEING
+test/word_262.png	MASH
+	GROUND TRUTH:	MASA
+test/word_264.png	PDST
+	GROUND TRUTH:	POST
+test/word_27.png	BAUTION
+	GROUND TRUTH:	CAUTION
+test/word_295.png	Shoping
+	GROUND TRUTH:	Shopping
+test/word_314.png	louth-watering
+	GROUND TRUTH:	Mouth-watering
+test/word_325.png	JA
+	GROUND TRUTH:	JIA
+test/word_327.png	KuCHING
+	GROUND TRUTH:	KUCHING
+test/word_375.png	LONGINLES
+	GROUND TRUTH:	LONGINES
+test/word_403.png	Beanstro,
+	GROUND TRUTH:	Beanstro
+test/word_463.png	aigontolod
+	GROUND TRUTH:	aigonLotus
+test/word_549.png	privileges,
+	GROUND TRUTH:	privileges
+test/word_566.png	SALE
+	GROUND TRUTH:	sale
+test/word_567.png	Cafes
+	GROUND TRUTH:	cafes
+test/word_573.png	Republic
+	GROUND TRUTH:	republic
+test/word_579.png	Chan
+	GROUND TRUTH:	Chang
+test/word_589.png	shpping
+	GROUND TRUTH:	shopping
+test/word_595.png	suprt
+	GROUND TRUTH:	support
+test/word_599.png	SKINCARE
+	GROUND TRUTH:	SINCLARE
+test/word_632.png	Desiguals
+	GROUND TRUTH:	desigual
+test/word_641.png	SO
+	GROUND TRUTH:	the
+test/word_692.png	MIKUN!
+	GROUND TRUTH:	MIKUNI
+test/word_713.png	FOPSHOP
+	GROUND TRUTH:	TOPSHOP
+test/word_717.png	atme
+	GROUND TRUTH:	latue
+test/word_741.png	Deeigual
+	GROUND TRUTH:	Desigual
+test/word_755.png	BBOTHERS
+	GROUND TRUTH:	BROTHERS
+test/word_765.png	STSCED
+	GROUND TRUTH:	SALE
+test/word_784.png	ORE
+	GROUND TRUTH:	SORE
+test/word_79.png	TL
+	GROUND TRUTH:	WALLS
+test/word_812.png	Caoaory
+	GROUND TRUTH:	Cadbury
+test/word_83.png	ATW
+	GROUND TRUTH:	DRING
+test/word_84.png	PO
+	GROUND TRUTH:	YOU
+test/word_858.png	BRPLORE
+	GROUND TRUTH:	EXPLORE
+test/word_878.png	LN
+	GROUND TRUTH:	The
+test/word_902.png	CHESTMAS
+	GROUND TRUTH:	CHRISTMAS
+test/word_919.png	sumOSEL
+	GROUND TRUTH:	sumosal
+test/word_936.png	orohous
+	GROUND TRUTH:	browhous
+test/word_946.png	MoC
+	GROUND TRUTH:	MAC
+test/word_947.png	me
+	GROUND TRUTH:	BIOTHERM
+test/word_951.png	swatch
+	GROUND TRUTH:	Swatch
+test/word_973.png	zeit
+	GROUND TRUTH:	Eett

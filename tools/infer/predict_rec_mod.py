@@ -42,6 +42,7 @@ class TextRecognizer(object):
         self.rec_image_shape = [int(v) for v in args.rec_image_shape.split(",")]
         self.rec_batch_num = args.rec_batch_num
         self.rec_algorithm = args.rec_algorithm
+        self.label = args.label
         postprocess_params = {
             'name': 'CTCLabelDecode',
             "character_dict_path": args.rec_char_dict_path,
@@ -397,7 +398,7 @@ class TextRecognizer(object):
         st = time.time()
         if self.benchmark:
             self.autolog.times.start()
-        for beg_img_no in range(0, img_num, batch_num):
+        for beg_img_no in tqdm(range(0, img_num, batch_num), desc=f"Evaluation on {self.label} dataset"):
             end_img_no = min(img_num, beg_img_no + batch_num)
             norm_img_batch = []
             if self.rec_algorithm == "SRN":
@@ -628,6 +629,10 @@ class TextRecognizer(object):
 
 def main(args):
     # image_file_list = get_image_file_list(args.image_dir)
+    full_paths = args.full_paths
+    train_list = args.train_list
+    out_path = args.out_path
+
     text_recognizer = TextRecognizer(args)
     valid_image_file_list = []
     img_list = []
@@ -638,9 +643,6 @@ def main(args):
         for i in range(2):
             res = text_recognizer([img] * int(args.rec_batch_num))
 
-    full_paths = args.full_paths
-    train_list = args.train_list
-    out_path = args.out_path
 
     image_file_list = []
     with open(full_paths, 'r') as input_file:
@@ -673,7 +675,7 @@ def main(args):
             ground_truths.append(line_split[1])
     count_wrong = 0
     with (open(out_path, 'w')) as output_file:
-        for ino in tqdm(range(len(img_list))):
+        for ino in range(len(img_list)):
             res = rec_res[ino][0]
             if res != ground_truths[ino]:
                 count_wrong += 1
