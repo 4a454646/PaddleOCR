@@ -251,7 +251,7 @@ def train(config,
     max_iter = len(train_dataloader) - 1 if platform.system(
     ) == "Windows" else len(train_dataloader)
 
-
+    final_train_acc, final_valid_acc = 0, 0
     for epoch in range(start_epoch, epoch_num + 1):
         print(f"starting epoch {epoch}")
         reader_start = time.time()
@@ -297,12 +297,15 @@ def train(config,
 
         # eval
         if dist.get_rank() == 0:
-            calc_loss = epoch % 10 == 0
-            valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
+            calc_loss = epoch % 30 == 0
+            # valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
 
-            train_metrics = eval_with(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
+            # train_metrics = eval_with(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
 
             if calc_loss:
+                valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
+
+                train_metrics = eval_with(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
                 visualizer.update_charts(
                     lr=optimizer.get_lr(),
                     train_acc=train_metrics['acc'],
@@ -311,23 +314,25 @@ def train(config,
                     valid_loss=valid_metrics['loss'],
                     epoch=epoch
                 )
-            else:
-                visualizer.update_charts(
-                    lr=optimizer.get_lr(),
-                    train_acc=train_metrics['acc'],
-                    train_loss=0,
-                    valid_acc=valid_metrics['acc'],
-                    valid_loss=0,
-                    epoch=epoch
-                )
+                final_train_acc = train_metrics['acc']
+                final_valid_acc = valid_metrics['acc']
+            # else:
+            #     visualizer.update_charts(
+            #         lr=optimizer.get_lr(),
+            #         train_acc=train_metrics['acc'],
+            #         train_loss=0,
+            #         valid_acc=valid_metrics['acc'],
+            #         valid_loss=0,
+            #         epoch=epoch
+            #     )
 
-            print(f"lr: {optimizer.get_lr()}, train_acc: {train_metrics['acc']}, train_loss: {train_metrics['loss']}, valid_acc: {valid_metrics['acc']}, valid_loss: {valid_metrics['loss']}")
+            # print(f"lr: {optimizer.get_lr()}, train_acc: {train_metrics['acc']}, train_loss: {train_metrics['loss']}, valid_acc: {valid_metrics['acc']}, valid_loss: {valid_metrics['loss']}")
 
-            if valid_metrics[main_indicator] >= best_model_dict[main_indicator]:
-                print("saving new best model!")
-                best_model_dict.update(valid_metrics)
-                best_model_dict['best_epoch'] = epoch
-                save_model(model, optimizer, save_model_dir, logger, config, is_best=True, prefix='best_accuracy', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+            # if valid_metrics[main_indicator] >= best_model_dict[main_indicator]:
+            #     print("saving new best model!")
+            #     best_model_dict.update(valid_metrics)
+            #     best_model_dict['best_epoch'] = epoch
+            #     save_model(model, optimizer, save_model_dir, logger, config, is_best=True, prefix='best_accuracy', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
 
             calc_time_remaining(epoch_num, epoch, reader_start, eta_meter)
 
@@ -335,12 +340,12 @@ def train(config,
 
 
 
-        if dist.get_rank() == 0:
-            save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='latest', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
-            if epoch > 0 and epoch % save_epoch_step == 0:
-                save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='iter_epoch_{}'.format(epoch), best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+        # if dist.get_rank() == 0:
+        #     save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='latest', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+        #     if epoch > 0 and epoch % save_epoch_step == 0:
+        #         save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='iter_epoch_{}'.format(epoch), best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
 
-    return
+    return final_train_acc, final_valid_acc
 
 def calc_time_remaining(epoch_num, epoch, reader_start, eta_meter):
     train_epoch_time = time.time() - reader_start

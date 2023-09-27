@@ -179,7 +179,7 @@ def main(config, device, logger, vdl_writer):
     if config['Global']['distributed']:
         model = paddle.DataParallel(model)
     # start train
-    program.train(
+    final_train_acc, final_valid_acc = program.train(
         config=config,
         train_dataloader=train_dataloader,
         valid_dataloader=valid_dataloader,
@@ -198,6 +198,8 @@ def main(config, device, logger, vdl_writer):
         amp_custom_black_list=amp_custom_black_list,
         visualizer=TensorBoardVisualizer(config["Global"]["save_model_dir"])
     )
+
+    return final_train_acc, final_valid_acc
 
 
 def test_reader(config, device, logger):

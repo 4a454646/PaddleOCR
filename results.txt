@@ -28,3 +28,12 @@ train: 20770/21848 (95.07%)
 validation: 4350/4840 (89.88%)
 test: 3092/3387 (91.29%)
 
+Results for 0.4bda_0.4-8rot:
+train: 20628/21848 (94.42%)
+validation: 4330/4840 (89.46%)
+test: 3062/3387 (90.4%)
+
+Results for no_aug:
+train: 21518/21848 (98.49%)
+validation: 4298/4840 (88.8%)
+test: 3046/3387 (89.93%)

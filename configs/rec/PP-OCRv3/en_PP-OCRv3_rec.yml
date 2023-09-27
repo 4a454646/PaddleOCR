@@ -4,7 +4,7 @@ Global:
   epoch_num: 500
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/cosine_ia_0.1prob_1rot
+  save_model_dir: ./trials/test
   save_epoch_step: 50
   eval_batch_step: [0, 1000]
   cal_metric_during_train: true

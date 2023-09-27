@@ -1,10 +1,10 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 50
+  epoch_num: 30
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/v4/0.4bda_0.6-8rot
+  save_model_dir: ./trials/v4/test
   save_epoch_step: 10
   eval_batch_step: [0, 1000]
   cal_metric_during_train: true
@@ -92,13 +92,13 @@ Train:
         image_shape: [48, 320, 3]
         max_text_length: 25
     - RecAug:
-        tia_prob: 0.4
-        crop_prob: 0.4
-        reverse_prob: 0.4
-        noise_prob: 0.4
-        jitter_prob: 0.4
-        blur_prob: 0.4
-        hsv_aug_prob: 0.4
+        tia_prob: 0
+        crop_prob: 0
+        reverse_prob: 0
+        noise_prob: 0
+        jitter_prob: 0
+        blur_prob: 0
+        hsv_aug_prob: 0
     - MultiLabelEncode:
     - RecResizeImg:
         image_shape: [3, 48, 320]

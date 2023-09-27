@@ -35,10 +35,60 @@ class RecAug(object):
                  jitter_prob=0.4,
                  blur_prob=0.4,
                  hsv_aug_prob=0.4,
+                 affine_scale_diff=0,
+                 affine_translate_percent=0,
+                 affine_rotation=0,
+                 affine_shear=0,
+                 affine_prob=0,
+                 channelshuffle_prob=0,
+                 add_amount=0,
+                 add_gaussian_amount=0,
+                 multiply_amount=0,
+                 dropout_percent=0,
+                 c_dropout_percent=0,
+                 c_dropout_size_percent=0,
+                 invert_prob=0,
+                 jpeg_compression=0,
+                 gaussian_sigma=0,
+                 motionblur_kernel=0,
+                 hs_multiplier=0,
+                 saturation_remover=0,
+                 color_temp_shift=0,
+                 contrast_gamma=0,
+                 cloud_snow_prob=0,
+                 non_affine_amount=0,
                  **kwargs):
         self.tia_prob = tia_prob
-        self.bda = BaseDataAugmentation(crop_prob, reverse_prob, noise_prob,
-                                        jitter_prob, blur_prob, hsv_aug_prob)
+        self.bda = BaseDataAugmentation(
+            crop_prob,
+            reverse_prob,
+            noise_prob,
+            jitter_prob,
+            blur_prob,
+            hsv_aug_prob,
+            affine_scale_diff,
+            affine_translate_percent,
+            affine_rotation,
+            affine_shear,
+            affine_prob,
+            channelshuffle_prob,
+            add_amount,
+            add_gaussian_amount,
+            multiply_amount,
+            dropout_percent,
+            c_dropout_percent,
+            c_dropout_size_percent,
+            invert_prob,
+            jpeg_compression,
+            gaussian_sigma,
+            motionblur_kernel,
+            hs_multiplier,
+            saturation_remover,
+            color_temp_shift,
+            contrast_gamma,
+            cloud_snow_prob,
+            non_affine_amount,
+        )
 
     def __call__(self, data):
         img = data['image']
@@ -65,6 +115,28 @@ class BaseDataAugmentation(object):
                  jitter_prob=0.4,
                  blur_prob=0.4,
                  hsv_aug_prob=0.4,
+                 affine_scale_diff=0,
+                 affine_translate_percent=0,
+                 affine_rotation=0,
+                 affine_shear=0,
+                 affine_prob=0,
+                 channelshuffle_prob=0,
+                 add_amount=0,
+                 add_gaussian_amount=0,
+                 multiply_amount=0,
+                 dropout_percent=0,
+                 c_dropout_percent=0,
+                 c_dropout_size_percent=0,
+                 invert_prob=0,
+                 jpeg_compression=0,
+                 gaussian_sigma=0,
+                 motionblur_kernel=0,
+                 hs_multiplier=0,
+                 saturation_remover=0,
+                 color_temp_shift=0,
+                 contrast_gamma=0,
+                 cloud_snow_prob=0,
+                 non_affine_amount=0,
                  **kwargs):
         self.crop_prob = crop_prob
         self.reverse_prob = reverse_prob
@@ -72,6 +144,28 @@ class BaseDataAugmentation(object):
         self.jitter_prob = jitter_prob
         self.blur_prob = blur_prob
         self.hsv_aug_prob = hsv_aug_prob
+        self.affine_scale_diff = affine_scale_diff
+        self.affine_translate_percent = affine_translate_percent
+        self.affine_rotation = affine_rotation
+        self.affine_shear = affine_shear
+        self.affine_prob = affine_prob
+        self.channelshuffle_prob = channelshuffle_prob
+        self.add_amount = add_amount
+        self.add_gaussian_amount = add_gaussian_amount
+        self.multiply_amount = multiply_amount
+        self.dropout_percent = dropout_percent
+        self.c_dropout_percent = c_dropout_percent
+        self.c_dropout_size_percent = c_dropout_size_percent
+        self.invert_prob = invert_prob
+        self.jpeg_compression = jpeg_compression
+        self.gaussian_sigma = gaussian_sigma
+        self.motionblur_kernel = motionblur_kernel
+        self.hs_multiplier = hs_multiplier
+        self.saturation_remover = saturation_remover
+        self.color_temp_shift = color_temp_shift
+        self.contrast_gamma = contrast_gamma
+        self.cloud_snow_prob = cloud_snow_prob
+        print(self.affine_scale_diff)
 
     def __call__(self, data):
         img = data['image']
@@ -94,19 +188,55 @@ class BaseDataAugmentation(object):
 
         if random.random() <= self.reverse_prob:
             img = 255 - img
-
-        if random.random() <= 0.4:
+        
+        if self.affine_scale_diff != 0:
             seq = iaa.Sequential([
-                iaa.Affine(
-                    # scale={"x": (0.8, 1.2), "y": (0.8, 1.2)},
-                    # translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)},
-                    rotate=(-8, 8),
-                    # shear=(-8, 8),
+                iaa.Sometimes(self.affine_prob, iaa.Affine(
+                    scale={
+                        "x":(1-self.affine_scale_diff, 1+self.affine_scale_diff), 
+                        "y":(1-self.affine_scale_diff, 1+self.affine_scale_diff)
+                    },
+                    translate_percent={
+                        "x": (-self.affine_translate_percent, self.affine_translate_percent),
+                        "y": (-self.affine_translate_percent, self.affine_translate_percent)
+                    },
+                    rotate=(-self.affine_rotation, self.affine_rotation),
+                    shear=(-self.affine_shear, self.affine_shear),
                     fit_output=True,
                     cval=128
-                )
+                )),
+                iaa.ChannelShuffle(p=self.channelshuffle_prob),
+                iaa.Add((-self.add_amount, self.add_amount), per_channel=True),
+                iaa.AdditiveGaussianNoise(scale=(0, self.add_gaussian_amount*255), per_channel=True),
+                iaa.Multiply((1-self.multiply_amount, 1+self.multiply_amount), per_channel=True),
+                iaa.OneOf([
+                    iaa.Dropout(p=(0, self.dropout_percent)),
+                    iaa.CoarseDropout(p=(0, self.c_dropout_percent), size_percent=(0, self.c_dropout_size_percent)),
+                ]),
+                iaa.Invert(p=self.invert_prob, per_channel=True),
+                iaa.JpegCompression(compression=(0, self.jpeg_compression)),
+                iaa.MultiplyHueAndSaturation((1-self.hs_multiplier, 1+self.hs_multiplier), per_channel=True),
+                iaa.RemoveSaturation(mul=(0, self.saturation_remover)),
+                iaa.ChangeColorTemperature((self.color_temp_shift, self.color_temp_shift)),
+                iaa.GammaContrast(gamma=(1-self.contrast_gamma, 1+self.contrast_gamma)),
+                iaa.OneOf([
+                    iaa.GaussianBlur(sigma=(0, self.gaussian_sigma)),
+                    iaa.MotionBlur(k=self.motionblur_kernel),
+                    # iaa.imgcorruptlike.DefocusBlur(severity=defocus_severity),
+                    # iaa.imgcorruptlike.ZoomBlur(severity=zoom_severity)
+                ]),
+                iaa.Sometimes(self.cloud_snow_prob, iaa.OneOf([
+                    iaa.Clouds(),
+                    iaa.Fog()
+                ]))
             ], random_order=True)
-            img = seq.augment_image(img)
+            if h < 32 or w < 32:
+                scale = 32.0 / min(h, w)
+                h = math.ceil(h * scale)
+                w = math.ceil(w * scale)
+                img = seq.augment_image(cv2.resize(img, (w, h)))
+            else:
+                img = seq.augment_image(img)
         
         data['image'] = img
         # cv2.imwrite('/workspace/PaddleOCR/visualize/test.jpg', img)
