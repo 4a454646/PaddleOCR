@@ -177,6 +177,7 @@ def to_float32(preds):
 
 def train(config,
           train_dataloader,
+          alt_dataloader,
           valid_dataloader,
           device,
           model,
@@ -251,37 +252,31 @@ def train(config,
     max_iter = len(train_dataloader) - 1 if platform.system(
     ) == "Windows" else len(train_dataloader)
 
+
     final_train_acc, final_valid_acc = 0, 0
     for epoch in range(start_epoch, epoch_num + 1):
+        training_alt = epoch % 2 == 0
+
         print(f"starting epoch {epoch}")
+        print(f"training with {'alt' if training_alt else 'train'} dataloader")
         reader_start = time.time()
         eta_meter = AverageMeter()
 
         if train_dataloader.dataset.need_reset:
             train_dataloader = build_dataloader(config, 'Train', device, logger, seed=epoch)
             max_iter = len(train_dataloader)
-
-        pbar = tqdm(total=len(train_dataloader), desc='training', position=0, leave=True)
-        for idx, batch in enumerate(train_dataloader):
+            
+        if training_alt:
+            main_dataloader = alt_dataloader
+        else:
+            main_dataloader = train_dataloader
+        pbar = tqdm(total=len(main_dataloader), desc='training', position=0, leave=True)
+        for idx, batch in enumerate(main_dataloader):
             profiler.add_profiler_step(profiler_options)
             if idx >= max_iter:
                 break
             lr = optimizer.get_lr()
             images = batch[0]
-
-            # # save each image to disk in a folder called "visualize", then immediately stop the program
-            # for idx, image in enumerate(images):
-            #     # image_min, image_max = image.min(), image.max()
-            #     # image = (image - image_min) / (image_max - image_min + 1e-6)
-            #     undo = image.numpy().copy()
-            #     undo *= 0.5
-            #     undo += 0.5
-            #     undo *= 255
-            #     undo = np.transpose(undo, (1, 2, 0)).astype('uint8')
-            #     cv2.imwrite(f"visualize/{idx}.jpg", undo)
-            #     if idx > 10: 
-            #         break
-            # exit()
 
             preds = model(images, data=batch[1:])
             loss = loss_class(preds, batch)['loss']
@@ -298,41 +293,38 @@ def train(config,
         # eval
         if dist.get_rank() == 0:
             calc_loss = epoch % 30 == 0
-            # valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
 
-            # train_metrics = eval_with(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
+            valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class)
 
-            if calc_loss:
-                valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
+            main_metrics = eval_with(model, main_dataloader, post_process_class, eval_class, calc_loss, loss_class)
 
-                train_metrics = eval_with(model, train_dataloader, post_process_class, eval_class, calc_loss, loss_class, epoch, model_type, extra_input=extra_input, scaler=scaler, amp_level=amp_level, amp_custom_black_list=amp_custom_black_list)
-                visualizer.update_charts(
+
+            if training_alt:
+                visualizer.update_alt(
+                    alt_acc=main_metrics['acc'],
+                    alt_loss=main_metrics['loss'],
+                    epoch=epoch
+                )
+            else:
+                visualizer.update_main(
                     lr=optimizer.get_lr(),
-                    train_acc=train_metrics['acc'],
-                    train_loss=train_metrics['loss'],
+                    train_acc=main_metrics['acc'],
+                    train_loss=main_metrics['loss'],
                     valid_acc=valid_metrics['acc'],
                     valid_loss=valid_metrics['loss'],
                     epoch=epoch
                 )
-                final_train_acc = train_metrics['acc']
-                final_valid_acc = valid_metrics['acc']
-            # else:
-            #     visualizer.update_charts(
-            #         lr=optimizer.get_lr(),
-            #         train_acc=train_metrics['acc'],
-            #         train_loss=0,
-            #         valid_acc=valid_metrics['acc'],
-            #         valid_loss=0,
-            #         epoch=epoch
-            #     )
 
-            # print(f"lr: {optimizer.get_lr()}, train_acc: {train_metrics['acc']}, train_loss: {train_metrics['loss']}, valid_acc: {valid_metrics['acc']}, valid_loss: {valid_metrics['loss']}")
+            final_train_acc = main_metrics['acc']
+            final_valid_acc = valid_metrics['acc']
 
-            # if valid_metrics[main_indicator] >= best_model_dict[main_indicator]:
-            #     print("saving new best model!")
-            #     best_model_dict.update(valid_metrics)
-            #     best_model_dict['best_epoch'] = epoch
-            #     save_model(model, optimizer, save_model_dir, logger, config, is_best=True, prefix='best_accuracy', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+            print(f"lr: {optimizer.get_lr()}, train_acc: {main_metrics['acc']}, train_loss: {main_metrics['loss']}, valid_acc: {valid_metrics['acc']}, valid_loss: {valid_metrics['loss']}")
+
+            if valid_metrics[main_indicator] >= best_model_dict[main_indicator]:
+                print("saving new best model!")
+                best_model_dict.update(valid_metrics)
+                best_model_dict['best_epoch'] = epoch
+                save_model(model, optimizer, save_model_dir, logger, config, is_best=True, prefix='best_accuracy', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
 
             calc_time_remaining(epoch_num, epoch, reader_start, eta_meter)
 
@@ -340,10 +332,10 @@ def train(config,
 
 
 
-        # if dist.get_rank() == 0:
-        #     save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='latest', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
-        #     if epoch > 0 and epoch % save_epoch_step == 0:
-        #         save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='iter_epoch_{}'.format(epoch), best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+        if dist.get_rank() == 0:
+            save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='latest', best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
+            if epoch > 0 and epoch % save_epoch_step == 0:
+                save_model(model, optimizer, save_model_dir, logger, config, is_best=False, prefix='iter_epoch_{}'.format(epoch), best_model_dict=best_model_dict, epoch=epoch, global_step=global_step)
 
     return final_train_acc, final_valid_acc
 
@@ -365,15 +357,7 @@ def eval_with(model,
          post_process_class,
          eval_class,
          calc_loss,
-         loss_class,
-         epoch,
-         model_type=None,
-         extra_input=False,
-         scaler=None,
-         amp_level='O2',
-         amp_custom_black_list=[],
-         amp_custom_white_list=[],
-         amp_dtype='float16'):
+         loss_class):
     if not calc_loss:
         model.eval()
     with torch.no_grad():

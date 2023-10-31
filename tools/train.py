@@ -52,6 +52,7 @@ def main(config, device, logger, vdl_writer):
 
     # build dataloader
     train_dataloader = build_dataloader(config, 'Train', device, logger)
+    alt_dataloader = build_dataloader(config, 'Alt', device, logger)
     if len(train_dataloader) == 0:
         logger.error(
             "No Images in train dataset, please ensure\n" +
@@ -173,8 +174,7 @@ def main(config, device, logger, vdl_writer):
         scaler = None
 
     # load pretrain model
-    pre_best_model_dict = load_model(config, model, optimizer,
-                                     config['Architecture']["model_type"])
+    pre_best_model_dict = load_model(config, model, optimizer, config['Architecture']["model_type"])
 
     if config['Global']['distributed']:
         model = paddle.DataParallel(model)
@@ -182,6 +182,7 @@ def main(config, device, logger, vdl_writer):
     final_train_acc, final_valid_acc = program.train(
         config=config,
         train_dataloader=train_dataloader,
+        alt_dataloader=alt_dataloader,
         valid_dataloader=valid_dataloader,
         device=device,
         model=model,
