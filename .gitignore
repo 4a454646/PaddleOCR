@@ -36,6 +36,7 @@ test_tipc/web/node_modules/
 *.pdparams
 *.pdiparams
 *.pdmodel
+*.states
 *.pdopt
 *.log
 *.jpg

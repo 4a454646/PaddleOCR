@@ -35,6 +35,7 @@ class RecAug(object):
                  jitter_prob=0.4,
                  blur_prob=0.4,
                  hsv_aug_prob=0.4,
+                 use_imgaug=0,
                  affine_scale_diff=0,
                  affine_translate_percent=0,
                  affine_rotation=0,
@@ -66,6 +67,7 @@ class RecAug(object):
             jitter_prob,
             blur_prob,
             hsv_aug_prob,
+            use_imgaug,
             affine_scale_diff,
             affine_translate_percent,
             affine_rotation,
@@ -115,6 +117,7 @@ class BaseDataAugmentation(object):
                  jitter_prob=0.4,
                  blur_prob=0.4,
                  hsv_aug_prob=0.4,
+                 use_imgaug=0,
                  affine_scale_diff=0,
                  affine_translate_percent=0,
                  affine_rotation=0,
@@ -144,6 +147,7 @@ class BaseDataAugmentation(object):
         self.jitter_prob = jitter_prob
         self.blur_prob = blur_prob
         self.hsv_aug_prob = hsv_aug_prob
+        self.use_imgaug = use_imgaug
         self.affine_scale_diff = affine_scale_diff
         self.affine_translate_percent = affine_translate_percent
         self.affine_rotation = affine_rotation
@@ -189,7 +193,7 @@ class BaseDataAugmentation(object):
         if random.random() <= self.reverse_prob:
             img = 255 - img
         
-        if self.affine_scale_diff != 0:
+        if self.use_imgaug != 0:
             seq = iaa.Sequential([
                 iaa.Sometimes(self.affine_prob, iaa.Affine(
                     scale={

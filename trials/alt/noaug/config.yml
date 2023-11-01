@@ -4,8 +4,8 @@ Global:
   epoch_num: 200
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/alt/one
-  save_epoch_step: 10
+  save_model_dir: ./trials/alt/noaug
+  save_epoch_step: 100
   eval_batch_step:
   - 0
   - 1000
@@ -98,7 +98,7 @@ Train:
         jitter_prob: 0
         blur_prob: 0
         hsv_aug_prob: 0
-        learning_rate: 0.00014
+        use_imgaug: 0
         affine_scale_diff: 0.09
         affine_translate_percent: 0.21
         affine_rotation: 5
@@ -165,7 +165,7 @@ Alt:
         jitter_prob: 0
         blur_prob: 0
         hsv_aug_prob: 0
-        learning_rate: 0.00014
+        use_imgaug: 0
         affine_scale_diff: 0.09
         affine_translate_percent: 0.21
         affine_rotation: 5
