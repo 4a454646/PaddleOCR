@@ -1,11 +1,11 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 200
+  epoch_num: 30
   log_smooth_window: 0
   print_batch_step: 1000
   save_model_dir: ./trials/alt/new_hardneg
-  save_epoch_step: 200
+  save_epoch_step: 30
   eval_batch_step:
   - 0
   - 1000
@@ -140,7 +140,7 @@ Train:
     num_workers: 8
 Alt:
   dataset:
-    name: SimpleDataSet 
+    name: SimpleDataSet
     data_dir: ./aug_train/
     ext_op_transform_idx: 1
     label_file_list:
@@ -261,3 +261,4 @@ Test:
     drop_last: false
     batch_size_per_card: 256
     num_workers: 8
+profiler_options: null

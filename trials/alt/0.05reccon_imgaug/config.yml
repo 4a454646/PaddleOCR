@@ -4,8 +4,8 @@ Global:
   epoch_num: 200
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/alt/new_hardneg
-  save_epoch_step: 200
+  save_model_dir: ./trials/alt/0.05reccon_imgaug
+  save_epoch_step: 100
   eval_batch_step:
   - 0
   - 1000
@@ -91,35 +91,35 @@ Train:
         - 3
         max_text_length: 25
     - RecAug:
-        tia_prob: 0.4
-        crop_prob: 0.4
-        reverse_prob: 0.4
-        noise_prob: 0.4
-        jitter_prob: 0.4
-        blur_prob: 0.4
-        hsv_aug_prob: 0.4
+        tia_prob: 0
+        crop_prob: 0
+        reverse_prob: 0
+        noise_prob: 0
+        jitter_prob: 0
+        blur_prob: 0
+        hsv_aug_prob: 0
         use_imgaug: 1
         affine_scale_diff: 0.09
-        affine_translate_percent: 0.1
+        affine_translate_percent: 0.21
         affine_rotation: 5
-        affine_shear: 5
-        affine_prob: 0.3
+        affine_shear: 10
+        affine_prob: 0.73
         channelshuffle_prob: 0.28
-        add_amount: 50
+        add_amount: 55
         add_gaussian_amount: 0.27
         multiply_amount: 0.13
         dropout_percent: 0.05
-        c_dropout_percent: 0.05
-        c_dropout_size_percent: 0.05
-        invert_prob: 0.5
-        jpeg_compression: 0.3
-        gaussian_sigma: 3
-        motionblur_kernel: 3
+        c_dropout_percent: 0.1
+        c_dropout_size_percent: 0.14
+        invert_prob: 0.77
+        jpeg_compression: 0.36
+        gaussian_sigma: 6
+        motionblur_kernel: 10
         hs_multiplier: 0.05
-        saturation_remover: 0.33
-        color_temp_shift: 5000
-        contrast_gamma: 0.5
-        cloud_snow_prob: 0.01
+        saturation_remover: 0.36
+        color_temp_shift: 8132
+        contrast_gamma: 0.75
+        cloud_snow_prob: 0.08
     - MultiLabelEncode: null
     - RecResizeImg:
         image_shape:
@@ -140,7 +140,7 @@ Train:
     num_workers: 8
 Alt:
   dataset:
-    name: SimpleDataSet 
+    name: SimpleDataSet
     data_dir: ./aug_train/
     ext_op_transform_idx: 1
     label_file_list:
@@ -156,37 +156,37 @@ Alt:
         - 48
         - 320
         - 3
-        max_text_length: 100
+        max_text_length: 25
     - RecAug:
-        tia_prob: 0.4
-        crop_prob: 0.4
-        reverse_prob: 0.4
-        noise_prob: 0.4
-        jitter_prob: 0.4
-        blur_prob: 0.4
-        hsv_aug_prob: 0.4
+        tia_prob: 0
+        crop_prob: 0
+        reverse_prob: 0
+        noise_prob: 0
+        jitter_prob: 0
+        blur_prob: 0
+        hsv_aug_prob: 0
         use_imgaug: 1
         affine_scale_diff: 0.09
-        affine_translate_percent: 0.1
+        affine_translate_percent: 0.21
         affine_rotation: 5
-        affine_shear: 5
-        affine_prob: 0.3
+        affine_shear: 10
+        affine_prob: 0.73
         channelshuffle_prob: 0.28
-        add_amount: 50
+        add_amount: 55
         add_gaussian_amount: 0.27
         multiply_amount: 0.13
         dropout_percent: 0.05
-        c_dropout_percent: 0.05
-        c_dropout_size_percent: 0.05
-        invert_prob: 0.5
-        jpeg_compression: 0.3
-        gaussian_sigma: 3
-        motionblur_kernel: 3
+        c_dropout_percent: 0.1
+        c_dropout_size_percent: 0.14
+        invert_prob: 0.77
+        jpeg_compression: 0.36
+        gaussian_sigma: 6
+        motionblur_kernel: 10
         hs_multiplier: 0.05
-        saturation_remover: 0.33
-        color_temp_shift: 5000
-        contrast_gamma: 0.5
-        cloud_snow_prob: 0.01
+        saturation_remover: 0.36
+        color_temp_shift: 8132
+        contrast_gamma: 0.75
+        cloud_snow_prob: 0.08
     - MultiLabelEncode: null
     - RecResizeImg:
         image_shape:
@@ -261,3 +261,4 @@ Test:
     drop_last: false
     batch_size_per_card: 256
     num_workers: 8
+profiler_options: null

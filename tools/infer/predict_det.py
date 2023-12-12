@@ -270,6 +270,7 @@ class TextDetector(object):
 
         post_result = self.postprocess_op(preds, shape_list)
         dt_boxes = post_result[0]['points']
+        dt_boxes = self.expand_bboxes(ori_im, dt_boxes)
 
         if self.args.det_box_type == 'poly':
             dt_boxes = self.filter_tag_det_res_only_clip(dt_boxes, ori_im.shape)
@@ -280,6 +281,39 @@ class TextDetector(object):
             self.autolog.times.end(stamp=True)
         et = time.time()
         return dt_boxes, et - st
+
+
+    def expand_bboxes(self, image, dt_boxes):
+        print("DOING THE THING")
+        img_height, img_width = image.shape[:2]
+        # Calculate the center of each box
+        centers = dt_boxes.mean(axis=1)
+
+        # Create a new array for the expanded boxes
+        expanded_boxes = np.empty_like(dt_boxes)
+
+        # For each box and corresponding center...
+        for i, (box, center) in enumerate(zip(dt_boxes, centers)):
+            # For each corner of the box...
+            for j, corner in enumerate(box):
+                # Calculate the vector from the center to the corner
+                vector = corner - center
+
+                # Increase the length of the vector by 10%
+                vector *= 1.3
+
+                # Calculate the new corner position
+                new_corner = center + vector
+
+                # Store the new corner in the expanded_boxes array
+                expanded_boxes[i,j] = new_corner
+
+        # Ensure the boxes don't go outside the image boundaries
+        expanded_boxes = np.maximum(expanded_boxes, 0)
+        expanded_boxes[:,:,0] = np.minimum(expanded_boxes[:,:,0], img_width)
+        expanded_boxes[:,:,1] = np.minimum(expanded_boxes[:,:,1], img_height)
+
+        return expanded_boxes
 
 
 if __name__ == "__main__":

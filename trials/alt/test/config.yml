@@ -4,8 +4,8 @@ Global:
   epoch_num: 200
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/alt/new_hardneg
-  save_epoch_step: 200
+  save_model_dir: ./trials/alt/test
+  save_epoch_step: 100
   eval_batch_step:
   - 0
   - 1000
@@ -140,7 +140,7 @@ Train:
     num_workers: 8
 Alt:
   dataset:
-    name: SimpleDataSet 
+    name: SimpleDataSet
     data_dir: ./aug_train/
     ext_op_transform_idx: 1
     label_file_list:
@@ -156,7 +156,7 @@ Alt:
         - 48
         - 320
         - 3
-        max_text_length: 100
+        max_text_length: 25
     - RecAug:
         tia_prob: 0.4
         crop_prob: 0.4
@@ -261,3 +261,4 @@ Test:
     drop_last: false
     batch_size_per_card: 256
     num_workers: 8
+profiler_options: null

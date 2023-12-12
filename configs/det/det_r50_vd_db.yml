@@ -1,10 +1,10 @@
 Global:
   use_gpu: true
-  epoch_num: 1200
+  epoch_num: 500
   log_smooth_window: 20
   print_batch_step: 10
   save_model_dir: ./output/det_r50_vd/
-  save_epoch_step: 1200
+  save_epoch_step: 1500
   # evaluation is run every 2000 iterations
   eval_batch_step: [0,2000]
   cal_metric_during_train: False
@@ -42,7 +42,9 @@ Optimizer:
   beta1: 0.9
   beta2: 0.999
   lr:
-    learning_rate: 0.001
+    name: Cosine
+    learning_rate: 1.0e-4
+    warmup_epoch: 5
   regularizer:
     name: 'L2'
     factor: 0
@@ -50,9 +52,9 @@ Optimizer:
 PostProcess:
   name: DBPostProcess
   thresh: 0.3
-  box_thresh: 0.7
+  box_thresh: 0.3
   max_candidates: 1000
-  unclip_ratio: 1.5
+  unclip_ratio: 2
 
 Metric:
   name: DetMetric
@@ -61,9 +63,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./train_data/icdar2015/text_localization/
+    data_dir: ./aug_train/nitin_fullset
     label_file_list:
-      - ./train_data/icdar2015/text_localization/train_icdar2015_label.txt
+      - ./aug_train/dets_train.txt
     ratio_list: [1.0]
     transforms:
       - DecodeImage: # load image
@@ -72,7 +74,6 @@ Train:
       - DetLabelEncode: # Class handling label
       - IaaAugment:
           augmenter_args:
-            - { 'type': Fliplr, 'args': { 'p': 0.5 } }
             - { 'type': Affine, 'args': { 'rotate': [-10, 10] } }
             - { 'type': Resize, 'args': { 'size': [0.5, 3] } }
       - EastRandomCropData:
@@ -97,15 +98,15 @@ Train:
   loader:
     shuffle: True
     drop_last: False
-    batch_size_per_card: 16
+    batch_size_per_card: 8
     num_workers: 4
 
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./train_data/icdar2015/text_localization/
+    data_dir: ./aug_train/nitin_fullset
     label_file_list:
-      - ./train_data/icdar2015/text_localization/test_icdar2015_label.txt
+      - ./aug_train/dets_val.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR

@@ -209,30 +209,33 @@ class BaseDataAugmentation(object):
                     fit_output=True,
                     cval=128
                 )),
-                iaa.ChannelShuffle(p=self.channelshuffle_prob),
-                iaa.Add((-self.add_amount, self.add_amount), per_channel=True),
-                iaa.AdditiveGaussianNoise(scale=(0, self.add_gaussian_amount*255), per_channel=True),
-                iaa.Multiply((1-self.multiply_amount, 1+self.multiply_amount), per_channel=True),
-                iaa.OneOf([
-                    iaa.Dropout(p=(0, self.dropout_percent)),
-                    iaa.CoarseDropout(p=(0, self.c_dropout_percent), size_percent=(0, self.c_dropout_size_percent)),
-                ]),
-                iaa.Invert(p=self.invert_prob, per_channel=True),
-                iaa.JpegCompression(compression=(0, self.jpeg_compression)),
-                iaa.MultiplyHueAndSaturation((1-self.hs_multiplier, 1+self.hs_multiplier), per_channel=True),
-                iaa.RemoveSaturation(mul=(0, self.saturation_remover)),
-                iaa.ChangeColorTemperature((self.color_temp_shift, self.color_temp_shift)),
-                iaa.GammaContrast(gamma=(1-self.contrast_gamma, 1+self.contrast_gamma)),
-                iaa.OneOf([
-                    iaa.GaussianBlur(sigma=(0, self.gaussian_sigma)),
-                    iaa.MotionBlur(k=self.motionblur_kernel),
-                    # iaa.imgcorruptlike.DefocusBlur(severity=defocus_severity),
-                    # iaa.imgcorruptlike.ZoomBlur(severity=zoom_severity)
-                ]),
-                iaa.Sometimes(self.cloud_snow_prob, iaa.OneOf([
-                    iaa.Clouds(),
-                    iaa.Fog()
-                ]))
+                iaa.SomeOf((0, 3), [
+                    iaa.ChannelShuffle(p=self.channelshuffle_prob),
+                    iaa.Add((-self.add_amount, self.add_amount), per_channel=True),
+                    iaa.AdditiveGaussianNoise(scale=(0, self.add_gaussian_amount*255), per_channel=True),
+                    iaa.Multiply((1-self.multiply_amount, 1+self.multiply_amount), per_channel=True),
+                    iaa.OneOf([
+                        iaa.Dropout(p=(0, self.dropout_percent)),
+                        iaa.CoarseDropout(p=(0, self.c_dropout_percent), size_percent=(0, self.c_dropout_size_percent)),
+                    ]),
+                    iaa.Invert(p=self.invert_prob, per_channel=True),
+                    iaa.JpegCompression(compression=(0, self.jpeg_compression)),
+                    iaa.MultiplyHueAndSaturation((1-self.hs_multiplier, 1+self.hs_multiplier), per_channel=True),
+                    iaa.RemoveSaturation(mul=(0, self.saturation_remover)),
+                    iaa.ChangeColorTemperature((self.color_temp_shift, self.color_temp_shift)),
+                    iaa.GammaContrast(gamma=(1-self.contrast_gamma, 1+self.contrast_gamma)),
+                    iaa.OneOf([
+                        iaa.GaussianBlur(sigma=(0, self.gaussian_sigma)),
+                        iaa.MotionBlur(k=self.motionblur_kernel),
+                        # iaa.imgcorruptlike.DefocusBlur(severity=defocus_severity),
+                        # iaa.imgcorruptlike.ZoomBlur(severity=zoom_severity)
+                    ]),
+                    iaa.Sometimes(self.cloud_snow_prob, iaa.OneOf([
+                        iaa.Clouds(),
+                        iaa.Fog()
+                    ]))
+                ], random_order=True),
+                iaa.Crop(percent=(0.0, 0.3))
             ], random_order=True)
             if h < 32 or w < 32:
                 scale = 32.0 / min(h, w)

@@ -140,4 +140,5 @@ class EASTPostProcess(object):
                         continue
                     boxes_norm.append(box)
             dt_boxes_list.append({'points': np.array(boxes_norm)})
+        print(dt_boxes)
         return dt_boxes_list

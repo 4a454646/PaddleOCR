@@ -4838,3 +4838,220 @@ test/word_977.png	Esplanade
 test/word_988.png	Carpark
 test/word_99.png	CONVERSE
 test/word_991.png	2015
+nitin_crops/eb-115845601368_cropped_crop13.jpg	Brown,
+nitin_crops/eb-115845601368_cropped_crop14.jpg	LEAGUE
+nitin_crops/eb-115845603874_cropped_crop0.jpg	AMERICAN
+nitin_crops/eb-115845603874_cropped_crop1.jpg	BACK ROW: Tr, Weidner, Francona, Moore, Brideweser,
+nitin_crops/eb-115845603874_cropped_crop2.jpg	Brown, Zuverink, Johnson, Triandos, Nelson, Houtteman,
+nitin_crops/eb-115845603874_cropped_crop3.jpg	Ceccarelli, Ourham, Club House Mgr. Diskin. SECOND
+nitin_crops/eb-115845603874_cropped_crop4.jpg	ROW: Garner, Botd, Mirdanda, Zupo, Coach Vincent, Coach
+nitin_crops/eb-115845603874_cropped_crop5.jpg	Harris, Mgr. Richards, Coach Brecheen, Busby, Kell,
+nitin_crops/eb-115845603874_cropped_crop6.jpg	Ginsberg, Loes. FIRST ROW: Batboy Shaw, Neiman, Wight,
+nitin_crops/eb-115845603874_cropped_crop7.jpg	Hale, Robinson, Lehman, Pilarcik, Goodman, O'Dell, Bat-
+nitin_crops/eb-115845603874_cropped_crop8.jpg	boy Diering.
+nitin_crops/eb-115845603874_cropped_crop9.jpg	Triandos
+nitin_crops/eb-115845603874_cropped_crop10.jpg	BALTIMORE
+nitin_crops/eb-115845603874_cropped_crop11.jpg	Carner,
+nitin_crops/eb-115845603874_cropped_crop12.jpg	ORIOLES
+nitin_crops/eb-115845603874_cropped_crop13.jpg	LEAGUE
+nitin_crops/eb-115845605358_cropped_crop0.jpg	JOE PIGNATANO
+nitin_crops/eb-115845605358_cropped_crop1.jpg	LOS ANGELES DODGERS
+nitin_crops/eb-115845605358_cropped_crop2.jpg	Dodgers
+nitin_crops/eb-115845605358_cropped_crop3.jpg	CATCHER
+nitin_crops/eb-115845648870_cropped_crop0.jpg	BOSTON
+nitin_crops/eb-115845648870_cropped_crop1.jpg	RED SOX
+nitin_crops/eb-115845648870_cropped_crop2.jpg	ELLIS
+nitin_crops/eb-115845648870_cropped_crop3.jpg	BURKS
+nitin_crops/eb-115845648870_cropped_crop4.jpg	B
+nitin_crops/eb-115845648870_cropped_crop5.jpg	topps
+nitin_crops/eb-115845653897_cropped_crop0.jpg	RICKEY HENDERSON
+nitin_crops/eb-115845653897_cropped_crop1.jpg	Ricky Henderson
+nitin_crops/eb-115845653897_cropped_crop2.jpg	OUTFIELD
+nitin_crops/eb-115845653897_cropped_crop3.jpg	A's
+nitin_crops/eb-115845689624_cropped_crop0.jpg	NOREN
+nitin_crops/eb-115845689624_cropped_crop1.jpg	NY
+nitin_crops/eb-115845689624_cropped_crop2.jpg	Color TV
+nitin_crops/eb-115845689624_cropped_crop3.jpg	NEW YOR
+nitin_crops/eb-115845692058_cropped_crop0.jpg	JOHNNY KLIPPSTEIN
+nitin_crops/eb-115845692058_cropped_crop1.jpg	Johnny Klippstein
+nitin_crops/eb-115845692058_cropped_crop2.jpg	P
+nitin_crops/eb-115845692058_cropped_crop3.jpg	D
+nitin_crops/eb-115845692058_cropped_crop4.jpg	TIGERS
+nitin_crops/eb-115845713271_cropped_crop0.jpg	ADLEY RUTSCHMAN
+nitin_crops/eb-115845713271_cropped_crop1.jpg	1st
+nitin_crops/eb-115845713271_cropped_crop2.jpg	ECT * PROSPECT * PROSPECT * PROS
+nitin_crops/eb-115845713271_cropped_crop3.jpg	Orioles
+nitin_crops/eb-115845713271_cropped_crop4.jpg	B
+nitin_crops/eb-115845713271_cropped_crop5.jpg	PROSPECT
+nitin_crops/eb-115845713271_cropped_crop6.jpg	PROSPECT
+nitin_crops/eb-115845713271_cropped_crop7.jpg	PROS
+nitin_crops/eb-115845713271_cropped_crop8.jpg	edition
+nitin_crops/eb-115845713271_cropped_crop9.jpg	Catcher
+nitin_crops/eb-115845713271_cropped_crop10.jpg	TM
+nitin_crops/eb-115845715471_cropped_crop0.jpg	NGELS
+nitin_crops/eb-115845715471_cropped_crop1.jpg	17
+nitin_crops/eb-115845715471_cropped_crop2.jpg	SHOHEI
+nitin_crops/eb-115845715471_cropped_crop3.jpg	TOPPS
+nitin_crops/eb-115845715471_cropped_crop4.jpg	A
+nitin_crops/eb-115845715471_cropped_crop5.jpg	A
+nitin_crops/eb-115845715471_cropped_crop6.jpg	OHTANI
+nitin_crops/eb-115845715471_cropped_crop7.jpg	SHOHE
+nitin_crops/eb-115845715471_cropped_crop8.jpg	P/DH
+nitin_crops/eb-115845715471_cropped_crop9.jpg	ANGELS
+nitin_crops/eb-115845777465_cropped_crop0.jpg	S
+nitin_crops/eb-115845777465_cropped_crop1.jpg	KEN GRIFFEY, JR.
+nitin_crops/eb-115845777465_cropped_crop2.jpg	PEREZ
+nitin_crops/eb-115845777465_cropped_crop3.jpg	DONRUSS
+nitin_crops/eb-115845777465_cropped_crop4.jpg	KINGS
+nitin_crops/eb-115845777465_cropped_crop5.jpg	DIAMOND
+nitin_crops/eb-115846752408_cropped_crop0.jpg	minnie minoso
+nitin_crops/eb-115846752408_cropped_crop1.jpg	CLEVELAND INDIANS
+nitin_crops/eb-115846752408_cropped_crop2.jpg	OUTFIELD
+nitin_crops/eb-115846794169_cropped_crop0.jpg	SHOHEI OHTANI
+nitin_crops/eb-115846794169_cropped_crop1.jpg	LOS ANGELES
+nitin_crops/eb-115846794169_cropped_crop2.jpg	CARD
+nitin_crops/eb-115846794169_cropped_crop3.jpg	RC
+nitin_crops/eb-115846794169_cropped_crop4.jpg	ROOKIE
+nitin_crops/eb-115846794169_cropped_crop5.jpg	DH
+nitin_crops/eb-115848000636_cropped_crop0.jpg	SELECT
+nitin_crops/eb-115848000636_cropped_crop1.jpg	ICHIRO
+nitin_crops/eb-115848000636_cropped_crop2.jpg	SEATTLE * OF
+nitin_crops/eb-115848000636_cropped_crop3.jpg	ICHIRO
+nitin_crops/eb-115848000636_cropped_crop4.jpg	2022
+nitin_crops/eb-115848000636_cropped_crop5.jpg	51
+nitin_crops/eb-115848020850_cropped_crop0.jpg	BOWMAN
+nitin_crops/eb-115848020850_cropped_crop1.jpg	55
+nitin_crops/eb-115848020850_cropped_crop2.jpg	SAN FRANCISCO GIANTS
+nitin_crops/eb-115848020850_cropped_crop3.jpg	TIM LINCECUM * P
+nitin_crops/eb-115848020850_cropped_crop4.jpg	Chrome
+nitin_crops/eb-115848021032_cropped_crop0.jpg	1ST
+nitin_crops/eb-115848021032_cropped_crop1.jpg	BOWMAN
+nitin_crops/eb-115848021032_cropped_crop2.jpg	DREW GILBERT
+nitin_crops/eb-115848021032_cropped_crop3.jpg	PROSPECTS // PROSPECTS // PROSPECTS
+nitin_crops/eb-115848021032_cropped_crop4.jpg	1
+nitin_crops/eb-115848021032_cropped_crop5.jpg	B
+nitin_crops/eb-115848021032_cropped_crop6.jpg	Chrome
+nitin_crops/eb-115848021032_cropped_crop7.jpg	ROS
+nitin_crops/eb-115848021032_cropped_crop8.jpg	AST
+nitin_crops/eb-115848021032_cropped_crop9.jpg	OF
+nitin_crops/eb-115848025841_cropped_crop0.jpg	HERITAGE
+nitin_crops/eb-115848025841_cropped_crop1.jpg	topps
+nitin_crops/eb-115848025841_cropped_crop2.jpg	ARIZONA
+nitin_crops/eb-115848025841_cropped_crop3.jpg	OUTFIELD
+nitin_crops/eb-115848025841_cropped_crop4.jpg	RC
+nitin_crops/eb-115848025841_cropped_crop5.jpg	CORRIN
+nitin_crops/eb-115848025841_cropped_crop6.jpg	DIAMONDBACKS
+nitin_crops/eb-115848025841_cropped_crop7.jpg	CARROLL
+nitin_crops/eb-115848034887_cropped_crop0.jpg	Bowman
+nitin_crops/eb-115848034887_cropped_crop1.jpg	BOSTON RED SOX
+nitin_crops/eb-115848034887_cropped_crop2.jpg	DAVID ORTIZ * DH
+nitin_crops/eb-115848034887_cropped_crop3.jpg	Chrome
+nitin_crops/eb-115848043697_cropped_crop0.jpg	GIANTS
+nitin_crops/eb-115848043697_cropped_crop1.jpg	S
+nitin_crops/eb-115848043697_cropped_crop2.jpg	topps
+nitin_crops/eb-115848043697_cropped_crop3.jpg	Chrome
+nitin_crops/eb-115848043697_cropped_crop4.jpg	GIAN
+nitin_crops/eb-115848043697_cropped_crop5.jpg	RC
+nitin_crops/eb-115848044312_cropped_crop0.jpg	ROOKIE
+nitin_crops/eb-115848044312_cropped_crop1.jpg	LOGAN WEBB
+nitin_crops/eb-115848044312_cropped_crop2.jpg	SAN FRANCISCO
+nitin_crops/eb-115848044312_cropped_crop3.jpg	RATED
+nitin_crops/eb-115848044312_cropped_crop4.jpg	OPTIC
+nitin_crops/eb-115848044312_cropped_crop5.jpg	DONNUSS
+nitin_crops/eb-115848044899_cropped_crop0.jpg	Brave
+nitin_crops/eb-115848044899_cropped_crop1.jpg	FREDDIE FREEMAN
+nitin_crops/eb-115848044899_cropped_crop2.jpg	Braves
+nitin_crops/eb-115848044899_cropped_crop3.jpg	topps
+nitin_crops/eb-115848044899_cropped_crop4.jpg	Chrome
+nitin_crops/eb-115848044899_cropped_crop5.jpg	A
+nitin_crops/eb-115848051207_cropped_crop0.jpg	YEARS OF BASEBALL
+nitin_crops/eb-115848051207_cropped_crop1.jpg	OPERATION
+nitin_crops/eb-115848051207_cropped_crop2.jpg	Athletics
+nitin_crops/eb-115848051207_cropped_crop3.jpg	HAROLD BAINES
+nitin_crops/eb-115848051207_cropped_crop4.jpg	Athletics
+nitin_crops/eb-115848051207_cropped_crop5.jpg	topps
+nitin_crops/eb-115848051207_cropped_crop6.jpg	40
+nitin_crops/eb-115848051207_cropped_crop7.jpg	DH-OF
+nitin_crops/eb-115848057539_cropped_crop0.jpg	OPERATION
+nitin_crops/eb-115848057539_cropped_crop1.jpg	DESERT SHIELD
+nitin_crops/eb-115848057539_cropped_crop2.jpg	YEARS OF BASEBALL
+nitin_crops/eb-115848057539_cropped_crop3.jpg	KENT ANDERSON
+nitin_crops/eb-115848057539_cropped_crop4.jpg	topps
+nitin_crops/eb-115848057539_cropped_crop5.jpg	40
+nitin_crops/eb-115848057539_cropped_crop6.jpg	Angels
+nitin_crops/eb-115848057539_cropped_crop7.jpg	SS-2B
+nitin_crops/eb-115848057741_cropped_crop0.jpg	YEARS OF BASEBALL
+nitin_crops/eb-115848057741_cropped_crop1.jpg	40
+nitin_crops/eb-115848057741_cropped_crop2.jpg	BLUE JAYS
+nitin_crops/eb-115848057741_cropped_crop3.jpg	DAVID WELLS
+nitin_crops/eb-115848057741_cropped_crop4.jpg	P
+nitin_crops/eb-115848057741_cropped_crop5.jpg	topps
+nitin_crops/eb-115848057741_cropped_crop6.jpg	TOR
+nitin_crops/eb-115848061723_cropped_crop0.jpg	topps
+nitin_crops/eb-115848061723_cropped_crop1.jpg	Braves
+nitin_crops/eb-115848061723_cropped_crop2.jpg	AUSTIN RILEY
+nitin_crops/eb-115848061723_cropped_crop3.jpg	ATLANTA BRAVES
+nitin_crops/eb-115848061723_cropped_crop4.jpg	A
+nitin_crops/eb-115848061723_cropped_crop5.jpg	A
+nitin_crops/eb-115848061723_cropped_crop6.jpg	3B
+nitin_crops/eb-115848072918_cropped_crop0.jpg	1988-2021
+nitin_crops/eb-115848072918_cropped_crop1.jpg	JULIO
+nitin_crops/eb-115848072918_cropped_crop2.jpg	RODRIGUEZ
+nitin_crops/eb-115848072918_cropped_crop3.jpg	MARINERS
+nitin_crops/eb-115848072918_cropped_crop4.jpg	35
+nitin_crops/eb-115848072918_cropped_crop5.jpg	topps
+nitin_crops/eb-115848072918_cropped_crop6.jpg	Chrome
+nitin_crops/eb-115848095319_cropped_crop0.jpg	BOWMAN
+nitin_crops/eb-115848095319_cropped_crop1.jpg	1ST
+nitin_crops/eb-115848095319_cropped_crop2.jpg	Phillies
+nitin_crops/eb-115848095319_cropped_crop3.jpg	JUSTIN CRAWFORD
+nitin_crops/eb-115848095319_cropped_crop4.jpg	outfielder
+nitin_crops/eb-115848095319_cropped_crop5.jpg	B
+nitin_crops/eb-115848095319_cropped_crop6.jpg	Chrome
+nitin_crops/eb-115848261173_cropped_crop0.jpg	yogi berra
+nitin_crops/eb-115848261173_cropped_crop1.jpg	yogi berra
+nitin_crops/eb-115848261173_cropped_crop2.jpg	Yankees
+nitin_crops/eb-115848261173_cropped_crop3.jpg	NEW YORK YANKEES
+nitin_crops/eb-115848261173_cropped_crop4.jpg	CATCHER
+nitin_crops/eb-115848262179_cropped_crop0.jpg	GAME #4
+nitin_crops/eb-115848262179_cropped_crop1.jpg	L.A. 5 - SOX 4
+nitin_crops/eb-115848262179_cropped_crop2.jpg	HODGES' WINNING HOMER
+nitin_crops/eb-115848262179_cropped_crop3.jpg	A
+nitin_crops/eb-115848262179_cropped_crop4.jpg	Dodgers
+nitin_crops/eb-115848262179_cropped_crop5.jpg	1959
+nitin_crops/eb-115848262179_cropped_crop6.jpg	14
+nitin_crops/eb-115848262179_cropped_crop7.jpg	WORLD
+nitin_crops/eb-115848262179_cropped_crop8.jpg	SERIES
+nitin_crops/eb-115848270320_cropped_crop0.jpg	The Sporting News
+nitin_crops/eb-115848270320_cropped_crop1.jpg	ERNIE BANKS
+nitin_crops/eb-115848270320_cropped_crop2.jpg	NATIONAL LEAGUE
+nitin_crops/eb-115848270320_cropped_crop3.jpg	'59 ALL STAR SELECTION
+nitin_crops/eb-115848270320_cropped_crop4.jpg	c
+nitin_crops/eb-115848270320_cropped_crop5.jpg	SHORTSTOP
+nitin_crops/eb-115848542869_cropped_crop0.jpg	1ST
+nitin_crops/eb-115848542869_cropped_crop1.jpg	BOWMAN
+nitin_crops/eb-115848542869_cropped_crop2.jpg	1st
+nitin_crops/eb-115848542869_cropped_crop3.jpg	BLUE
+nitin_crops/eb-115848542869_cropped_crop4.jpg	edition
+nitin_crops/eb-115848542869_cropped_crop5.jpg	ZACH
+nitin_crops/eb-115848542869_cropped_crop6.jpg	BRITTON
+nitin_crops/eb-115848542869_cropped_crop7.jpg	OF
+nitin_crops/eb-115848566388_cropped_crop0.jpg	073/399
+nitin_crops/eb-115848566388_cropped_crop1.jpg	MIGEUL BLEIS
+nitin_crops/eb-115848566388_cropped_crop2.jpg	B
+nitin_crops/eb-115848566388_cropped_crop3.jpg	chrome
+nitin_crops/eb-115848566388_cropped_crop4.jpg	outfielder
+nitin_crops/eb-115848568714_cropped_crop0.jpg	B
+nitin_crops/eb-115848568714_cropped_crop1.jpg	Chrome
+nitin_crops/eb-115848568714_cropped_crop2.jpg	25
+nitin_crops/eb-115848577622_cropped_crop0.jpg	CORBIN CARROLL
+nitin_crops/eb-115848577622_cropped_crop1.jpg	RC
+nitin_crops/eb-115848577622_cropped_crop2.jpg	B
+nitin_crops/eb-115848577622_cropped_crop3.jpg	Chrome
+nitin_crops/eb-115848590508_cropped_crop0.jpg	NEW YORK METS
+nitin_crops/eb-115848590508_cropped_crop1.jpg	NY
+nitin_crops/eb-115848590508_cropped_crop2.jpg	TOM
+nitin_crops/eb-115848590508_cropped_crop3.jpg	SEAVER
+nitin_crops/eb-115848590508_cropped_crop4.jpg	PITCHER
+nitin_crops/eb-115848596106_cropped_crop0.jpg	FREDDIE FREEMAN
+nitin_crops/eb-115848596106_cropped_crop1.jpg	ATLANTA BRAVES
