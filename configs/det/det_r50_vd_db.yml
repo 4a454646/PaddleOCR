@@ -1,14 +1,14 @@
 Global:
   use_gpu: true
-  epoch_num: 500
+  epoch_num: 100
   log_smooth_window: 20
   print_batch_step: 10
-  save_model_dir: ./output/det_r50_vd/
+  save_model_dir: ./output/det_r50_vd_withhoriz/
   save_epoch_step: 1500
-  # evaluation is run every 2000 iterations
   eval_batch_step: [0,2000]
   cal_metric_during_train: False
-  pretrained_model: ./pretrain_models/ResNet50_vd_ssld_pretrained
+  # pretrained_model: ./pretrain_models/ResNet50_vd_ssld_pretrained
+  pretrained_model: ./output/det_r50_vd/best_accuracy
   checkpoints:
   save_inference_dir:
   use_visualdl: False
@@ -43,7 +43,7 @@ Optimizer:
   beta2: 0.999
   lr:
     name: Cosine
-    learning_rate: 1.0e-4
+    learning_rate: 5.0e-5
     warmup_epoch: 5
   regularizer:
     name: 'L2'
@@ -51,10 +51,10 @@ Optimizer:
 
 PostProcess:
   name: DBPostProcess
-  thresh: 0.3
-  box_thresh: 0.3
+  thresh: 0.1
+  box_thresh: 0.1
   max_candidates: 1000
-  unclip_ratio: 2
+  unclip_ratio: 1.2
 
 Metric:
   name: DetMetric
@@ -74,8 +74,8 @@ Train:
       - DetLabelEncode: # Class handling label
       - IaaAugment:
           augmenter_args:
-            - { 'type': Affine, 'args': { 'rotate': [-10, 10] } }
-            - { 'type': Resize, 'args': { 'size': [0.5, 3] } }
+            - { 'type': Affine, 'args': { 'rotate': [-20, 20] } }
+            - { 'type': Resize, 'args': { 'size': [0.3, 4] } }
       - EastRandomCropData:
           size: [640, 640]
           max_tries: 50

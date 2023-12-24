@@ -234,8 +234,7 @@ class BaseDataAugmentation(object):
                         iaa.Clouds(),
                         iaa.Fog()
                     ]))
-                ], random_order=True),
-                iaa.Crop(percent=(0.0, 0.3))
+                ], random_order=True)
             ], random_order=True)
             if h < 32 or w < 32:
                 scale = 32.0 / min(h, w)

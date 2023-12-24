@@ -1,11 +1,11 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 30
+  epoch_num: 200
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/alt/new_hardneg
-  save_epoch_step: 30
+  save_model_dir: ./trials/newrec/baseaugs
+  save_epoch_step: 200
   eval_batch_step:
   - 0
   - 1000
@@ -83,13 +83,13 @@ Train:
         img_mode: BGR
         channel_first: false
     - RecConAug:
-        prob: 0.05
+        prob: 0
         ext_data_num: 3
         image_shape:
         - 48
         - 320
         - 3
-        max_text_length: 25
+        max_text_length: 100
     - RecAug:
         tia_prob: 0.4
         crop_prob: 0.4
@@ -98,11 +98,11 @@ Train:
         jitter_prob: 0.4
         blur_prob: 0.4
         hsv_aug_prob: 0.4
-        use_imgaug: 1
+        use_imgaug: 0
         affine_scale_diff: 0.09
         affine_translate_percent: 0.1
-        affine_rotation: 5
-        affine_shear: 5
+        affine_rotation: 20
+        affine_shear: 20
         affine_prob: 0.3
         channelshuffle_prob: 0.28
         add_amount: 50
@@ -150,7 +150,7 @@ Alt:
         img_mode: BGR
         channel_first: false
     - RecConAug:
-        prob: 0.05
+        prob: 0
         ext_data_num: 3
         image_shape:
         - 48
@@ -165,11 +165,11 @@ Alt:
         jitter_prob: 0.4
         blur_prob: 0.4
         hsv_aug_prob: 0.4
-        use_imgaug: 1
+        use_imgaug: 0
         affine_scale_diff: 0.09
         affine_translate_percent: 0.1
-        affine_rotation: 5
-        affine_shear: 5
+        affine_rotation: 20
+        affine_shear: 20
         affine_prob: 0.3
         channelshuffle_prob: 0.28
         add_amount: 50
@@ -208,7 +208,7 @@ Alt:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./aug_train/val_imgs/
+    data_dir: ./aug_train/
     label_file_list:
     - ./aug_train/val_list.txt
     transforms:

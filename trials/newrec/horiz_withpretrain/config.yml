@@ -1,17 +1,16 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: 150
+  epoch_num: 50
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./trials/newrec/dockertest
+  save_model_dir: ./trials/newrec/horiz_withpretrain
   save_epoch_step: 150
   eval_batch_step:
   - 0
   - 1000
   cal_metric_during_train: true
-  pretrained_model: ./pretrain_models/en_PP-OCRv3_rec_train/best_accuracy
-  # pretrained_model: ./trials/newrec/hardneg_allaugs_evenlesspower_newset/best_accuracy
+  pretrained_model: ./trials/newrec/hardneg_allaugs_evenlesspower_newset/best_accuracy
   checkpoints: null
   save_inference_dir: null
   use_visualdl: false
@@ -102,7 +101,7 @@ Train:
         use_imgaug: 1
         affine_scale_diff: 0.1
         affine_translate_percent: 0.05
-        affine_rotation: 180
+        affine_rotation: 5
         affine_shear: 5
         affine_prob: 0.1
         channelshuffle_prob: 0.1
@@ -136,12 +135,12 @@ Train:
         - valid_ratio
   loader:
     shuffle: true
-    batch_size_per_card: 32
+    batch_size_per_card: 96
     drop_last: true
     num_workers: 8
 Alt:
   dataset:
-    name: SimpleDataSet 
+    name: SimpleDataSet
     data_dir: ./aug_train/
     ext_op_transform_idx: 1
     label_file_list:
@@ -203,7 +202,7 @@ Alt:
         - valid_ratio
   loader:
     shuffle: true
-    batch_size_per_card: 32
+    batch_size_per_card: 96
     drop_last: true
     num_workers: 8
 Eval:
@@ -232,7 +231,7 @@ Eval:
   loader:
     shuffle: false
     drop_last: false
-    batch_size_per_card: 32
+    batch_size_per_card: 256
     num_workers: 8
 Test:
   dataset:
@@ -260,5 +259,6 @@ Test:
   loader:
     shuffle: false
     drop_last: false
-    batch_size_per_card: 32
+    batch_size_per_card: 256
     num_workers: 8
+profiler_options: null

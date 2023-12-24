@@ -37,6 +37,16 @@ class TensorBoardVisualizer():
                 scalar_value=valid_loss, 
                 global_step=epoch
             )
+            self._writer.add_scalar(
+                tag=f"Dataset/Train_Acc", 
+                scalar_value=train_acc, 
+                global_step=epoch
+            )
+            self._writer.add_scalar(
+                tag=f"Dataset/Valid_Acc", 
+                scalar_value=valid_acc, 
+                global_step=epoch
+            )
     
     def update_alt(self, alt_acc, alt_loss, epoch):
         self._writer.add_scalar(
@@ -48,6 +58,11 @@ class TensorBoardVisualizer():
             self._writer.add_scalar(
                 tag=f"Dataset/Alt_Loss", 
                 scalar_value=alt_loss, 
+                global_step=epoch
+            )
+            self._writer.add_scalar(
+                tag=f"Dataset/Alt_Acc", 
+                scalar_value=alt_acc, 
                 global_step=epoch
             )
 

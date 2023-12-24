@@ -290,10 +290,8 @@ def train(config,
 
             pbar.update(1)
 
-
-        # eval
         if dist.get_rank() == 0:
-            calc_loss = epoch % 30 == 0
+            calc_loss = epoch % 30 == 0 or epoch + 1 % 30 == 0
 
             valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class)
 
