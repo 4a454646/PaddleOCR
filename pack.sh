@@ -9,6 +9,7 @@ mv nitin_fullset aug_train
 cat export/det_train_set.txt >> aug_train/dets_train.txt
 cat export/det_val_set.txt >> aug_train/dets_val.txt
 cat export/rec_train_set.txt >> aug_train/train_list.txt
+cat export/rec_train_set.txt >> aug_train/alt_list.txt
 cat export/rec_val_set.txt >> aug_train/val_list.txt
 
 # clean up folders

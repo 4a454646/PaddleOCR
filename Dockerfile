@@ -1,6 +1,4 @@
 FROM python:3.9-bullseye
-# copy only the Dockerfile
-COPY Dockerfile .
 
 # change the working directory to PaddleOCR
 WORKDIR /PaddleOCR
@@ -59,3 +57,5 @@ COPY . /PaddleOCR
 RUN /bin/bash -c "\
     source ~/miniconda3/bin/activate paddleocr && \
     pip install -r requirements.txt"
+
+RUN apt install wormhole -y
