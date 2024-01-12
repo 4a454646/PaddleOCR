@@ -26,7 +26,9 @@ class TensorBoardVisualizer():
             scalar_value=valid_acc, 
             global_step=epoch
         )
+        print(f"updating main, train_loss is {train_loss}")
         if train_loss != 0:
+            print(f"because not 0, updating dataset")
             self._writer.add_scalar(
                 tag=f"Dataset/Train_Loss", 
                 scalar_value=train_loss, 
@@ -54,7 +56,9 @@ class TensorBoardVisualizer():
             scalar_value=alt_acc, 
             global_step=epoch
         )
+        print(f"updating alt, alt_loss is {alt_loss}")
         if alt_loss != 0:
+            print(f"because not 0, updating dataset")
             self._writer.add_scalar(
                 tag=f"Dataset/Alt_Loss", 
                 scalar_value=alt_loss, 

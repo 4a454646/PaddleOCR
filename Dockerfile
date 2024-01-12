@@ -1,4 +1,13 @@
-FROM python:3.9-bullseye
+FROM ubuntu:focal
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    software-properties-common wget build-essential libffi-dev libssl-dev curl git unzip vim \
+    && add-apt-repository ppa:deadsnakes/ppa \
+    && apt-get update \
+    && apt-get install -y python3.9 python3.9-dev python3-pip \
+    && ln -s /usr/bin/python3.9 /usr/bin/python
 
 # change the working directory to PaddleOCR
 WORKDIR /PaddleOCR
@@ -44,7 +53,6 @@ RUN mv key2.gpg /etc/apt/trusted.gpg.d/
 RUN gpg --keyserver keyserver.ubuntu.com --recv-keys ACD442D1C8B7748B
 RUN gpg --export ACD442D1C8B7748B > keyA.gpg
 RUN mv keyA.gpg /etc/apt/trusted.gpg.d/
-RUN add-apt-repository -y ppa:system76-dev/stable
 RUN add-apt-repository "deb http://apt.pop-os.org/proprietary focal main"
 RUN echo "deb [trusted=yes] http://ppa.launchpad.net/system76-dev/stable/ubuntu focal main" | tee /etc/apt/sources.list.d/system76-dev.list
 
@@ -59,3 +67,7 @@ RUN /bin/bash -c "\
     pip install -r requirements.txt"
 
 RUN apt install wormhole -y
+
+RUN chmod +x start.sh
+
+CMD [ "./start.sh" ]

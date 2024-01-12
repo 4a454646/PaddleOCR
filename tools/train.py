@@ -146,6 +146,9 @@ def main(config, device, logger, vdl_writer):
     if valid_dataloader is not None:
         logger.info('valid dataloader has {} iters'.format(
             len(valid_dataloader)))
+    if alt_dataloader is not None:
+        logger.info('alt dataloader has {} iters'.format(
+            len(alt_dataloader)))
 
     use_amp = config["Global"].get("use_amp", False)
     amp_level = config["Global"].get("amp_level", 'O2')

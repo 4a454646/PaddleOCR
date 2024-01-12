@@ -286,12 +286,12 @@ def train(config,
 
             if not isinstance(lr_scheduler, float):
                 lr_scheduler.step()
-                lr_scheduler.step()
 
             pbar.update(1)
 
         if dist.get_rank() == 0:
-            calc_loss = epoch % 30 == 0 or epoch + 1 % 30 == 0
+            calc_loss = epoch % 50 == 0 or (epoch + 1) % 50 == 0
+            print(f"epoch {epoch}, calc_loss is {calc_loss}")
 
             valid_metrics = eval_with(model, valid_dataloader, post_process_class, eval_class, calc_loss, loss_class)
 
@@ -299,12 +299,14 @@ def train(config,
 
 
             if training_alt:
+                print("confirming alt")
                 visualizer.update_alt(
                     alt_acc=main_metrics['acc'],
                     alt_loss=main_metrics['loss'],
                     epoch=epoch
                 )
             else:
+                print("confirming main")
                 visualizer.update_main(
                     lr=optimizer.get_lr(),
                     train_acc=main_metrics['acc'],
@@ -365,9 +367,8 @@ def eval_with(model,
         else: total = 5
         pbar = tqdm(total=total, desc=f"evaluating with{'' if calc_loss else 'out'} loss", position=0, leave=True)
         for idx, batch in enumerate(dataloader):
-            if idx > 5:
-                if calc_loss: pass
-                else: continue
+            if idx > total:
+                break
             images = batch[0]
             preds = model(images, data=batch[1:])
 
