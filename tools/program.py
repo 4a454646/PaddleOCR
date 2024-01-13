@@ -274,7 +274,7 @@ def train(config,
         for idx, batch in enumerate(main_dataloader):
             profiler.add_profiler_step(profiler_options)
             if idx >= max_iter:
-                break
+                continue
             lr = optimizer.get_lr()
             images = batch[0]
 
@@ -368,7 +368,7 @@ def eval_with(model,
         pbar = tqdm(total=total, desc=f"evaluating with{'' if calc_loss else 'out'} loss", position=0, leave=True)
         for idx, batch in enumerate(dataloader):
             if idx > total:
-                break
+                continue
             images = batch[0]
             preds = model(images, data=batch[1:])
 
@@ -432,7 +432,7 @@ def get_center(model, eval_dataloader, post_process_class):
     char_center = dict()
     for idx, batch in enumerate(eval_dataloader):
         if idx >= max_iter:
-            break
+            continue
         images = batch[0]
         start = time.time()
         preds = model(images)
