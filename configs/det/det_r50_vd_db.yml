@@ -3,12 +3,12 @@ Global:
   epoch_num: 500
   log_smooth_window: 20
   print_batch_step: 10
-  save_model_dir: ./output/docker_train1
+  save_model_dir: ./output/docker_test2
   save_epoch_step: 1500
   eval_batch_step: [0,2000]
   cal_metric_during_train: False
-  # pretrained_model: ./pretrain_models/ResNet50_vd_ssld_pretrained
-  pretrained_model: ./pretrain_models/en_PP-OCRv3_det_train/best_accuracy
+  pretrained_model: ./pretrain_models/ResNet50_vd_ssld_pretrained
+  # pretrained_model: ./pretrain_models/en_PP-OCRv3_det_train/best_accuracy
   checkpoints:
   save_inference_dir:
   use_visualdl: False
@@ -43,15 +43,15 @@ Optimizer:
   beta2: 0.999
   lr:
     name: Cosine
-    learning_rate: 5.0e-5
+    learning_rate: 1.0e-4
     warmup_epoch: 5
   regularizer:
     name: 'L2'
-    factor: 0
+    factor: 5.0e-05
 
 PostProcess:
   name: DBPostProcess
-  thresh: 0.1
+  thresh: 0.3
   box_thresh: 0.1
   max_candidates: 1000
   unclip_ratio: 1.2
@@ -75,7 +75,7 @@ Train:
       - IaaAugment:
           augmenter_args:
             - { 'type': Affine, 'args': { 'rotate': [-20, 20] } }
-            - { 'type': Resize, 'args': { 'size': [0.3, 4] } }
+            - { 'type': Resize, 'args': { 'size': [0.2, 3] } }
       - EastRandomCropData:
           size: [640, 640]
           max_tries: 50
@@ -98,8 +98,8 @@ Train:
   loader:
     shuffle: True
     drop_last: False
-    batch_size_per_card: 256
-    num_workers: 4
+    batch_size_per_card: 8
+    num_workers: 8
 
 Eval:
   dataset:
