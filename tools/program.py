@@ -286,6 +286,7 @@ def train(config,
 
             if not isinstance(lr_scheduler, float):
                 lr_scheduler.step()
+                lr_scheduler.step()
 
             pbar.update(1)
 
