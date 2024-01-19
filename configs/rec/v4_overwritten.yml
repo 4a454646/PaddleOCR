@@ -203,9 +203,9 @@ Alt:
         - valid_ratio
   loader:
     shuffle: true
-    batch_size_per_card: 128
     drop_last: true
-    num_workers: 6
+    batch_size_per_card: 128
+    num_workers: 8
 Eval:
   dataset:
     name: SimpleDataSet
@@ -230,8 +230,8 @@ Eval:
         - length
         - valid_ratio
   loader:
-    shuffle: false
-    drop_last: false
+    shuffle: true
+    drop_last: true
     batch_size_per_card: 128
     num_workers: 8
 Test:
