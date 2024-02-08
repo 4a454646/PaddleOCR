@@ -302,7 +302,7 @@ class RecConAug(object):
                                        (ext_w, self.image_shape[0]))
         data['image'] = np.concatenate(
             [data['image'], ext_data['image']], axis=1)
-        data["label"] += ext_data["label"]
+        data["label"] += " " + ext_data["label"]
         return data
 
     def __call__(self, data):
