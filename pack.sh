@@ -5,11 +5,25 @@ mv nitin_crops aug_train
 mv nitin_fullset aug_train
 # use cat to add the contents of the following files:
 # export/det_train_set.txt export/det_val_set.txt export/rec_train_set.txt export/rec_val_set.txt
-# to aug_train/dets_train.txt aug_train/dets_val.txt aug_train/train_list.txt aug_train/val_list.txt
-cat export/det_train_set.txt >> aug_train/dets_train.txt
-cat export/det_val_set.txt >> aug_train/dets_val.txt
-cat export/rec_train_set.txt >> aug_train/train_list.txt
-cat export/rec_train_set.txt >> aug_train/alt_list.txt
-cat export/rec_val_set.txt >> aug_train/val_list.txt
-
-# clean up folders
+# to train_data/dets_train.txt train_data/dets_val.txt train_data/train_list.txt train_data/val_list.txt
+cat export/det_train_set.txt >> train_data/dets_train.txt
+cat export/det_val_set.txt >> train_data/dets_val.txt
+cat export/rec_train_set.txt >> train_data/train_list.txt
+while IFS= read -r line
+do
+  line=${line%%$'\t'*}
+  echo "/PaddleOCR/train_data/$line"
+done < train_list > train_list_paths
+cat export/rec_train_set.txt >> train_data/alt_list.txt
+while IFS= read -r line
+do
+  line=${line%%$'\t'*}
+  echo "/PaddleOCR/train_data/$line"
+done < alt_list > alt_list_paths
+cat export/rec_val_set.txt >> train_data/val_list.txt
+cat export/rec_train_set.txt >> train_data/alt_list.txt
+while IFS= read -r line
+do
+  line=${line%%$'\t'*}
+  echo "/PaddleOCR/train_data/$line"
+done < val_list > val_list_paths

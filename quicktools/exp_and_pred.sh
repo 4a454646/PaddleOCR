@@ -26,8 +26,8 @@ model="${model}/model"
 
 python3 -u tools/infer/predict_rec_mod.py \
   --label="train" \
-  --train_list="./aug_train/train_list.txt" \
-  --full_paths="./aug_train/train_list_paths.txt" \
+  --train_list="./train_data/train_list.txt" \
+  --full_paths="./train_data/train_list_paths.txt" \
   --out_path="./trials/${model}/train_result.txt" \
   --rec_model_dir="./trials/${model}/" \
   --rec_image_shape="3, 48, 320" \
@@ -36,8 +36,8 @@ python3 -u tools/infer/predict_rec_mod.py \
 
 python3 -u tools/infer/predict_rec_mod.py \
   --label="validation" \
-  --train_list="./aug_train/val_list.txt" \
-  --full_paths="./aug_train/val_list_paths.txt" \
+  --train_list="./train_data/val_list.txt" \
+  --full_paths="./train_data/val_list_paths.txt" \
   --out_path="./trials/${model}/val_result.txt" \
   --rec_model_dir="./trials/${model}/" \
   --rec_image_shape="3, 48, 320" \
@@ -46,8 +46,8 @@ python3 -u tools/infer/predict_rec_mod.py \
 
 python3 -u tools/infer/predict_rec_mod.py \
   --label="test" \
-  --train_list="./aug_train/test_list.txt" \
-  --full_paths="./aug_train/test_list_paths.txt" \
+  --train_list="./train_data/test_list.txt" \
+  --full_paths="./train_data/test_list_paths.txt" \
   --out_path="./trials/${model}/test_result.txt" \
   --rec_model_dir="./trials/${model}/" \
   --rec_image_shape="3, 48, 320" \
@@ -56,8 +56,8 @@ python3 -u tools/infer/predict_rec_mod.py \
 
 python3 -u tools/infer/predict_rec_mod.py \
   --label="alt" \
-  --train_list="./aug_train/alt_list.txt" \
-  --full_paths="./aug_train/alt_list_paths.txt" \
+  --train_list="./train_data/alt_list.txt" \
+  --full_paths="./train_data/alt_list_paths.txt" \
   --out_path="./trials/${model}/alt_result.txt" \
   --rec_model_dir="./trials/${model}/" \
   --rec_image_shape="3, 48, 320" \

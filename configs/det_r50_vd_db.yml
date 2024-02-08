@@ -63,9 +63,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./aug_train/nitin_fullset
+    data_dir: ./train_data/nitin_fullset
     label_file_list:
-      - ./aug_train/dets_train.txt
+      - ./train_data/dets_train.txt
     ratio_list: [1.0]
     transforms:
       - DecodeImage: # load image
@@ -104,9 +104,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./aug_train/nitin_fullset
+    data_dir: ./train_data/nitin_fullset
     label_file_list:
-      - ./aug_train/dets_val.txt
+      - ./train_data/dets_val.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR

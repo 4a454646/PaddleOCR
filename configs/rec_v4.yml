@@ -75,10 +75,10 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./aug_train/
+    data_dir: ./train_data/
     ext_op_transform_idx: 1
     label_file_list:
-    - ./aug_train/train_list.txt
+    - ./train_data/train_list.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -142,10 +142,10 @@ Train:
 Alt:
   dataset:
     name: SimpleDataSet 
-    data_dir: ./aug_train/
+    data_dir: ./train_data/
     ext_op_transform_idx: 1
     label_file_list:
-    - ./aug_train/alt_list.txt
+    - ./train_data/alt_list.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -209,9 +209,9 @@ Alt:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./aug_train/
+    data_dir: ./train_data/
     label_file_list:
-    - ./aug_train/val_list.txt
+    - ./train_data/val_list.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -237,9 +237,9 @@ Eval:
 Test:
   dataset:
     name: SimpleDataSet
-    data_dir: ./aug_train/test_imgs/
+    data_dir: ./train_data/test_imgs/
     label_file_list:
-    - ./aug_train/test_list.txt
+    - ./train_data/test_list.txt
     transforms:
     - DecodeImage:
         img_mode: BGR

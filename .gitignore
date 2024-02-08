@@ -10,7 +10,6 @@ __pycache__/
 inference/
 inference_results/
 
-train_data/
 log/
 *.DS_Store
 *.vs
@@ -39,7 +38,5 @@ test_tipc/web/node_modules/
 *.states
 *.pdopt
 *.log
-*.jpg
-*.png
 *.tar*
 runs/*

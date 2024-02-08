@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     # Compare the input files and write the output file
     fullpath_1 = f"preds/{args.model_dir}/{args.input_file1}"
-    fullpath_2 = f"aug_train/{args.input_file2}"
+    fullpath_2 = f"train_data/{args.input_file2}"
     os.makedirs(f"preds/{args.model_dir}/diffs", exist_ok=True)
     output_file_path = f"preds/{args.model_dir}/diffs/{args.input_file1}"
     compare_and_write(fullpath_1, fullpath_2, output_file_path)
