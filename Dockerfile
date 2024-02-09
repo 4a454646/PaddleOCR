@@ -67,7 +67,3 @@ RUN /bin/bash -c "\
     pip install -r requirements.txt"
 
 RUN apt install wormhole -y
-
-RUN chmod +x start.sh
-
-CMD [ "./start.sh" ]
