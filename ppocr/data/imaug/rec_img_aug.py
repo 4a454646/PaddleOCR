@@ -222,11 +222,11 @@ class BaseDataAugmentation(object):
                     iaa.JpegCompression(compression=(0, self.jpeg_compression)),
                     iaa.MultiplyHueAndSaturation((1-self.hs_multiplier, 1+self.hs_multiplier), per_channel=True),
                     iaa.RemoveSaturation(mul=(0, self.saturation_remover)),
-                    iaa.ChangeColorTemperature((self.color_temp_shift, self.color_temp_shift)),
+                    iaa.ChangeColorTemperature((1000, self.color_temp_shift)),
                     iaa.GammaContrast(gamma=(1-self.contrast_gamma, 1+self.contrast_gamma)),
                     iaa.OneOf([
                         iaa.GaussianBlur(sigma=(0, self.gaussian_sigma)),
-                        iaa.MotionBlur(k=self.motionblur_kernel),
+                        iaa.MotionBlur(k=(0, self.motionblur_kernel)),
                         # iaa.imgcorruptlike.DefocusBlur(severity=defocus_severity),
                         # iaa.imgcorruptlike.ZoomBlur(severity=zoom_severity)
                     ]),

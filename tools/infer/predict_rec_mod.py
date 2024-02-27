@@ -14,6 +14,7 @@
 import os
 import sys
 from PIL import Image
+import Levenshtein
 __dir__ = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(__dir__)
 sys.path.insert(0, os.path.abspath(os.path.join(__dir__, '../..')))
@@ -675,6 +676,9 @@ def main(args):
             ground_truths.append(line_split[1])
     count_wrong = 0
     with (open(out_path, 'w')) as output_file:
+        print(len(img_list))
+        print(len(path_list))
+        print(len(ground_truths))
         for ino in range(len(img_list)):
             res = rec_res[ino][0]
             if res != ground_truths[ino]:
@@ -682,7 +686,11 @@ def main(args):
                 output_file.write(f"{path_list[ino]}\t{res}\n")
                 # calculate the necessary number of tabs to equal the spacing created by path_list[ino]
                 num_tabs = 1 + (len(path_list[ino]) // 4)
-                output_file.write("\t" * (num_tabs - 4) + "GROUND TRUTH:\t" + ground_truths[ino] + "\n")
+                to_write = "\t" * (num_tabs - 4) + "GROUND TRUTH:\t" + ground_truths[ino]
+                similarity_score = Levenshtein.distance(res, ground_truths[ino])
+                if similarity_score > 4:
+                    to_write += " (CLEARLY WRONG)"
+                output_file.write(to_write + "\n")
     print(f"{args.label}: {len(img_list) - count_wrong}/{len(img_list)} ({round((1 - count_wrong / len(img_list)) * 100, 2)}%)")
     if args.benchmark:
         text_recognizer.autolog.report()

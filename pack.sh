@@ -1,5 +1,8 @@
 tar -xzf pack.tar.gz
 
+rm -r train_data/nitin_crops
+rm -r train_data/nitin_fullset
+
 mv nitin_crops train_data
 mv nitin_fullset train_data
 
