@@ -226,7 +226,7 @@ class BaseDataAugmentation(object):
                     iaa.GammaContrast(gamma=(1-self.contrast_gamma, 1+self.contrast_gamma)),
                     iaa.OneOf([
                         iaa.GaussianBlur(sigma=(0, self.gaussian_sigma)),
-                        iaa.MotionBlur(k=(0, self.motionblur_kernel)),
+                        iaa.MotionBlur(k=self.motionblur_kernel, angle=(0, 360)),
                         # iaa.imgcorruptlike.DefocusBlur(severity=defocus_severity),
                         # iaa.imgcorruptlike.ZoomBlur(severity=zoom_severity)
                     ]),
