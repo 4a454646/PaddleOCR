@@ -1,6 +1,8 @@
 #!/bin/bash/
 export LD_LIBRARY_PATH=/root/miniconda3/envs/paddleocr/lib/
 
+pip3 install levenshtein
+
 while getopts "m:" opt; do
   case $opt in
     m)
@@ -41,7 +43,7 @@ python3 tools/infer/predict_rec_mod.py \
   --rec_model_dir="./rec_train/${model}/" \
   --rec_image_shape="3, 48, 320" \
   --rec_char_dict_path="./ppocr/utils/en_dict.txt" \
-  --show_log=false \ 
+  --show_log=false \
   --label="Val"
 
 python3 tools/infer/predict_rec_mod.py \
