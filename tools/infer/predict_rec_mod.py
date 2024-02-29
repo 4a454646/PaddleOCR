@@ -675,6 +675,7 @@ def main(args):
             path_list.append(line_split[0])
             ground_truths.append(line_split[1])
     count_wrong = 0
+    count_cl_wrong = 0
     with (open(out_path, 'w')) as output_file:
         print(len(img_list))
         print(len(path_list))
@@ -690,8 +691,9 @@ def main(args):
                 similarity_score = Levenshtein.distance(res, ground_truths[ino])
                 if similarity_score > 4:
                     to_write += " (CLEARLY WRONG)"
+                    count_cl_wrong += 1
                 output_file.write(to_write + "\n")
-    print(f"{args.label}: {len(img_list) - count_wrong}/{len(img_list)} ({round((1 - count_wrong / len(img_list)) * 100, 2)}%)")
+    print(f"{args.label}: {len(img_list) - count_wrong}/{len(img_list)} ({round((1 - count_wrong / len(img_list)) * 100, 2)}%)\n{len(img_list) - count_cl_wrong}/{len(img_list)} ({round((1 - count_cl_wrong / len(img_list)) * 100, 2)}%)")
     if args.benchmark:
         text_recognizer.autolog.report()
 

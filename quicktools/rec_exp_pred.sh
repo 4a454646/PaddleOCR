@@ -21,7 +21,7 @@ done
 
 python3 tools/export_model.py \
     -c ./rec_train/${model}/config.yml \
-    -o Global.pretrained_model=./rec_train/${model}/latest \
+    -o Global.pretrained_model=./rec_train/${model}/best_accuracy \
     Global.save_inference_dir=./rec_train/${model}/model
 
 model="${model}/model"

@@ -4,8 +4,8 @@ Global:
   epoch_num: 400
   log_smooth_window: 0
   print_batch_step: 1000
-  save_model_dir: ./rec_train/feb9_CLEANEDDATA_nodefualt_maxmaximgaug_reccon
-  save_epoch_step: 250
+  save_model_dir: ./rec_train/feb
+  save_epoch_step: 100
   eval_batch_step:
   - 0
   - 1000

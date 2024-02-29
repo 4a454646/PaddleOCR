@@ -322,7 +322,7 @@ def train(config,
 
             print(f"lr: {optimizer.get_lr()}, train_acc: {main_metrics['acc']}, train_loss: {main_metrics['loss']}, valid_acc: {valid_metrics['acc']}, valid_loss: {valid_metrics['loss']}")
 
-            if valid_metrics[main_indicator] >= best_model_dict[main_indicator]:
+            if valid_metrics[main_indicator] >= best_model_dict[main_indicator] and calc_loss:
                 print("saving new best model!")
                 best_model_dict.update(valid_metrics)
                 best_model_dict['best_epoch'] = epoch

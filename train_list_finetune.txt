@@ -125,7 +125,7 @@ card_crops/0_90a2db78-631e-4d41-afa4-cd485e32d3a7_cropped.png	70
 card_crops/0_917c53a9-d062-435f-9643-85dad7de85d5_cropped.png	W
 card_crops/0_91cd16ff-fdee-438a-a23a-329426ec196c_cropped.png	REDS
 card_crops/0_91ec004c-f6eb-4b3b-84a1-b7f3c3881b58_cropped.png	B
-card_crops/0_922d2552-d2c7-4487-ad84-075fa94c4c4d_cropped.png	I OHTANI | P|OH
+card_crops/0_922d2552-d2c7-4487-ad84-075fa94c4c4d_cropped.png	I OHTANI|P|OH
 card_crops/0_9290ee6d-6dbe-45de-abc0-db33fa040885_cropped.png	topps
 card_crops/0_9337daf7-29d5-4199-bce7-bd8a108bcfc2_cropped.png	ANGEL
 card_crops/0_9497e98a-5683-4f4a-98af-f157a6027710_cropped.png	B
@@ -421,7 +421,7 @@ card_crops/1_64930e62-b6c1-46c4-95b0-0dcd00f354c3_cropped.png	ROOKIE
 card_crops/1_6504ac8c-e126-4110-96ce-79b8d0cfaf50_cropped.png	OSPECT.
 card_crops/1_6633217d-d270-4c7e-be24-e06a2c9eb50d_cropped.png	CHICAGO
 card_crops/1_677e32b6-e4cf-40a1-b2e0-8f5d405ad039_cropped.png	RC
-card_crops/1_67ba80e1-0b9c-4740-861e-c2dbda488ea4_cropped.png	BEIBER | P
+card_crops/1_67ba80e1-0b9c-4740-861e-c2dbda488ea4_cropped.png	BEIBER|P
 card_crops/1_68ac1adf-0937-43eb-ad7d-8830789f9fad_cropped.png	RC
 card_crops/1_68f8b0af-ff8e-4289-89a6-557ed596be9e_cropped.png	MAN
 card_crops/1_69c96236-6b19-4f67-be0e-ae625008cc42_cropped.png	1ST
@@ -496,7 +496,7 @@ card_crops/22_418c298a-58ef-475c-a2cb-d60826670228_cropped.png	TRIPLE-A
 card_crops/22_98d9fecd-1de0-420b-b100-6c5291e417b5_cropped.png	year
 card_crops/25_479f3aff-5d74-4493-8844-7a0ed44e1653_cropped.png	GQ
 card_crops/29_479f3aff-5d74-4493-8844-7a0ed44e1653_cropped.png	ERITAG
-card_crops/2_0124143f-6d69-4fc8-8f00-d8dc3fd7f46f_cropped.png	S ROBERT | OF
+card_crops/2_0124143f-6d69-4fc8-8f00-d8dc3fd7f46f_cropped.png	S ROBERT|OF
 card_crops/2_043f4075-80f5-4d86-b9ea-6ebb236ba481_cropped.png	Cc
 card_crops/2_0582fefa-4c50-42b3-8382-d1707462161c_cropped.png	ALEX
 card_crops/2_066bebb2-e21b-4dc9-bfe7-97ca1b83c2a8_cropped.png	B
@@ -543,7 +543,7 @@ card_crops/2_32698259-08b2-4c8a-bb33-1a589be62c69_cropped.png	S
 card_crops/2_3338b5f4-2bab-4865-a495-f66dda12c8e1_cropped.png	Chrome
 card_crops/2_3394c43b-ff43-4b11-88eb-7723c9ade3af_cropped.png	DONRUSS
 card_crops/2_348eff33-0e67-4a05-85c4-0890e897f0b7_cropped.png	eynold
-card_crops/2_34a4a4d7-f4f0-43e1-94ec-944eecc1e85d_cropped.png	LINDOR | SS
+card_crops/2_34a4a4d7-f4f0-43e1-94ec-944eecc1e85d_cropped.png	LINDOR|SS
 card_crops/2_34ade7bb-44f3-4abd-84b2-a2ab1801d00f_cropped.png	AKIYAMA
 card_crops/2_34f2a00c-919c-4013-bfd1-508db023703b_cropped.png	topps
 card_crops/2_36016ebe-2b1f-44e7-93fb-128cd7efa98a_cropped.png	RUSH-
@@ -590,7 +590,7 @@ card_crops/2_76765f18-eb35-41f6-8843-09cd2467cd2c_cropped.png	GAME
 card_crops/2_77bcbb42-7a1d-4c4d-afe5-707ff428cceb_cropped.png	FRANCISCO
 card_crops/2_7848ae12-ba06-4037-960e-8cd07847d8a2_cropped.png	RC
 card_crops/2_78a8f11c-a23e-433b-b138-45dac4574f38_cropped.png	5
-card_crops/2_78ad2cf4-20e2-407f-9cb5-7f8b3d2c6e77_cropped.png	OF | SAN DIEGO PADRES
+card_crops/2_78ad2cf4-20e2-407f-9cb5-7f8b3d2c6e77_cropped.png	OF|SAN DIEGO PADRES
 card_crops/2_793e3d12-f635-4f1f-ac71-945a79183c50_cropped.png	Chrome
 card_crops/2_7f515385-62df-458b-8fdb-f3e78321b6b0_cropped.png	H
 card_crops/2_7fa969ac-2259-4283-bbcc-e9e08495055e_cropped.png	ARIZONA
@@ -684,14 +684,14 @@ card_crops/3_267f7423-e81a-4731-83df-4cf5e63063d6_cropped.png	CABRERA
 card_crops/3_2773654e-d716-496e-89d3-762abc5bd2d9_cropped.png	JESUS
 card_crops/3_284456fa-0445-44bb-af11-1c812c5b44e9_cropped.png	ST
 card_crops/3_28657ac8-e110-4b96-a984-c4d034d6c2ac_cropped.png	ICHIRO
-card_crops/3_29000e04-9570-4310-8d94-e84ad6b108eb_cropped.png	DH | BOSTON RED SOX
+card_crops/3_29000e04-9570-4310-8d94-e84ad6b108eb_cropped.png	DH|BOSTON RED SOX
 card_crops/3_29b24fcf-d64e-4c87-a41e-e8617edf53f0_cropped.png	DELGADO
 card_crops/3_30dab04b-2e7a-4f4a-a5c6-e416efb7e0dd_cropped.png	SOX
 card_crops/3_3157d36a-9518-4065-b2a2-dbaab6de7d0a_cropped.png	X
 card_crops/3_3250be5f-c1f9-44c3-928f-d7f11a209db3_cropped.png	B
 card_crops/3_34a4a4d7-f4f0-43e1-94ec-944eecc1e85d_cropped.png	C
 card_crops/3_34ade7bb-44f3-4abd-84b2-a2ab1801d00f_cropped.png	CINCINNATI
-card_crops/3_34f2a00c-919c-4013-bfd1-508db023703b_cropped.png	BART | C
+card_crops/3_34f2a00c-919c-4013-bfd1-508db023703b_cropped.png	BART|C
 card_crops/3_36016ebe-2b1f-44e7-93fb-128cd7efa98a_cropped.png	Carlos
 card_crops/3_36bc3ad2-1b85-490a-a212-372cd3230dd3_cropped.png	K
 card_crops/3_36d36bb6-5701-42c9-97df-dd0201df9d76_cropped.png	21
@@ -804,7 +804,7 @@ card_crops/4_197ffe25-6f34-475a-bde8-ca7fd49700d3_cropped.png	Royals
 card_crops/4_19c91e00-fc83-49a0-bbd4-ba7b34dac88a_cropped.png	d
 card_crops/4_19f29252-432d-4768-8023-b4726da4d7a7_cropped.png	065/150
 card_crops/4_2186b519-30dc-402b-b01c-4faa7fdb34cd_cropped.png	TODD
-card_crops/4_220021bc-6999-48ef-8e20-2cfd98891d42_cropped.png	JOHNSON | OF
+card_crops/4_220021bc-6999-48ef-8e20-2cfd98891d42_cropped.png	JOHNSON|OF
 card_crops/4_22656163-3fff-484c-bdeb-f7fb85589a36_cropped.png	d
 card_crops/4_22a04c65-08ac-4fa9-80c6-90a8f73f68aa_cropped.png	TRADED
 card_crops/4_22fe562e-5d8a-441b-b816-406ef839b503_cropped.png	3
@@ -828,7 +828,7 @@ card_crops/4_36016ebe-2b1f-44e7-93fb-128cd7efa98a_cropped.png	Delgado
 card_crops/4_36bc3ad2-1b85-490a-a212-372cd3230dd3_cropped.png	RC
 card_crops/4_36d36bb6-5701-42c9-97df-dd0201df9d76_cropped.png	Dodgers
 card_crops/4_373161b8-dde7-4db1-9095-d76063c59a12_cropped.png	topps
-card_crops/4_3749ffca-fb26-4332-b5e9-b0501ffe4777_cropped.png	LUIS CASTILLO | P
+card_crops/4_3749ffca-fb26-4332-b5e9-b0501ffe4777_cropped.png	LUIS CASTILLO|P
 card_crops/4_3831a386-97f0-4b25-9197-a22b2a70ee8b_cropped.png	PIPELINE TALENT
 card_crops/4_384ccccb-79f8-4a38-b57e-154307f9a045_cropped.png	WILLI
 card_crops/4_386a9439-a32b-482f-bba3-ff71b6d00e7e_cropped.png	100
@@ -874,7 +874,7 @@ card_crops/4_78ad2cf4-20e2-407f-9cb5-7f8b3d2c6e77_cropped.png	PHAM
 card_crops/4_7907545d-35bb-46d9-bdee-e87c921168ae_cropped.png	BIEBER
 card_crops/4_7f515385-62df-458b-8fdb-f3e78321b6b0_cropped.png	MARTINEZ
 card_crops/4_7fa969ac-2259-4283-bbcc-e9e08495055e_cropped.png	AHMED
-card_crops/4_7fc36f67-8d86-4e5a-ba50-ab3082169f65_cropped.png	BIEBER | P
+card_crops/4_7fc36f67-8d86-4e5a-ba50-ab3082169f65_cropped.png	BIEBER|P
 card_crops/4_80dbce29-d523-48ae-bd41-b11893b971f1_cropped.png	3
 card_crops/4_8137cce9-3149-4245-8220-89a290a65fd6_cropped.png	HENDERSON
 card_crops/4_82ef5727-c419-4722-9fe6-b57a288d6057_cropped.png	CHICAGO
@@ -1086,7 +1086,7 @@ card_crops/6_22fe562e-5d8a-441b-b816-406ef839b503_cropped.png	BELLINGER
 card_crops/6_24e1f28f-fe89-4d5e-af6d-e499c582c25b_cropped.png	CR
 card_crops/6_250de7d7-5670-4f98-8e0e-4dad8d7ad763_cropped.png	SAMSUNG
 card_crops/6_2616549f-054c-4e19-88a5-1ce425c0d578_cropped.png	BAUER
-card_crops/6_267f7423-e81a-4731-83df-4cf5e63063d6_cropped.png	DH | DETROIT
+card_crops/6_267f7423-e81a-4731-83df-4cf5e63063d6_cropped.png	DH|DETROIT
 card_crops/6_284456fa-0445-44bb-af11-1c812c5b44e9_cropped.png	Chrome
 card_crops/6_3091f449-2439-4f2f-aa4c-8ddbbf9343e9_cropped.png	LOS
 card_crops/6_30dab04b-2e7a-4f4a-a5c6-e416efb7e0dd_cropped.png	COMBOS
@@ -1097,7 +1097,7 @@ card_crops/6_3394c43b-ff43-4b11-88eb-7723c9ade3af_cropped.png	Rookies
 card_crops/6_348eff33-0e67-4a05-85c4-0890e897f0b7_cropped.png	P.
 card_crops/6_34f2a00c-919c-4013-bfd1-508db023703b_cropped.png	RC
 card_crops/6_36016ebe-2b1f-44e7-93fb-128cd7efa98a_cropped.png	PROSPECT
-card_crops/6_36d36bb6-5701-42c9-97df-dd0201df9d76_cropped.png	BUEHLER | P
+card_crops/6_36d36bb6-5701-42c9-97df-dd0201df9d76_cropped.png	BUEHLER|P
 card_crops/6_36da6392-d944-4d8f-8c03-ee51185c3661_cropped.png	WALKER
 card_crops/6_373161b8-dde7-4db1-9095-d76063c59a12_cropped.png	3rd
 card_crops/6_386a9439-a32b-482f-bba3-ff71b6d00e7e_cropped.png	RONNY
@@ -1356,7 +1356,7 @@ card_crops/9_30dab04b-2e7a-4f4a-a5c6-e416efb7e0dd_cropped.png	YOUKILIS
 card_crops/9_3157d36a-9518-4065-b2a2-dbaab6de7d0a_cropped.png	/YANKEES
 card_crops/9_3250be5f-c1f9-44c3-928f-d7f11a209db3_cropped.png	BAEZ
 card_crops/9_32698259-08b2-4c8a-bb33-1a589be62c69_cropped.png	LOGAN
-card_crops/9_3338b5f4-2bab-4865-a495-f66dda12c8e1_cropped.png	OF | CINCINNATI REDS
+card_crops/9_3338b5f4-2bab-4865-a495-f66dda12c8e1_cropped.png	OF|CINCINNATI REDS
 card_crops/9_373161b8-dde7-4db1-9095-d76063c59a12_cropped.png	KLUTTS
 card_crops/9_3831a386-97f0-4b25-9197-a22b2a70ee8b_cropped.png	BRADEN
 card_crops/9_386a9439-a32b-482f-bba3-ff71b6d00e7e_cropped.png	YORK
@@ -2320,7 +2320,7 @@ gc_ori/155_11.jpg	TOPPS
 gc_ori/155_14.jpg	2021
 gc_ori/155_16.jpg	THE
 gc_ori/155_19.jpg	214.1
-gc_ori/155_26.jpg	MONTREAL / WASH.
+gc_ori/155_26.jpg	MONTREAL/WASH.
 gc_ori/155_28.jpg	BRAVES
 gc_ori/155_3.jpg	PRODUCT
 gc_ori/155_34.jpg	1.6
@@ -3816,7 +3816,7 @@ gc_ori/29_6.jpg	2-10-20
 gc_ori/2_1.jpg	1986
 gc_ori/2_10.jpg	Dodgers
 gc_ori/2_11.jpg	142
-gc_ori/2_12.jpg	ADELL | OF
+gc_ori/2_12.jpg	ADELL/OF
 gc_ori/2_13.jpg	BOS
 gc_ori/2_14.jpg	TANNER
 gc_ori/2_15.jpg	Miami
@@ -4078,14 +4078,14 @@ gc_ori/3_27.jpg	A
 gc_ori/3_28.jpg	MAX
 gc_ori/3_31.jpg	Chrome
 gc_ori/3_32.jpg	MEANS
-gc_ori/3_35.jpg	GRAY / P
+gc_ori/3_35.jpg	GRAY/P
 gc_ori/3_36.jpg	GRAY
 gc_ori/3_37.jpg	86BC-
 gc_ori/3_38.jpg	SUAREZ
 gc_ori/3_39.jpg	NICK
 gc_ori/3_41.jpg	FLAHERTY
 gc_ori/3_42.jpg	CUBA
-gc_ori/3_5.jpg	VERDUGO / OF
+gc_ori/3_5.jpg	VERDUGO/OF
 gc_ori/3_6.jpg	VERDUGO
 gc_ori/3_8.jpg	CHRISTIAN
 gc_ori/40_11.jpg	Jo
@@ -4449,7 +4449,7 @@ gc_ori/5_11.jpg	@TOPPS
 gc_ori/5_13.jpg	RC
 gc_ori/5_14.jpg	BOSTON
 gc_ori/5_16.jpg	@TOPPS
-gc_ori/5_17.jpg	SEMIEN / SS
+gc_ori/5_17.jpg	SEMIEN/SS
 gc_ori/5_18.jpg	SEMIEN
 gc_ori/5_19.jpg	BOSTON
 gc_ori/5_2.jpg	KC
@@ -4623,7 +4623,7 @@ gc_ori/69_6.jpg	debut
 gc_ori/69_8.jpg	and
 gc_ori/69_9.jpg	last
 gc_ori/6_1.jpg	NOLAN
-gc_ori/6_10.jpg	BUEHLER / P
+gc_ori/6_10.jpg	BUEHLER/P
 gc_ori/6_11.jpg	ANGELS
 gc_ori/6_14.jpg	RED
 gc_ori/6_16.jpg	MARLINS
@@ -4802,7 +4802,7 @@ gc_ori/7_14.jpg	SOX
 gc_ori/7_16.jpg	FREE
 gc_ori/7_17.jpg	MARCUS
 gc_ori/7_18.jpg	ATHLETICS
-gc_ori/7_2.jpg	SINGER / P
+gc_ori/7_2.jpg	SINGER/P
 gc_ori/7_23.jpg	WT:
 gc_ori/7_28.jpg	BRAVES
 gc_ori/7_3.jpg	KANSAS
@@ -16075,7 +16075,7 @@ word/word_1814.png	CATHAY
 word/word_1815.png	real
 word/word_1817.png	JANUARY8
 word/word_1819.png	JAN
-word/word_182.png	A / X
+word/word_182.png	A/X
 word/word_1820.png	CATHAY
 word/word_1822.png	EVERYTHING
 word/word_1824.png	JANUARY
@@ -17334,7 +17334,7 @@ word/word_1392.png	How
 word/word_1393.png	Win:
 word/word_1394.png	Purchase
 word/word_1395.png	any
-word/word_1396.png	Data / Social
+word/word_1396.png	Data/Social
 word/word_1397.png	Plan
 word/word_1398.png	Triple
 word/word_1399.png	your
@@ -17713,7 +17713,7 @@ word/word_1733.png	BRAUN
 word/word_1734.png	ALDO
 word/word_1735.png	ALDO
 word/word_1736.png	ALDO
-word/word_1737.png	giordano / ladies
+word/word_1737.png	giordano/ladies
 word/word_1738.png	OFF
 word/word_1739.png	OFF
 word/word_174.png	Tanjong
@@ -19927,7 +19927,7 @@ word/word_3726.png	TEES
 word/word_3727.png	FOR
 word/word_3728.png	COTTON
 word/word_3729.png	EXIT
-word/word_373.png	CashCard / FlashPay/
+word/word_373.png	CashCard/FlashPay/
 word/word_3730.png	SECRET
 word/word_3731.png	SALE
 word/word_3732.png	SALE
@@ -20366,7 +20366,7 @@ word/word_4120.png	LTD
 word/word_4121.png	FILIPINO
 word/word_4122.png	KABAYAN
 word/word_4123.png	RESTAURANT
-word/word_4124.png	COUNTER / KITCHEN
+word/word_4124.png	COUNTER/KITCHEN
 word/word_4125.png	ASSISTANT
 word/word_4126.png	WANTED:
 word/word_4127.png	WANTED;
@@ -22448,7 +22448,7 @@ full_neg/baseball_test_crops/0ead3244-e12f-4822-bd17-1ca1ce7f1ad5.jpg	WHITE
 full_neg/baseball_test_crops/0eae1d54-f8ec-438a-b170-7465be54b02d.jpg	BLUE
 full_neg/baseball_test_crops/0eaec2b8-bc5e-46fa-b951-5351131cdb03.jpg	MAAS
 full_neg/baseball_test_crops/0eaeed06-f0b1-4f3b-9d43-a4077ba31ae6.jpg	Chrome
-full_neg/baseball_test_crops/0eafb433-160d-4dd0-b7c0-e2873027c318.jpg	1B | OF
+full_neg/baseball_test_crops/0eafb433-160d-4dd0-b7c0-e2873027c318.jpg	1B|OF
 full_neg/baseball_test_crops/0eb3c8a7-37b5-4f73-a5e1-c53a072a584d.jpg	HANK
 full_neg/baseball_test_crops/0eb8819c-6fd7-4e53-8e82-46aeec4487f6.jpg	B
 full_neg/baseball_test_crops/0eb9493c-7284-4aff-8496-f43e59e48681.jpg	HERITAGE
@@ -26654,7 +26654,7 @@ full_neg/baseball_test_crops/acccdd0a-7f3a-4c0d-8b47-03b42ef95f47.jpg	1
 full_neg/baseball_test_crops/acce08c7-17f3-4e9e-b122-a4cd143e0e5e.jpg	FIRST
 full_neg/baseball_test_crops/accebe2e-fed8-4f47-98ce-2e672c656f37.jpg	major
 full_neg/baseball_test_crops/accefc92-825d-4e1d-bcc4-299d2226cffa.jpg	PITCHER
-full_neg/baseball_test_crops/acd0a4f3-ef4a-4efc-9862-0349376c6fc4.jpg	P | DH
+full_neg/baseball_test_crops/acd0a4f3-ef4a-4efc-9862-0349376c6fc4.jpg	P|DH
 full_neg/baseball_test_crops/acd2d49e-d138-4c0f-b01c-719ce1b59a71.jpg	JOE
 full_neg/baseball_test_crops/acd4300b-f101-40a5-900b-e850d71df0ce.jpg	RED
 full_neg/baseball_test_crops/acd69945-9795-40d3-9499-19d428951379.jpg	H
