@@ -105,18 +105,18 @@ Train:
         affine_rotation: 30
         affine_shear: 30
         affine_prob: 0.5
-        channelshuffle_prob: 1.0
+        channelshuffle_prob: 0.5
         add_amount: 255
-        add_gaussian_amount: 1.0
-        multiply_amount: 1.0
-        dropout_percent: 0.5
-        c_dropout_percent: 0.5
+        add_gaussian_amount: 0.5
+        multiply_amount: 0.5
+        dropout_percent: 0.3
+        c_dropout_percent: 0.3
         c_dropout_size_percent: 0.1
         invert_prob: 0.3
         jpeg_compression: 0.9
-        gaussian_sigma: 9
+        gaussian_sigma: 7
         motionblur_kernel: 3
-        hs_multiplier: 1.0
+        hs_multiplier: 0.5
         saturation_remover: 1.0
         color_temp_shift: 30000
         contrast_gamma: 0.5

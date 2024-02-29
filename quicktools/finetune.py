@@ -23,6 +23,7 @@ def filter_file(input_filename, output_filename):
 files = [
     ('train_data/train_list.txt', 'train_data/train_list_finetune.txt'),
     ('train_data/val_list.txt', 'train_data/val_list_finetune.txt'),
+    ('train_data/alt_list.txt', 'train_data/alt_list_finetune.txt'),
 ]
 
 # Process each file
